@@ -21,9 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Lua/LuaJIT
-        uses: leafo/gh-actions-lua@v9
+        uses: leafo/gh-actions-lua@v10
       - name: Pull Source
         run: |
           git clone -q https://github.com/Ketho/BlizzardInterfaceResources.git source
