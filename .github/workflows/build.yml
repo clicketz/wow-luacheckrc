@@ -131,7 +131,7 @@ jobs:
             for i = 1, #CONSTANT_FILES do
                 local env = {}
                 env._G = env
-                loadfile(string.format(SOURCE_PATH, CONSTANT_FILES[i]), 't', env)()
+                loadfile(string.format(SOURCE_PATH, CONSTANT_FILES[i]), 't', env)
                 insert(parseConstants(env))
             end
 
