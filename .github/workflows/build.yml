@@ -78,6 +78,25 @@ jobs:
                 return result
             end
 
+            local function parseConstants(tbl, result)
+                result = result or {}
+                for k, v in pairs(tbl) do
+                    if k ~= '_G' then
+                        if type(k) ~= 'table' then
+                          k = tostring(k)
+                        end
+
+                        if type(v) == 'table' then
+                            result[k] = {fields = {}}
+                            parseConstants(v, result[k].fields)
+                        else
+                            result[#result + 1] = k
+                        end
+                    end
+                end
+                return result
+            end
+
             local read_globals = {'LibStub'}
             local function insert(tbl)
                 for k, v in pairs(tbl) do
@@ -100,12 +119,20 @@ jobs:
                 for j = 1, #tbl do insert(getValues(tbl[j])) end
             end
 
-            local GLOBAL_FILES = {'Constants.lua', 'LuaEnum.lua', 'GlobalStrings/enUS.lua'}
+            local GLOBAL_FILES = {'LuaEnum.lua', 'GlobalStrings/enUS.lua'}
             for i = 1, #GLOBAL_FILES do
                 local env = {}
                 env._G = env
                 loadfile(string.format(SOURCE_PATH, GLOBAL_FILES[i]), 't', env)()
                 insert(parseGlobals(env))
+            end
+
+            local CONSTANT_FILES = {'Constants.lua'}
+            for i = 1, #CONSTANT_FILES do
+                local env = {}
+                env._G = env
+                loadfile(string.format(SOURCE_PATH, CONSTANT_FILES[i]), 't', env)()
+                insert(parseConstants(env))
             end
 
             table.sort(read_globals)
