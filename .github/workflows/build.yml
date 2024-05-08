@@ -28,6 +28,9 @@ jobs:
         run: |
           git clone -q https://github.com/Ketho/BlizzardInterfaceResources.git source
           git -C source checkout ${{ github.event.inputs.source }}
+      - name: Get Constants
+        run:
+          wget -o $GITHUB_WORKSPACE/source/Resources/Constants.lua https://raw.githubusercontent.com/tomrus88/BlizzardInterfaceCode/master/Interface/AddOns/Blizzard_FrameXMLBase/Constants.lua
       - name: Create Script
         run: |
           cat <<EOF > parse.lua
@@ -97,7 +100,7 @@ jobs:
                 for j = 1, #tbl do insert(getValues(tbl[j])) end
             end
 
-            local GLOBAL_FILES = {'LuaEnum.lua', 'GlobalStrings/enUS.lua'}
+            local GLOBAL_FILES = {'Constants.lua', 'LuaEnum.lua', 'GlobalStrings/enUS.lua'}
             for i = 1, #GLOBAL_FILES do
                 local env = {}
                 env._G = env
