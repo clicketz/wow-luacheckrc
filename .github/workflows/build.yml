@@ -30,7 +30,7 @@ jobs:
           git -C source checkout ${{ github.event.inputs.source }}
       - name: Get Constants
         run:
-          wget -o $GITHUB_WORKSPACE/source/Resources/Constants.lua https://raw.githubusercontent.com/tomrus88/BlizzardInterfaceCode/master/Interface/AddOns/Blizzard_FrameXMLBase/Constants.lua
+          wget -O /Resources/Constants.lua https://raw.githubusercontent.com/tomrus88/BlizzardInterfaceCode/master/Interface/AddOns/Blizzard_FrameXMLBase/Constants.lua
       - name: Create Script
         run: |
           cat <<EOF > parse.lua
