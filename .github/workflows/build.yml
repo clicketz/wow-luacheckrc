@@ -78,26 +78,10 @@ jobs:
                 return result
             end
 
-            local function parseConstants(tbl, result)
-                result = result or {}
-                for k, v in pairs(tbl) do
-                    if k ~= '_G' then
-                        if type(k) ~= 'table' then
-                          k = tostring(k)
-                        end
-
-                        if type(v) == 'table' then
-                            result[k] = {fields = {}}
-                            parseConstants(v, result[k].fields)
-                        else
-                            result[#result + 1] = k
-                        end
-                    end
-                end
-                return result
-            end
-
             local read_globals = {'LibStub'}
+            local env = {}
+            env._G = env
+            
             local function insert(tbl)
                 for k, v in pairs(tbl) do
                     if type(k) == 'number' then
@@ -108,31 +92,21 @@ jobs:
                 end
             end
 
-            local SINGLE_TABLE_FILES = {'Mixins.lua'}
+            local SINGLE_TABLE_FILES = { 'Mixins.lua' }
             for i = 1, #SINGLE_TABLE_FILES do
-                insert(getValues(dofile(string.format(SOURCE_PATH, SINGLE_TABLE_FILES[i]))))
+                insert(getValues(loadfile(string.format(SOURCE_PATH, SINGLE_TABLE_FILES[i]), "t", env)()))
             end
 
-            local MULTI_TABLE_FILES = {'GlobalAPI.lua', 'FrameXML.lua', 'Frames.lua'}
+            local MULTI_TABLE_FILES = { 'GlobalAPI.lua', 'FrameXML.lua', 'Frames.lua' }
             for i = 1, #MULTI_TABLE_FILES do
-                local tbl = dofile(string.format(SOURCE_PATH, MULTI_TABLE_FILES[i]))
+                local tbl = loadfile(string.format(SOURCE_PATH, MULTI_TABLE_FILES[i]), "t", env)()
                 for j = 1, #tbl do insert(getValues(tbl[j])) end
             end
 
-            local GLOBAL_FILES = {'LuaEnum.lua', 'GlobalStrings/enUS.lua'}
+            local GLOBAL_FILES = { 'LuaEnum.lua', 'GlobalStrings/enUS.lua', 'Constants.lua' }
             for i = 1, #GLOBAL_FILES do
-                local env = {}
-                env._G = env
-                loadfile(string.format(SOURCE_PATH, GLOBAL_FILES[i]), 't', env)()
+                loadfile(string.format('%s', GLOBAL_FILES[i]), 't', env)()
                 insert(parseGlobals(env))
-            end
-
-            local CONSTANT_FILES = {'Constants.lua'}
-            for i = 1, #CONSTANT_FILES do
-                local env = {}
-                env._G = env
-                loadfile(string.format(SOURCE_PATH, CONSTANT_FILES[i]), 't', env)
-                insert(parseConstants(env))
             end
 
             table.sort(read_globals)
