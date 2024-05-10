@@ -95,9 +95,6 @@ jobs:
             end
 
             local read_globals = {'LibStub'}
-            local env = {}
-            env._G = env
-            
             local function insert(tbl)
                 for k, v in pairs(tbl) do
                     if type(k) == 'number' then
@@ -108,20 +105,22 @@ jobs:
                 end
             end
 
-            local SINGLE_TABLE_FILES = { 'Mixins.lua', 'Constants_Parsed.lua' }
+            local SINGLE_TABLE_FILES = {'Mixins.lua', 'Constants_Parsed.lua' }
             for i = 1, #SINGLE_TABLE_FILES do
-                insert(getValues(loadfile(string.format(SOURCE_PATH, SINGLE_TABLE_FILES[i]), "t", env)()))
+                insert(getValues(dofile(string.format(SOURCE_PATH, SINGLE_TABLE_FILES[i]))))
             end
 
-            local MULTI_TABLE_FILES = { 'GlobalAPI.lua', 'FrameXML.lua', 'Frames.lua' }
+            local MULTI_TABLE_FILES = {'GlobalAPI.lua', 'FrameXML.lua', 'Frames.lua'}
             for i = 1, #MULTI_TABLE_FILES do
-                local tbl = loadfile(string.format(SOURCE_PATH, MULTI_TABLE_FILES[i]), "t", env)()
+                local tbl = dofile(string.format(SOURCE_PATH, MULTI_TABLE_FILES[i]))
                 for j = 1, #tbl do insert(getValues(tbl[j])) end
             end
 
-            local GLOBAL_FILES = { 'LuaEnum.lua', 'GlobalStrings/enUS.lua' }
+            local GLOBAL_FILES = {'LuaEnum.lua', 'GlobalStrings/enUS.lua'}
             for i = 1, #GLOBAL_FILES do
-                loadfile(string.format('%s', GLOBAL_FILES[i]), 't', env)()
+                local env = {}
+                env._G = env
+                loadfile(string.format(SOURCE_PATH, GLOBAL_FILES[i]), 't', env)()
                 insert(parseGlobals(env))
             end
 
@@ -129,47 +128,47 @@ jobs:
 
             local file, errmsg = io.open(GITHUB_WORKSPACE .. '/.luacheckrc', 'w')
             if file then
-                file:write('std = \'lua51\'', '\n')
-                file:write('max_line_length = false', '\n')
-                file:write('exclude_files = {\'**Libs/\', \'**libs/\'}', '\n')
-                file:write('ignore = {', '\n')
-                file:write('    \'11./SLASH_.*\', -- Setting an undefined (Slash handler) global variable', '\n')
-                file:write('    \'11./BINDING_.*\', -- Setting an undefined (Keybinding header) global variable', '\n')
-                file:write('    \'113/LE_.*\', -- Accessing an undefined (Lua ENUM type) global variable', '\n')
-                file:write('    \'113/NUM_LE_.*\', -- Accessing an undefined (Lua ENUM type) global variable', '\n')
-                file:write('    \'211\', -- Unused local variable', '\n')
-                file:write('    \'211/L\', -- Unused local variable "L"', '\n')
-                file:write('    \'211/CL\', -- Unused local variable "CL"', '\n')
-                file:write('    \'212\', -- Unused argument', '\n')
-                file:write('    \'213\', -- Unused loop variable', '\n')
-                file:write('    \'214\', -- Unused hint', '\n')
-                file:write('    -- \'231\', -- Set but never accessed', '\n')
-                file:write('    \'311\', -- Value assigned to a local variable is unused', '\n')
-                file:write('    \'314\', -- Value of a field in a table literal is unused', '\n')
-                file:write('    \'42.\', -- Shadowing a local variable, an argument, a loop variable.', '\n')
-                file:write('    \'43.\', -- Shadowing an upvalue, an upvalue argument, an upvalue loop variable.', '\n')
-                file:write('    \'542\', -- An empty if branch', '\n')
-                file:write('    \'581\', -- Error-prone operator orders', '\n')
-                file:write('    \'582\', -- Error-prone operator orders', '\n')
-                file:write('}', '\n')
-                file:write('globals = {', '\n')
-                file:write('    \'_G\', -- Global table', '\n')
-                file:write('    \'bit\',', '\n')
-                file:write('}', '\n')
-                file:write('read_globals = ',
-                    string.gsub(require('pprint').pformat(read_globals, {
-                    indent_size = 4,
-                    level_width = 120,
-                    wrap_array = true
-                }), '%s+\n', '\n'), '\n')
-                file:write('', '\n')
-
-                file:close()
-            elseif errmsg then
-                error(errmsg)
-            else
-                error('cannot create file')
-            end
+              file:write('std = \'lua51\'', '\n')
+              file:write('max_line_length = false', '\n')
+              file:write('exclude_files = {\'**Libs/\', \'**libs/\'}', '\n')
+              file:write('ignore = {', '\n')
+              file:write('    \'11./SLASH_.*\', -- Setting an undefined (Slash handler) global variable', '\n')
+              file:write('    \'11./BINDING_.*\', -- Setting an undefined (Keybinding header) global variable', '\n')
+              file:write('    \'113/LE_.*\', -- Accessing an undefined (Lua ENUM type) global variable', '\n')
+              file:write('    \'113/NUM_LE_.*\', -- Accessing an undefined (Lua ENUM type) global variable', '\n')
+              file:write('    \'211\', -- Unused local variable', '\n')
+              file:write('    \'211/L\', -- Unused local variable "L"', '\n')
+              file:write('    \'211/CL\', -- Unused local variable "CL"', '\n')
+              file:write('    \'212\', -- Unused argument', '\n')
+              file:write('    \'213\', -- Unused loop variable', '\n')
+              file:write('    \'214\', -- Unused hint', '\n')
+              file:write('    -- \'231\', -- Set but never accessed', '\n')
+              file:write('    \'311\', -- Value assigned to a local variable is unused', '\n')
+              file:write('    \'314\', -- Value of a field in a table literal is unused', '\n')
+              file:write('    \'42.\', -- Shadowing a local variable, an argument, a loop variable.', '\n')
+              file:write('    \'43.\', -- Shadowing an upvalue, an upvalue argument, an upvalue loop variable.', '\n')
+              file:write('    \'542\', -- An empty if branch', '\n')
+              file:write('    \'581\', -- Error-prone operator orders', '\n')
+              file:write('    \'582\', -- Error-prone operator orders', '\n')
+              file:write('}', '\n')
+              file:write('globals = {', '\n')
+              file:write('    \'_G\', -- Global table', '\n')
+              file:write('    \'bit\',', '\n')
+              file:write('}', '\n')
+              file:write('read_globals = ',
+                  string.gsub(require('pprint').pformat(read_globals, {
+                  indent_size = 4,
+                  level_width = 120,
+                  wrap_array = true
+              }), '%s+\n', '\n'), '\n')
+              file:write('', '\n')
+          
+              file:close()
+          elseif errmsg then
+              error(errmsg)
+          else
+              error('cannot create file')
+          end
 
           EOF
       - name: Get 'pprint.lua'
