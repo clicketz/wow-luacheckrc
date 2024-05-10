@@ -45,7 +45,7 @@ jobs:
 
       - name: Get Constants Parsing Script
         run:
-          wget -O parse_constants.py https://raw.githubusercontent.com/clicketz/files/master/parse_constants.py
+          wget -O $GITHUB_WORKSPACE/source/Resources/parse_constants.py https://raw.githubusercontent.com/clicketz/files/master/parse_constants.py
 
       - name: Create Script
         run: |
