@@ -39,6 +39,10 @@ jobs:
           git clone -q https://github.com/Ketho/BlizzardInterfaceResources.git source
           git -C source checkout ${{ github.event.inputs.source }}
 
+      - name: Get Personal Additions
+        run:
+          wget -O $GITHUB_WORKSPACE/source/Resources/Additions.lua https://raw.githubusercontent.com/clicketz/files/master/luacheckAdditions.lua
+
       - name: Get Constants
         run:
           wget -O $GITHUB_WORKSPACE/source/Resources/Constants.lua https://raw.githubusercontent.com/tomrus88/BlizzardInterfaceCode/master/Interface/AddOns/Blizzard_FrameXMLBase/Constants.lua
@@ -105,7 +109,7 @@ jobs:
                 end
             end
 
-            local SINGLE_TABLE_FILES = {'Mixins.lua', 'Constants_Parsed.lua' }
+            local SINGLE_TABLE_FILES = {'Mixins.lua', 'Additions.lua', 'Constants_Parsed.lua' }
             for i = 1, #SINGLE_TABLE_FILES do
                 insert(getValues(dofile(string.format(SOURCE_PATH, SINGLE_TABLE_FILES[i]))))
             end
