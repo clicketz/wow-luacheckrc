@@ -156,7 +156,7 @@ jobs:
               file:write('    \'582\', -- Error-prone operator orders', '\n')
               file:write('}', '\n')
               file:write('globals = ',
-                  string.gsub(require('pprint').pformat(globals, {
+                  string.gsub(require('pprint').pformat(read_globals, {
                   indent_size = 4,
                   level_width = 120,
                   wrap_array = true
