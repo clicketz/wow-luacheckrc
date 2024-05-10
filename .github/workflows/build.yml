@@ -22,15 +22,26 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
       - name: Install Lua/LuaJIT
         uses: leafo/gh-actions-lua@v10
+
+      - name: Install tree sitter languages
+        run: python -m pip install tree_sitter_languages
+
       - name: Pull Source
         run: |
           git clone -q https://github.com/Ketho/BlizzardInterfaceResources.git source
           git -C source checkout ${{ github.event.inputs.source }}
+
       - name: Get Constants
         run:
           wget -O $GITHUB_WORKSPACE/source/Resources/Constants.lua https://raw.githubusercontent.com/tomrus88/BlizzardInterfaceCode/master/Interface/AddOns/Blizzard_FrameXMLBase/Constants.lua
+
+      - name: Get Constants Parsing Script
+        run:
+          wget -O $GITHUB_WORKSPACE/source/Resources/parse_constants.py https://raw.githubusercontent.com/clicketz/files/master/parse_constants.py
+
       - name: Create Script
         run: |
           cat <<EOF > parse.lua
@@ -92,7 +103,7 @@ jobs:
                 end
             end
 
-            local SINGLE_TABLE_FILES = { 'Mixins.lua' }
+            local SINGLE_TABLE_FILES = { 'Mixins.lua', 'Constants_Parsed.lua' }
             for i = 1, #SINGLE_TABLE_FILES do
                 insert(getValues(loadfile(string.format(SOURCE_PATH, SINGLE_TABLE_FILES[i]), "t", env)()))
             end
@@ -103,7 +114,7 @@ jobs:
                 for j = 1, #tbl do insert(getValues(tbl[j])) end
             end
 
-            local GLOBAL_FILES = { 'LuaEnum.lua', 'GlobalStrings/enUS.lua', 'Constants.lua' }
+            local GLOBAL_FILES = { 'LuaEnum.lua', 'GlobalStrings/enUS.lua' }
             for i = 1, #GLOBAL_FILES do
                 loadfile(string.format('%s', GLOBAL_FILES[i]), 't', env)()
                 insert(parseGlobals(env))
@@ -158,8 +169,13 @@ jobs:
           EOF
       - name: Get 'pprint.lua'
         run: wget https://raw.githubusercontent.com/jagt/pprint.lua/master/pprint.lua
+
+      - name: Parse Constants
+        run: py .\parse_constants.py
+
       - name: Parse
         run: lua parse.lua $GITHUB_WORKSPACE
+
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
         env:
