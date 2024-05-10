@@ -176,7 +176,7 @@ jobs:
         run: wget https://raw.githubusercontent.com/jagt/pprint.lua/master/pprint.lua
 
       - name: Parse Constants
-        run: py .\parse_constants.py
+        run: python parse_constants.py
 
       - name: Parse
         run: lua parse.lua $GITHUB_WORKSPACE
