@@ -177,6 +177,7 @@ jobs:
 
       - name: Parse Constants
         run: python parse_constants.py
+        working-directory: $GITHUB_WORKSPACE/source/Resources/
 
       - name: Parse
         run: lua parse.lua $GITHUB_WORKSPACE
