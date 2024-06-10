@@ -32,7 +32,7 @@ jobs:
         uses: leafo/gh-actions-lua@v10
 
       - name: Install tree sitter languages
-        run: python -m pip install tree_sitter_languages
+        run: python -m pip install tree_sitter_languages<=1.10.1
 
       - name: Pull Source
         run: |
