@@ -19599,6 +19599,7 @@ globals = {
     'NONEQUIPSLOT',
     'NONE_CAPS',
     'NONE_KEY',
+    'NORMAL_FONT_COLOR',
     'NORMAL_FONT_COLOR_CODE',
     'NORMAL_QUEST_DISPLAY',
     'NORTH_AMERICA',
@@ -37600,42 +37601,42 @@ globals = {
             },
             CurrencyConsts = {
                 fields = {
-                    'CURRENCY_ID_RENOWN_KYRIAN',
-                    'ACCOUNT_WIDE_HONOR_CURRENCY_ID',
-                    'PLAYER_CURRENCY_CLIENT_FLAGS',
-                    'HONOR_CURRENCY_ID',
-                    'CURRENCY_ID_RENOWN_VENTHYR',
-                    'CURRENCY_ID_PERKS_PROGRAM_DISPLAY_INFO',
-                    'CONQUEST_RATED_BG_META_CURRENCY_ID',
-                    'CONQUEST_ARENA_META_CURRENCY_ID',
-                    'ECHOES_OF_NYALOTHA_CURRENCY_ID',
-                    'MAX_CURRENCY_QUANTITY',
-                    'CURRENCY_ID_RENOWN',
-                    'CONQUEST_CURRENCY_ID',
-                    'QUESTIONMARK_INV_ICON',
-                    'ARTIFACT_KNOWLEDGE_CURRENCY_ID',
-                    'CURRENCY_ID_WILLING_SOUL',
-                    'CLASSIC_HONOR_CURRENCY_ID',
-                    'CURRENCY_ID_RESERVOIR_ANIMA',
-                    'CONQUEST_ASHRAN_META_CURRENCY_ID',
                     'HONOR_PER_CURRENCY',
+                    'CONQUEST_ARENA_META_CURRENCY_ID',
+                    'CURRENCY_ID_RENOWN_VENTHYR',
+                    'DRAGON_ISLES_SUPPLIES_CURRENCY_ID',
+                    'CURRENCY_ID_RENOWN_KYRIAN',
+                    'CONQUEST_CURRENCY_ID',
+                    'ACCOUNT_WIDE_HONOR_LEVEL_CURRENCY_ID',
+                    'CONQUEST_ARENA_AND_BG_META_CURRENCY_ID',
+                    'MAX_CURRENCY_QUANTITY',
+                    'QUESTIONMARK_INV_ICON',
+                    'PLAYER_CURRENCY_CLIENT_FLAGS',
+                    'CURRENCY_ID_PERKS_PROGRAM_DISPLAY_INFO',
+                    'CLASSIC_HONOR_CURRENCY_ID',
+                    'CONQUEST_POINTS_CURRENCY_ID',
+                    'CONQUEST_RATED_BG_META_CURRENCY_ID',
+                    'ARTIFACT_KNOWLEDGE_CURRENCY_ID',
+                    'CLASSIC_ARENA_POINTS_CURRENCY_ID',
                     'CURRENCY_ID_RENOWN_NECROLORD',
                     'CURRENCY_ID_RENOWN_NIGHT_FAE',
+                    'CURRENCY_ID_RENOWN',
+                    'CURRENCY_ID_RESERVOIR_ANIMA',
                     'CONQUEST_BG_META_CURRENCY_ID',
-                    'CLASSIC_ARENA_POINTS_CURRENCY_ID',
-                    'ACCOUNT_WIDE_HONOR_LEVEL_CURRENCY_ID',
-                    'DRAGON_ISLES_SUPPLIES_CURRENCY_ID',
-                    'WAR_RESOURCES_CURRENCY_ID',
-                    'CONQUEST_ARENA_AND_BG_META_CURRENCY_ID',
-                    'CONQUEST_POINTS_CURRENCY_ID'
+                    'CONQUEST_ASHRAN_META_CURRENCY_ID',
+                    'CURRENCY_ID_WILLING_SOUL',
+                    'ACCOUNT_WIDE_HONOR_CURRENCY_ID',
+                    'ECHOES_OF_NYALOTHA_CURRENCY_ID',
+                    'HONOR_CURRENCY_ID',
+                    'WAR_RESOURCES_CURRENCY_ID'
                 }
             },
             EditModeConsts = {
                 fields = {
-                    'EditModeMinGridSpacing',
+                    'EditModeMaxLayoutsPerType',
                     'EditModeMaxGridSpacing',
                     'EditModeDefaultGridSpacing',
-                    'EditModeMaxLayoutsPerType'
+                    'EditModeMinGridSpacing'
                 }
             },
             GroupFinderConstants = {
@@ -37651,15 +37652,15 @@ globals = {
             InventoryConstants = {
                 fields = {
                     'NumBagSlots',
+                    'NumBankBagSlots',
                     'NumGenericBankSlots',
-                    'NumReagentBagSlots',
-                    'NumBankBagSlots'
+                    'NumReagentBagSlots'
                 }
             },
             ItemConsts = {
                 fields = {
-                    'NUM_ITEM_ENCHANTMENT_SOCKETS',
-                    'MAX_LOOT_OBJECT_ITEMS'
+                    'MAX_LOOT_OBJECT_ITEMS',
+                    'NUM_ITEM_ENCHANTMENT_SOCKETS'
                 }
             },
             LFG_ROLEConstants = {
@@ -37681,32 +37682,32 @@ globals = {
             },
             MajorFactionsConsts = {
                 fields = {
-                    'WORLD_STATE_RENOWN_CAP_10_0',
                     'PLUNDERSTORM_MAJOR_FACTION_ID',
-                    'WORLD_STATE_RAPID_RENOWN_CAP_10_0'
+                    'WORLD_STATE_RAPID_RENOWN_CAP_10_0',
+                    'WORLD_STATE_RENOWN_CAP_10_0'
                 }
             },
             PetConsts = {
                 fields = {
-                    'MAX_SUMMONABLE_HUNTER_PETS',
-                    'STABLED_PETS_FIRST_SLOT_INDEX',
                     'NUM_PET_SLOTS',
+                    'STABLED_PETS_FIRST_SLOT_INDEX',
                     'MAX_STABLE_SLOTS',
-                    'EXTRA_PET_STABLE_SLOT',
                     'MAX_SUMMONABLE_PETS',
-                    'NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL'
+                    'NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL',
+                    'EXTRA_PET_STABLE_SLOT',
+                    'MAX_SUMMONABLE_HUNTER_PETS'
                 }
             },
             ProfessionConsts = {
                 fields = {
-                    'CLASSIC_PROFESSION_PARENT_TIER_INDEX',
-                    'RUNEFORGING_SKILL_LINE_ID',
                     'PUBLIC_CRAFTING_ORDER_STALE_THRESHOLD',
                     'NUM_PRIMARY_PROFESSIONS',
-                    'CRAFTING_ORDER_ITEM_RETENTION',
-                    'CRAFTING_ORDER_CLAIM_DURATION',
                     'RUNEFORGING_ROOT_CATEGORY_ID',
-                    'MAX_CRAFTING_REAGENT_SLOTS'
+                    'MAX_CRAFTING_REAGENT_SLOTS',
+                    'CRAFTING_ORDER_CLAIM_DURATION',
+                    'RUNEFORGING_SKILL_LINE_ID',
+                    'CLASSIC_PROFESSION_PARENT_TIER_INDEX',
+                    'CRAFTING_ORDER_ITEM_RETENTION'
                 }
             },
             PvpInfoConsts = {
@@ -37730,17 +37731,17 @@ globals = {
             TraitConsts = {
                 fields = {
                     'INSPECT_TRAIT_CONFIG_ID',
-                    'COMMIT_COMBAT_TRAIT_CONFIG_CHANGES_SPELL_ID',
-                    'STARTER_BUILD_TRAIT_CONFIG_ID',
                     'VIEW_TRAIT_CONFIG_ID',
-                    'MAX_COMBAT_TRAIT_CONFIGS'
+                    'MAX_COMBAT_TRAIT_CONFIGS',
+                    'STARTER_BUILD_TRAIT_CONFIG_ID',
+                    'COMMIT_COMBAT_TRAIT_CONFIG_CHANGES_SPELL_ID'
                 }
             },
             Transmog = {
                 fields = {
-                    'MainHandTransmogIsPairedWeapon',
+                    'NoTransmogID',
                     'MainHandTransmogIsIndividualWeapon',
-                    'NoTransmogID'
+                    'MainHandTransmogIsPairedWeapon'
                 }
             },
             WeeklyRewardsConsts = {
@@ -37816,128 +37817,128 @@ globals = {
         fields = {
             AccountData = {
                 fields = {
-                    'TtsSettings',
-                    'FlaggedIDs',
-                    'ChatSettings',
-                    'Macros',
                     'UIEditModeAccount',
-                    'Config2',
-                    'Bindings2',
-                    'Macros2',
-                    'ClickBindings',
-                    'UIEditModeChar',
                     'FrontendChatSettings',
-                    'Bindings',
-                    'TtsSettings2',
                     'Config',
+                    'UIEditModeChar',
+                    'Bindings',
+                    'Macros2',
+                    'Bindings2',
+                    'Macros',
+                    'ClickBindings',
+                    'ChatSettings',
+                    'UILayout',
                     'FlaggedIDs2',
-                    'UILayout'
+                    'TtsSettings',
+                    'TtsSettings2',
+                    'FlaggedIDs',
+                    'Config2'
                 }
             },
             AccountDataUpdateStatus = {
                 fields = {
-                    'AccountDataUpdateToobig',
-                    'AccountDataUpdateSuccess',
                     'AccountDataUpdateFailed',
-                    'AccountDataUpdateCorrupt'
+                    'AccountDataUpdateCorrupt',
+                    'AccountDataUpdateSuccess',
+                    'AccountDataUpdateToobig'
                 }
             },
             AccountExportResult = {
                 fields = {
-                    'Cancelled',
-                    'AlreadyInProgress',
-                    'FailedToGenerateFile',
-                    'FileInvalid',
-                    'Unavailable',
-                    'Success',
-                    'RequestedInvalidCharacter',
-                    'FileWriteFailed',
-                    'UnknownError',
                     'FailedToLockAccount',
+                    'Cancelled',
+                    'Success',
+                    'AlreadyInProgress',
                     'ShuttingDown',
-                    'RpcError',
+                    'NoAccountFound',
+                    'FailedToGenerateFile',
+                    'RequestedInvalidCharacter',
                     'TimedOut',
-                    'NoAccountFound'
+                    'UnknownError',
+                    'RpcError',
+                    'FileWriteFailed',
+                    'FileInvalid',
+                    'Unavailable'
                 }
             },
             AccountStateFlags = {
                 fields = {
-                    'RafBalanceLoaded',
-                    'TrialBoostHistoryLoaded',
+                    'QuestCriteriaLoaded',
+                    'LoadFailed',
+                    'None',
+                    'PetjournalInitialized',
+                    'PerksPendingRewardsLoaded',
+                    'AccountNotificationsLoaded',
+                    'RafFriendMonthsLoaded',
+                    'QuestLogLoaded',
+                    'ArchivedPurchasesLoaded',
+                    'RafActivityLoaded',
+                    'BpayAddLicenseObjectsLoaded',
+                    'AccountUpgradeComplete',
+                    'BitVectorsLoaded',
+                    'PerksRefundsLoaded',
+                    'VasTransactionsLoaded',
+                    'CriteriaLoaded',
+                    'WoWTokenPurchaseLoaded',
                     'MountsLoaded',
+                    'RafBalanceLoaded',
+                    'SettingsLoaded',
                     'AchievementsLoaded',
+                    'ItemCollectionsLoaded',
+                    'PurchasesLoaded',
+                    'CharactersLoaded',
+                    'AccountWowlabsLoaded',
+                    'PerksPastRewardsLoaded',
+                    'AccountCurrenciesLoaded',
+                    'RevokedRafRewardsLoaded',
+                    'RafRewardsLoaded',
+                    'DynamicCriteriaLoaded',
+                    'CurrencyCapsLoaded',
+                    'PerksPendingPurchaseLoaded',
+                    'ConsumableTokensLoaded',
+                    'TrialBoostHistoryLoaded',
                     'BpayProductitemObjectsLoaded',
                     'BattleNetAccountLoaded',
-                    'WoWTokenPurchaseLoaded',
-                    'RafActivityLoaded',
-                    'AccountNotificationsLoaded',
-                    'PerksHeldItemLoaded',
                     'BpayDistributionObjectsLoaded',
-                    'QuestCriteriaLoaded',
-                    'DynamicCriteriaLoaded',
-                    'BpayAddLicenseObjectsLoaded',
-                    'CurrencyCapsLoaded',
-                    'None',
-                    'PerksPastRewardsLoaded',
-                    'QuestLogLoaded',
-                    'PerksPendingRewardsLoaded',
-                    'PetjournalInitialized',
-                    'PerksRefundsLoaded',
-                    'BitVectorsLoaded',
-                    'AccountUpgradeComplete',
-                    'ConsumableTokensLoaded',
-                    'VasTransactionsLoaded',
-                    'PerksPendingPurchaseLoaded',
-                    'CharactersLoaded',
-                    'LoadFailed',
-                    'RevokedRafRewardsLoaded',
-                    'RafFriendMonthsLoaded',
-                    'RafRewardsLoaded',
-                    'CriteriaLoaded',
                     'AuctionableTokensLoaded',
-                    'ItemCollectionsLoaded',
-                    'InPetCombat',
-                    'AccountWowlabsLoaded',
-                    'SettingsLoaded',
-                    'AccountCurrenciesLoaded',
-                    'PurchasesLoaded',
-                    'ArchivedPurchasesLoaded'
+                    'PerksHeldItemLoaded',
+                    'InPetCombat'
                 }
             },
             ActionBarOrientation = {
                 fields = {
-                    'Horizontal',
-                    'Vertical'
+                    'Vertical',
+                    'Horizontal'
                 }
             },
             ActionBarVisibleSetting = {
                 fields = {
-                    'Always',
-                    'InCombat',
                     'Hidden',
+                    'InCombat',
+                    'Always',
                     'OutOfCombat'
                 }
             },
             AddOnEnableState = {
                 fields = {
-                    'None',
                     'All',
-                    'Some'
+                    'Some',
+                    'None'
                 }
             },
             AddSoulbindConduitReason = {
                 fields = {
-                    'None',
+                    'Cheat',
                     'Upgrade',
                     'SpellEffect',
-                    'Cheat'
+                    'None'
                 }
             },
             AnimaDiversionNodeState = {
                 fields = {
-                    'SelectedTemporary',
                     'Available',
                     'Cooldown',
+                    'SelectedTemporary',
                     'SelectedPermanent',
                     'Unavailable'
                 }
@@ -37945,88 +37946,88 @@ globals = {
             ArrowCalloutDirection = {
                 fields = {
                     'Right',
-                    'Down',
                     'Left',
-                    'Up'
+                    'Up',
+                    'Down'
                 }
             },
             ArrowCalloutType = {
                 fields = {
-                    'None',
                     'WorldLootObject',
                     'Generic',
                     'WidgetContainerNoBorder',
-                    'Tutorial'
+                    'Tutorial',
+                    'None'
                 }
             },
             AuctionHouseCommoditySortOrder = {
                 fields = {
-                    'UnitPrice',
-                    'Quantity'
+                    'Quantity',
+                    'UnitPrice'
                 }
             },
             AuctionHouseError = {
                 fields = {
-                    'LimitedDurationItem',
-                    'ItemNotFound',
-                    'HasRestriction',
-                    'HigherBid',
-                    'QuestItem',
-                    'DoubleBid',
-                    'Unavailable',
-                    'FavoritesMaxed',
-                    'BoundItem',
-                    'BidIncrement',
                     'UsedCharges',
-                    'MinBid',
+                    'BidIncrement',
+                    'LootItem',
+                    'NotEnoughItems',
+                    'LimitedDurationItem',
+                    'RepairItem',
+                    'BidOwn',
+                    'DoubleBid',
+                    'FavoritesMaxed',
+                    'ItemNotAvailable',
+                    'ItemNotFound',
+                    'HigherBid',
+                    'EquippedBag',
+                    'BoundItem',
+                    'IsBusy',
                     'WrappedItem',
                     'ConjuredItem',
                     'ItemHasQuote',
-                    'DatabaseError',
-                    'ItemNotAvailable',
-                    'NotEnoughItems',
-                    'RestrictedAccountTrial',
-                    'BidOwn',
-                    'NotEnoughMoney',
-                    'EquippedBag',
+                    'HasRestriction',
                     'IsBag',
-                    'RepairItem',
-                    'LootItem',
-                    'IsBusy'
+                    'MinBid',
+                    'QuestItem',
+                    'NotEnoughMoney',
+                    'DatabaseError',
+                    'RestrictedAccountTrial',
+                    'Unavailable'
                 }
             },
             AuctionHouseExtraColumn = {
                 fields = {
-                    'None',
                     'Slots',
-                    'Skill',
                     'Ilvl',
-                    'Level'
+                    'Skill',
+                    'Level',
+                    'None'
                 }
             },
             AuctionHouseFilter = {
                 fields = {
-                    'None',
-                    'PoorQuality',
-                    'UpgradesOnly',
                     'LegendaryCraftedItemOnly',
-                    'UncollectedOnly',
-                    'UncommonQuality',
-                    'ArtifactQuality',
-                    'ExactMatch',
-                    'UsableOnly',
-                    'LegendaryQuality',
-                    'EpicQuality',
-                    'CommonQuality',
                     'RareQuality',
-                    'CurrentExpansionOnly'
+                    'ExactMatch',
+                    'UncollectedOnly',
+                    'CommonQuality',
+                    'CurrentExpansionOnly',
+                    'None',
+                    'UsableOnly',
+                    'ArtifactQuality',
+                    'UpgradesOnly',
+                    'EpicQuality',
+                    'PoorQuality',
+                    'UncommonQuality',
+                    'LegendaryQuality'
                 }
             },
             AuctionHouseFilterCategory = {
                 fields = {
-                    'Equipment',
+                    'Uncategorized',
                     'Rarity',
-                    'Uncategorized'
+                    'Equipment'
                 }
             },
             AuctionHouseItemSortOrder = {
@@ -38037,22 +38038,22 @@ globals = {
             },
             AuctionHouseNotification = {
                 fields = {
-                    'BidPlaced',
-                    'AuctionRemoved',
-                    'AuctionExpired',
+                    'AuctionWon',
                     'AuctionSold',
-                    'AuctionOutbid',
-                    'AuctionWon'
+                    'BidPlaced',
+                    'AuctionExpired',
+                    'AuctionRemoved',
+                    'AuctionOutbid'
                 }
             },
             AuctionHouseSortOrder = {
                 fields = {
+                    'Buyout',
+                    'Name',
                     'Price',
                     'Bid',
-                    'Buyout',
-                    'TimeRemaining',
                     'Level',
-                    'Name'
+                    'TimeRemaining'
                 }
             },
             AuctionHouseTimeLeftBand = {
@@ -38072,40 +38073,40 @@ globals = {
             AuraFrameIconDirection = {
                 fields = {
                     'Up',
+                    'Right',
                     'Down',
-                    'Left',
-                    'Right'
+                    'Left'
                 }
             },
             AuraFrameIconWrap = {
                 fields = {
                     'Up',
+                    'Right',
                     'Down',
-                    'Left',
-                    'Right'
+                    'Left'
                 }
             },
             AuraFrameOrientation = {
                 fields = {
-                    'Horizontal',
-                    'Vertical'
+                    'Vertical',
+                    'Horizontal'
                 }
             },
             AvgItemLevelCategories = {
                 fields = {
-                    'PvP',
-                    'EquippedEffectiveWeighted',
                     'PvPWeighted',
-                    'EquippedEffective',
+                    'Base',
                     'EquippedBase',
-                    'Base'
+                    'EquippedEffectiveWeighted',
+                    'EquippedEffective',
+                    'PvP'
                 }
             },
             AzeriteEssenceSlot = {
                 fields = {
-                    'MainSlot',
-                    'PassiveThreeSlot',
                     'PassiveOneSlot',
+                    'PassiveThreeSlot',
+                    'MainSlot',
                     'PassiveTwoSlot'
                 }
             },
@@ -38118,93 +38119,93 @@ globals = {
             },
             BagIndex = {
                 fields = {
-                    'BankBag_7',
-                    'Bag_2',
-                    'Bag_3',
-                    'BankBag_1',
-                    'Backpack',
                     'BankBag_4',
-                    'BankBag_6',
-                    'Bank',
                     'Reagentbank',
                     'BankBag_5',
-                    'BankBag_2',
-                    'BankBag_3',
+                    'Bag_3',
                     'Bag_1',
-                    'ReagentBag',
-                    'Bag_4',
+                    'Bankbag',
                     'Keyring',
-                    'Bankbag'
+                    'BankBag_3',
+                    'BankBag_7',
+                    'BankBag_6',
+                    'Backpack',
+                    'Bag_2',
+                    'BankBag_2',
+                    'Bank',
+                    'Bag_4',
+                    'BankBag_1',
+                    'ReagentBag'
                 }
             },
             BagSlotFlags = {
                 fields = {
-                    'PriorityEquipment',
-                    'PriorityQuestItems',
-                    'PriorityJunk',
                     'PriorityTradeGoods',
-                    'PriorityConsumables',
-                    'BagSlotValidFlagsAll',
-                    'BagSlotPriorityFlagsAll',
                     'ExcludeJunkSell',
+                    'PriorityConsumables',
+                    'PriorityEquipment',
+                    'BagSlotValidFlagsAll',
+                    'PriorityJunk',
+                    'BagSlotPriorityFlagsAll',
+                    'PriorityQuestItems',
                     'DisableAutoSort'
                 }
             },
             BagsDirection = {
                 fields = {
                     'Right',
-                    'Left',
                     'Down',
+                    'Left',
                     'Up'
                 }
             },
             BagsOrientation = {
                 fields = {
-                    'Horizontal',
-                    'Vertical'
+                    'Vertical',
+                    'Horizontal'
                 }
             },
             BattlePetAbilityFlag = {
                 fields = {
-                    'Passive',
+                    'DisplayAsHostileDebuff',
                     'StartOnCooldown',
                     'HideStrongWeakHints',
-                    'DisplayAsHostileDebuff',
-                    'ServerOnlyAura',
-                    'ShowCast'
+                    'Passive',
+                    'ShowCast',
+                    'ServerOnlyAura'
                 }
             },
             BattlePetAbilitySlot = {
                 fields = {
-                    'C',
+                    'A',
                     'B',
-                    'A'
+                    'C'
                 }
             },
             BattlePetAbilityTargets = {
                 fields = {
-                    'Specific',
-                    'FriendlyPad',
-                    'EnemyBackPet_1',
                     'ProcTarget',
-                    'Owner',
                     'EnemyFrontPet',
-                    'Weather',
-                    'FriendlyBackPet_2',
                     'EnemyBackPet_2',
-                    'FriendlyBackPet_1',
-                    'FriendlyFrontPet',
+                    'Specific',
+                    'FriendlyBackPet_2',
+                    'Weather',
+                    'Owner',
                     'EnemyPad',
+                    'EnemyBackPet_1',
+                    'FriendlyFrontPet',
+                    'FriendlyPad',
+                    'FriendlyBackPet_1',
                     'Caster'
                 }
             },
             BattlePetAbilityTurnFlag = {
                 fields = {
                     'TriggerByEnemy',
-                    'CanProcFromProc',
-                    'TriggerBySelf',
-                    'TriggerByAuraCaster',
                     'TriggerByWeather',
+                    'CanProcFromProc',
+                    'TriggerByAuraCaster',
+                    'TriggerBySelf',
                     'TriggerByFriend'
                 }
             },
@@ -38222,62 +38223,62 @@ globals = {
             },
             BattlePetAction = {
                 fields = {
-                    'None',
-                    'Ability',
+                    'Trap',
                     'SwitchPet',
                     'Skip',
-                    'Trap'
+                    'Ability',
+                    'None'
                 }
             },
             BattlePetBreedQuality = {
                 fields = {
                     'Legendary',
-                    'Uncommon',
-                    'Poor',
-                    'Epic',
                     'Rare',
-                    'Common'
+                    'Epic',
+                    'Poor',
+                    'Common',
+                    'Uncommon'
                 }
             },
             BattlePetEffectFlags = {
                 fields = {
-                    'EnableAbilityPicker',
-                    'LuaNeedsAllPets'
+                    'LuaNeedsAllPets',
+                    'EnableAbilityPicker'
                 }
             },
             BattlePetEffectParamType = {
                 fields = {
-                    'Int',
-                    'Ability'
+                    'Ability',
+                    'Int'
                 }
             },
             BattlePetEvent = {
                 fields = {
-                    'OnHealDealt',
-                    'OnSwapOut',
-                    'OnHealTaken',
                     'PostAuraTicks',
-                    'OnAuraRemoved',
                     'OnDamageDealt',
-                    'OnRoundEnd',
+                    'OnSwapOut',
                     'OnAbility',
-                    'OnDamageTaken',
-                    'OnAuraApplied',
+                    'OnHealTaken',
+                    'OnTurn',
                     'OnSwapIn',
+                    'OnRoundEnd',
                     'OnRoundStart',
-                    'OnTurn'
+                    'OnHealDealt',
+                    'OnAuraApplied',
+                    'OnAuraRemoved',
+                    'OnDamageTaken'
                 }
             },
             BattlePetNpcEmote = {
                 fields = {
-                    'PetKill',
-                    'BattleLose',
-                    'BattleUnused',
-                    'BattleStart',
-                    'PetAbility',
-                    'BattleWin',
                     'PetDie',
-                    'PetSwap'
+                    'PetKill',
+                    'PetAbility',
+                    'BattleLose',
+                    'PetSwap',
+                    'BattleWin',
+                    'BattleStart',
+                    'BattleUnused'
                 }
             },
             BattlePetNpcTeamFlag = {
@@ -38289,76 +38290,76 @@ globals = {
             BattlePetOwner = {
                 fields = {
                     'Weather',
-                    'Enemy',
-                    'Ally'
+                    'Ally',
+                    'Enemy'
                 }
             },
             BattlePetSources = {
                 fields = {
+                    'Vendor',
                     'Drop',
                     'Discovery',
-                    'Profession',
-                    'WorldEvent',
                     'TradingPost',
-                    'Quest',
+                    'Promotion',
                     'PetStore',
                     'Achievement',
                     'WildPet',
-                    'Vendor',
-                    'Promotion',
+                    'Profession',
+                    'WorldEvent',
+                    'Quest',
                     'Tcg'
                 }
             },
             BattlePetSpeciesFlags = {
                 fields = {
-                    'AddsAllowedWithBoss',
-                    'NotTradable',
-                    'Boss',
-                    'NoRename',
-                    'NoWildPetAddsAllowed',
-                    'HideUntilLearned',
-                    'HordeOnly',
                     'WellKnown',
-                    'RandomDisplay',
-                    'NoLicenseRequired',
+                    'NoWildPetAddsAllowed',
                     'NotAcccountwide',
+                    'AddsAllowedWithBoss',
+                    'NoRename',
+                    'RandomDisplay',
                     'HideFromJournal',
-                    'Capturable',
-                    'LegacyAccountUnique',
+                    'HideUntilLearned',
+                    'NotTradable',
                     'MatchPlayerHighPetLevel',
-                    'CantBattle',
-                    'AllianceOnly'
+                    'Capturable',
+                    'NoLicenseRequired',
+                    'HordeOnly',
+                    'LegacyAccountUnique',
+                    'AllianceOnly',
+                    'Boss',
+                    'CantBattle'
                 }
             },
             BattlePetStateFlag = {
                 fields = {
-                    'None',
-                    'SpeedMult',
+                    'SpeedBonus',
                     'Client',
-                    'ServerOnly',
-                    'QualityDoesNotEffect',
-                    'MaxHealthBonus',
                     'TurnLock',
+                    'SpeedMult',
+                    'None',
+                    'SwapOutLock',
+                    'ServerOnly',
+                    'SwapInLock',
                     'Power',
                     'DynamicScaling',
-                    'SwapOutLock',
-                    'SpeedBonus',
-                    'SwapInLock',
-                    'Stamina'
+                    'QualityDoesNotEffect',
+                    'Stamina',
+                    'MaxHealthBonus'
                 }
             },
             BattlePetTypes = {
                 fields = {
-                    'Aquatic',
+                    'Magic',
+                    'Elemental',
                     'Undead',
+                    'Beast',
                     'Dragonkin',
+                    'Mechanical',
+                    'Aquatic',
                     'Humanoid',
                     'Flying',
-                    'Elemental',
-                    'Magic',
-                    'Critter',
-                    'Mechanical',
-                    'Beast'
+                    'Critter'
                 }
             },
             BattlePetVisualFlag = {
@@ -38370,192 +38371,192 @@ globals = {
             },
             BattlePetVisualRange = {
                 fields = {
-                    'InPlace',
-                    'Melee',
                     'BehindRanged',
                     'Ranged',
                     'PointBlank',
-                    'BehindMelee'
+                    'Melee',
+                    'BehindMelee',
+                    'InPlace'
                 }
             },
             BattlepetDbFlags = {
                 fields = {
-                    'None',
-                    'AcquiredViaLicense',
-                    'LockMask',
                     'LockedForConvert',
-                    'DisplayOverridden',
                     'Favorite',
-                    'FanfareNeeded',
-                    'Converted',
-                    'TradingPost',
-                    'Revoked',
+                    'LockMask',
                     'Ability1Selection',
-                    'Ability0Selection',
-                    'Ability2Selection'
+                    'Ability2Selection',
+                    'None',
+                    'Revoked',
+                    'TradingPost',
+                    'FanfareNeeded',
+                    'AcquiredViaLicense',
+                    'DisplayOverridden',
+                    'Converted',
+                    'Ability0Selection'
                 }
             },
             BattlepetDeletedReason = {
                 fields = {
-                    'PlayerReleased',
-                    'Gm',
-                    'TradingPost',
                     'Unknown',
+                    'TradingPost',
                     'CageError',
-                    'PlayerCaged',
-                    'DelJournal'
+                    'DelJournal',
+                    'Gm',
+                    'PlayerReleased',
+                    'PlayerCaged'
                 }
             },
             BattlepetSlotLockCheat = {
                 fields = {
-                    'CheatOff',
                     'Cheat_1_Locked',
+                    'UnlockAll',
                     'Cheat_0_Locked',
                     'Cheat_2_Locked',
-                    'UnlockAll'
+                    'CheatOff'
                 }
             },
             BindingSet = {
                 fields = {
-                    'Account',
+                    'Character',
                     'Current',
                     'Default',
-                    'Character'
+                    'Account'
                 }
             },
             BrawlType = {
                 fields = {
-                    'None',
+                    'Battleground',
                     'Arena',
                     'LFG',
-                    'Battleground',
                     'SoloShuffle',
-                    'SoloRbg'
+                    'SoloRbg',
+                    'None'
                 }
             },
             CachedRewardType = {
                 fields = {
-                    'None',
-                    'Quest',
                     'Currency',
-                    'Item'
+                    'Item',
+                    'Quest',
+                    'None'
                 }
             },
             CalendarCommandType = {
                 fields = {
-                    'UpdateEvent',
-                    'GetCalendar',
-                    'Create',
-                    'GetEvent',
-                    'RemoveEvent',
-                    'Status',
                     'Complain',
-                    'ModeratorStatus',
-                    'Invite',
+                    'UpdateEvent',
                     'Notes',
+                    'Invite',
+                    'GetEvent',
                     'RemoveInvite',
-                    'Rsvp'
+                    'Rsvp',
+                    'Status',
+                    'ModeratorStatus',
+                    'Create',
+                    'GetCalendar',
+                    'RemoveEvent'
                 }
             },
             CalendarErrorType = {
                 fields = {
-                    'ComplaintSameGuild',
-                    'NoModerator',
+                    'EventsExceeded',
+                    'ComplaintLimit',
                     'ComplaintAdded',
-                    'Squelched',
-                    'NotInCommunity',
-                    'InvalidMaxSize',
+                    'InvalidDescription',
+                    'NoModerator',
                     'NoCommunityInvites',
-                    'EventLocked',
-                    'EventPassed',
+                    'NotInCommunity',
+                    'NameNotFound',
+                    'InvalidTime',
+                    'CreatorNotFound',
+                    'InvalidDate',
                     'EventInvalid',
-                    'InvalidSignup',
-                    'TargetAlreadyInvited',
-                    'Success',
-                    'ArenaEventsExceeded',
+                    'RestrictedAccount',
+                    'InvalidTitle',
+                    'NoInvites',
+                    'InvalidClub',
                     'UnknownError',
+                    'ComplaintSelf',
+                    'ComplaintDisabled',
+                    'Internal',
+                    'NotInvited',
+                    'InviteThrottled',
+                    'WrongFaction',
+                    'EventThrottled',
+                    'ComplaintNotFound',
+                    'InvalidNotes',
+                    'ComplaintGm',
+                    'NotInGuild',
+                    'DataAlreadySet',
+                    'ModeratorRestricted',
+                    'OtherInvitesExceeded',
+                    'InvalidSignup',
+                    'Squelched',
+                    'EventWrongServer',
+                    'Ignored',
+                    'ComplaintSameGuild',
                     'NoInvite',
                     'CommunityEventsExceeded',
-                    'NoPermission',
-                    'ComplaintSelf',
-                    'ModeratorRestricted',
-                    'InvitesExceeded',
-                    'CreatorNotFound',
-                    'Internal',
+                    'Success',
                     'RestrictedLevel',
-                    'InviteThrottled',
-                    'DataAlreadySet',
-                    'NotInvited',
-                    'EventsExceeded',
-                    'InvalidClub',
-                    'InvalidNotes',
-                    'InvalidTitle',
-                    'NameNotFound',
-                    'ComplaintNotFound',
-                    'InvalidDescription',
-                    'InvalidDate',
-                    'ComplaintLimit',
-                    'OtherInvitesExceeded',
-                    'ComplaintDisabled',
-                    'ComplaintGm',
-                    'SelfInvitesExceeded',
-                    'RestrictedAccount',
-                    'CalendarDisabled',
-                    'EventThrottled',
+                    'ArenaEventsExceeded',
+                    'EventPassed',
                     'DeleteCreatorFailed',
+                    'EventLocked',
+                    'SelfInvitesExceeded',
+                    'InvitesExceeded',
                     'NeedsTitle',
-                    'Ignored',
-                    'NotInGuild',
-                    'InvalidTime',
-                    'EventWrongServer',
-                    'WrongFaction',
-                    'NoInvites'
+                    'InvalidMaxSize',
+                    'CalendarDisabled',
+                    'TargetAlreadyInvited',
+                    'NoPermission'
                 }
             },
             CalendarEventBits = {
                 fields = {
-                    'GuildSignup',
-                    'GuildDeprecated',
-                    'PlayerCreated',
                     'CommunityAnnouncement',
-                    'Holiday',
-                    'AutoApprove',
-                    'RaidResetDeprecated',
-                    'CommunityWide',
-                    'Player',
+                    'System',
                     'CantComplain',
                     'CommunitySignup',
-                    'System',
+                    'Player',
+                    'Locked',
+                    'PlayerCreated',
+                    'GuildDeprecated',
+                    'CommunityWide',
+                    'GuildSignup',
+                    'RaidResetDeprecated',
                     'RaidLockout',
+                    'Holiday',
                     'ArenaDeprecated',
-                    'Locked'
+                    'AutoApprove'
                 }
             },
             CalendarEventRepeatOptions = {
                 fields = {
-                    'Never',
-                    'Biweekly',
                     'Monthly',
-                    'Weekly'
+                    'Never',
+                    'Weekly',
+                    'Biweekly'
                 }
             },
             CalendarEventType = {
                 fields = {
-                    'PvP',
-                    'Raid',
-                    'HeroicDeprecated',
-                    'Dungeon',
                     'Other',
-                    'Meeting'
+                    'Dungeon',
+                    'Meeting',
+                    'Raid',
+                    'PvP',
+                    'HeroicDeprecated'
                 }
             },
             CalendarFilterFlags = {
                 fields = {
-                    'Darkmoon',
                     'WeeklyHoliday',
-                    'Battleground',
                     'RaidReset',
-                    'RaidLockout'
+                    'RaidLockout',
+                    'Battleground',
+                    'Darkmoon'
                 }
             },
             CalendarGetEventType = {
@@ -38567,27 +38568,27 @@ globals = {
             },
             CalendarHolidayFilterType = {
                 fields = {
-                    'Darkmoon',
                     'Battleground',
-                    'Weekly'
+                    'Weekly',
+                    'Darkmoon'
                 }
             },
             CalendarInviteBits = {
                 fields = {
+                    'Creator',
                     'Signup',
                     'PendingInvite',
-                    'Moderator',
-                    'Creator'
+                    'Moderator'
                 }
             },
             CalendarInviteSortType = {
                 fields = {
-                    'Status',
+                    'Class',
+                    'Name',
                     'Notes',
                     'Party',
-                    'Class',
                     'Level',
-                    'Name'
+                    'Status'
                 }
             },
             CalendarInviteType = {
@@ -38598,22 +38599,22 @@ globals = {
             },
             CalendarModeratorStatus = {
                 fields = {
-                    'None',
+                    'Creator',
                     'Moderator',
-                    'Creator'
+                    'None'
                 }
             },
             CalendarStatus = {
                 fields = {
-                    'Available',
                     'Invited',
                     'Declined',
-                    'Signedup',
-                    'Confirmed',
+                    'Available',
                     'NotSignedup',
-                    'Tentative',
                     'Out',
-                    'Standby'
+                    'Standby',
+                    'Tentative',
+                    'Confirmed',
+                    'Signedup'
                 }
             },
             CalendarTexturesType = {
@@ -38624,24 +38625,24 @@ globals = {
             },
             CalendarType = {
                 fields = {
-                    'HolidayWeekly',
-                    'Player',
                     'HolidayBattleground',
                     'HolidayDarkmoon',
-                    'RaidLockout',
-                    'Holiday',
                     'Community',
+                    'Holiday',
+                    'RaidLockout',
+                    'Player',
+                    'HolidayWeekly',
                     'RaidResetDeprecated'
                 }
             },
             CalendarWebActionType = {
                 fields = {
-                    'Accept',
-                    'Tentative',
-                    'ReportSpam',
                     'TentativeSignup',
                     'Signup',
                     'Decline',
+                    'ReportSpam',
+                    'Tentative',
+                    'Accept',
                     'Remove'
                 }
             },
@@ -38662,54 +38663,54 @@ globals = {
             },
             CampaignState = {
                 fields = {
-                    'Complete',
-                    'InProgress',
+                    'Invalid',
                     'Stalled',
-                    'Invalid'
+                    'InProgress',
+                    'Complete'
                 }
             },
             CaptureBarWidgetFillDirectionType = {
                 fields = {
-                    'RightToLeft',
-                    'LeftToRight'
+                    'LeftToRight',
+                    'RightToLeft'
                 }
             },
             Causeofdeath = {
                 fields = {
-                    'None',
-                    'Slime',
                     'Lava',
                     'Drowning',
-                    'Falling',
-                    'Fatigue',
-                    'PlayerPvP',
+                    'None',
+                    'Slime',
                     'Fire',
+                    'PlayerDuel',
+                    'Fatigue',
+                    'Falling',
                     'Creature',
-                    'PlayerDuel'
+                    'PlayerPvP'
                 }
             },
             CauseofdeathFlags = {
                 fields = {
                     'ZoneNameNeeded',
+                    'CreatureNameNeeded',
                     'NoneNeeded',
-                    'PlayerNameNeeded',
-                    'CreatureNameNeeded'
+                    'PlayerNameNeeded'
                 }
             },
             CharCustomizationType = {
                 fields = {
-                    'Skin',
-                    'Face',
-                    'FacepaintColor',
-                    'Facepaint',
-                    'FacialHair',
-                    'Outfit',
-                    'CustomOptionTattoo',
-                    'HairColor',
-                    'CustomOptionTattooColor',
-                    'Hair',
                     'CustomOptionFacewear',
-                    'CustomOptionHorn'
+                    'CustomOptionHorn',
+                    'HairColor',
+                    'Skin',
+                    'CustomOptionTattoo',
+                    'FacialHair',
+                    'CustomOptionTattooColor',
+                    'Facepaint',
+                    'Outfit',
+                    'FacepaintColor',
+                    'Face',
+                    'Hair'
                 }
             },
             CharacterServiceInfoFlag = {
@@ -38719,40 +38720,40 @@ globals = {
             },
             ChatChannelRuleset = {
                 fields = {
-                    'None',
                     'ChromieTimeCataclysm',
-                    'Mentor',
+                    'ChromieTimeWoD',
+                    'ChromieTimeWrath',
+                    'ChromieTimeBuringCrusade',
+                    'None',
                     'Disabled',
                     'ChromieTimeLegion',
-                    'ChromieTimeWoD',
                     'ChromieTimeMists',
-                    'ChromieTimeBuringCrusade',
-                    'ChromieTimeWrath'
+                    'Mentor'
                 }
             },
             ChatChannelType = {
                 fields = {
-                    'None',
-                    'Public_Party',
-                    'Communities',
                     'Custom',
-                    'Private_Party'
+                    'Public_Party',
+                    'Private_Party',
+                    'Communities',
+                    'None'
                 }
             },
             ChatToxityFilterOptOut = {
                 fields = {
+                    'ExcludeFilterGuild',
                     'FilterAll',
                     'ExcludeFilterAll',
-                    'ExcludeFilterFriend',
-                    'ExcludeFilterGuild'
+                    'ExcludeFilterFriend'
                 }
             },
             ChatWhisperTargetStatus = {
                 fields = {
-                    'CanWhisper',
                     'CanWhisperGuild',
+                    'WrongFaction',
                     'Offline',
-                    'WrongFaction'
+                    'CanWhisper'
                 }
             },
             ChrCustomizationCategoryFlag = {
@@ -38764,40 +38765,40 @@ globals = {
             ChrCustomizationOptionType = {
                 fields = {
                     'Checkbox',
-                    'Slider',
-                    'SelectionPopout'
+                    'SelectionPopout',
+                    'Slider'
                 }
             },
             ChrModelFeatureFlags = {
                 fields = {
-                    'HunterPets',
                     'Forms',
+                    'Identity',
+                    'HunterPets',
                     'Summons',
                     'Mounts',
-                    'Identity',
                     'DragonCompanions'
                 }
             },
             ChrRacesAllianceType = {
                 fields = {
                     'Horde',
-                    'NeutralOrNpc',
-                    'Alliance'
+                    'Alliance',
+                    'NeutralOrNpc'
                 }
             },
             ClickBindingInteraction = {
                 fields = {
-                    'OpenContextMenu',
-                    'Target'
+                    'Target',
+                    'OpenContextMenu'
                 }
             },
             ClickBindingType = {
                 fields = {
-                    'None',
                     'PetAction',
-                    'Macro',
+                    'Interaction',
                     'Spell',
-                    'Interaction'
+                    'Macro',
+                    'None'
                 }
             },
             ClientPlatformType = {
@@ -38814,111 +38815,111 @@ globals = {
             },
             ClubActionType = {
                 fields = {
-                    'ErrorClubActionGetTickets',
-                    'ErrorClubActionCreate',
-                    'ErrorClubActionAcceptInvitation',
-                    'ErrorClubActionCreateTicket',
-                    'ErrorClubActionDestroyStream',
+                    'ErrorClubActionLeave',
+                    'ErrorClubActionEditMessage',
+                    'ErrorClubActionAddBan',
                     'ErrorClubActionDestroyTicket',
                     'ErrorClubActionRedeemTicket',
                     'ErrorClubActionCreateStream',
-                    'ErrorClubActionEditStream',
-                    'ErrorClubActionAddBan',
-                    'ErrorClubActionGetInvitations',
-                    'ErrorClubActionRemoveBan',
                     'ErrorClubActionCreateMessage',
-                    'ErrorClubActionRevokeInvitation',
-                    'ErrorClubActionDestroy',
-                    'ErrorClubActionLeave',
-                    'ErrorClubActionSubscribe',
-                    'ErrorClubActionEditMemberNote',
-                    'ErrorClubActionEditMessage',
-                    'ErrorClubActionGetTicket',
-                    'ErrorClubActionKickMember',
-                    'ErrorClubActionGetBans',
-                    'ErrorClubActionEditMember',
-                    'ErrorClubActionDeclineInvitation',
+                    'ErrorClubActionCreate',
+                    'ErrorClubActionDestroyStream',
+                    'ErrorClubActionDestroyMessage',
+                    'ErrorClubActionEditStream',
+                    'ErrorClubActionRemoveBan',
+                    'ErrorClubActionAcceptInvitation',
                     'ErrorClubActionInviteMember',
+                    'ErrorClubActionKickMember',
+                    'ErrorClubActionDeclineInvitation',
                     'ErrorClubActionEdit',
-                    'ErrorClubActionDestroyMessage'
+                    'ErrorClubActionGetTicket',
+                    'ErrorClubActionSubscribe',
+                    'ErrorClubActionCreateTicket',
+                    'ErrorClubActionGetTickets',
+                    'ErrorClubActionEditMember',
+                    'ErrorClubActionGetBans',
+                    'ErrorClubActionDestroy',
+                    'ErrorClubActionGetInvitations',
+                    'ErrorClubActionRevokeInvitation',
+                    'ErrorClubActionEditMemberNote'
                 }
             },
             ClubErrorType = {
                 fields = {
-                    'ErrorClubReceivedInvitationCountAtMax',
-                    'ErrorCommunitiesRestricted',
-                    'ErrorCommunitiesMissingShortName',
-                    'ErrorCommunitiesTrial',
-                    'ErrorClubStreamInvalidName',
-                    'ErrorClubStreamCountAtMax',
-                    'ErrorCommunitiesProfanity',
-                    'ErrorClubVoiceFull',
-                    'ErrorCommunitiesBadTarget',
-                    'ErrorClubTicketNoSuchTicket',
-                    'ErrorClubInsufficientPrivileges',
-                    'ErrorClubStreamNoStream',
-                    'ErrorCommunitiesNone',
-                    'ErrorClubEditHasCrossFactionMembers',
-                    'ErrorClubFull',
-                    'ErrorClubTicketHasConsumedAllowedRedeemCount',
-                    'ErrorCommunitiesUnknownRealm',
-                    'ErrorClubDoesntAllowCrossFaction',
-                    'ErrorCommunitiesUnknown',
-                    'ErrorClubBanCountAtMax',
-                    'ErrorCommunitiesNeutralFaction',
-                    'ErrorCommunitiesWrongFaction',
-                    'ErrorClubStreamCountAtMin',
-                    'ErrorClubBanAlreadyExists',
-                    'ErrorCommunitiesChatMute',
-                    'ErrorCommunitiesWrongRegion',
+                    'ErrorClubTooManyClubsJoined',
                     'ErrorClubTargetIsBanned',
-                    'ErrorClubSentInvitationCountAtMax',
-                    'ErrorClubMemberHasRequiredRole',
-                    'ErrorClubInvalidRoleID',
-                    'ErrorClubNotMember',
-                    'ErrorClubNoClub',
-                    'ErrorClubAlreadyMember',
-                    'ErrorClubTicketCountAtMax',
+                    'ErrorCommunitiesProfanity',
+                    'ErrorCommunitiesMissingShortName',
+                    'ErrorCommunitiesGuild',
+                    'ErrorCommunitiesBadTarget',
                     'ErrorCommunitiesIgnored',
+                    'ErrorCommunitiesTrial',
+                    'ErrorCommunitiesWrongFaction',
+                    'ErrorClubSentInvitationCountAtMax',
+                    'ErrorClubTicketHasConsumedAllowedRedeemCount',
+                    'ErrorClubStreamNoStream',
+                    'ErrorClubAlreadyMember',
+                    'ErrorClubInsufficientPrivileges',
+                    'ErrorCommunitiesVeteranTrial',
+                    'ErrorClubStreamCountAtMax',
+                    'ErrorClubNoSuchMember',
+                    'ErrorClubFull',
+                    'ErrorClubNotMember',
+                    'ErrorClubEditHasCrossFactionMembers',
+                    'ErrorClubDoesntAllowCrossFaction',
+                    'ErrorClubReceivedInvitationCountAtMax',
+                    'ErrorCommunitiesNeutralFaction',
+                    'ErrorClubTicketNoSuchTicket',
+                    'ErrorClubTicketCountAtMax',
+                    'ErrorCommunitiesRestricted',
+                    'ErrorClubBanCountAtMax',
+                    'ErrorClubBanAlreadyExists',
+                    'ErrorClubNoClub',
+                    'ErrorCommunitiesWrongRegion',
+                    'ErrorClubStreamInvalidName',
+                    'ErrorCommunitiesUnknownRealm',
+                    'ErrorClubVoiceFull',
+                    'ErrorCommunitiesNone',
+                    'ErrorClubInvalidRoleID',
                     'ErrorClubInvitationAlreadyExists',
                     'ErrorClubNoSuchInvitation',
-                    'ErrorClubNoSuchMember',
-                    'ErrorClubTooManyClubsJoined',
-                    'ErrorCommunitiesVeteranTrial',
-                    'ErrorCommunitiesGuild',
-                    'ErrorCommunitiesUnknownTicket'
+                    'ErrorClubMemberHasRequiredRole',
+                    'ErrorClubStreamCountAtMin',
+                    'ErrorCommunitiesChatMute',
+                    'ErrorCommunitiesUnknownTicket',
+                    'ErrorCommunitiesUnknown'
                 }
             },
             ClubFieldType = {
                 fields = {
+                    'ClubBroadcast',
+                    'ClubName',
                     'NumTypes',
                     'ClubDescription',
-                    'ClubName',
                     'ClubStreamSubject',
-                    'ClubBroadcast',
                     'ClubStreamName',
                     'ClubShortName'
                 }
             },
             ClubFinderApplicationUpdateType = {
                 fields = {
-                    'None',
-                    'AcceptInvite',
                     'Cancel',
-                    'DeclineInvite'
+                    'DeclineInvite',
+                    'AcceptInvite',
+                    'None'
                 }
             },
             ClubFinderClubPostingStatusFlags = {
                 fields = {
-                    'None',
-                    'ForceDescriptionChange',
-                    'FakePost',
-                    'UnderReview',
                     'NeedsCacheUpdate',
-                    'ForceNameChange',
-                    'PostDelisted',
+                    'ForceDescriptionChange',
+                    'Banned',
+                    'None',
+                    'UnderReview',
                     'PendingDelete',
-                    'Banned'
+                    'FakePost',
+                    'PostDelisted',
+                    'ForceNameChange'
                 }
             },
             ClubFinderDisableReason = {
@@ -38930,80 +38931,80 @@ globals = {
             },
             ClubFinderPostingReportType = {
                 fields = {
+                    'ClubName',
                     'PostingDescription',
                     'JoinNote',
-                    'ClubName',
                     'PostersName',
                     'ApplicantsName'
                 }
             },
             ClubFinderRequestType = {
                 fields = {
-                    'None',
                     'All',
+                    'Guild',
                     'Community',
-                    'Guild'
+                    'None'
                 }
             },
             ClubFinderSettingFlags = {
                 fields = {
-                    'None',
-                    'Social',
-                    'Tank',
-                    'Dungeons',
-                    'Raids',
-                    'MaxLevelOnly',
-                    'AutoAccept',
-                    'Healer',
-                    'SortRelevance',
-                    'LanguageReserved2',
-                    'LanguageReserved5',
-                    'PvP',
                     'SortNewest',
+                    'FactionNeutral',
                     'FactionAlliance',
+                    'MaxLevelOnly',
+                    'None',
+                    'Small',
+                    'LanguageReserved5',
+                    'Dungeons',
+                    'Social',
+                    'EnableListing',
+                    'LanguageReserved4',
+                    'FactionHorde',
+                    'Tank',
                     'LanguageReserved3',
-                    'Damage',
-                    'RP',
-                    'LanguageReserved1',
                     'Large',
                     'Medium',
+                    'LanguageReserved2',
+                    'LanguageReserved1',
+                    'SortRelevance',
                     'SortMemberCount',
-                    'LanguageReserved4',
-                    'FactionNeutral',
-                    'FactionHorde',
-                    'EnableListing',
-                    'Small'
+                    'AutoAccept',
+                    'Healer',
+                    'Damage',
+                    'Raids',
+                    'PvP',
+                    'RP'
                 }
             },
             ClubInvitationCandidateStatus = {
                 fields = {
-                    'InvitePending',
                     'Available',
+                    'InvitePending',
                     'AlreadyMember'
                 }
             },
             ClubMemberPresence = {
                 fields = {
-                    'Online',
+                    'Unknown',
+                    'Busy',
                     'Offline',
                     'OnlineMobile',
-                    'Unknown',
                     'Away',
-                    'Busy'
+                    'Online'
                 }
             },
             ClubRemovedReason = {
                 fields = {
-                    'None',
                     'Removed',
+                    'Banned',
                     'ClubDestroyed',
-                    'Banned'
+                    'None'
                 }
             },
             ClubRestrictionReason = {
                 fields = {
-                    'None',
-                    'Unavailable'
+                    'Unavailable',
+                    'None'
                 }
             },
             ClubRoleIdentifier = {
@@ -39016,25 +39017,25 @@ globals = {
             },
             ClubStreamNotificationFilter = {
                 fields = {
-                    'None',
+                    'All',
                     'Mention',
-                    'All'
+                    'None'
                 }
             },
             ClubStreamType = {
                 fields = {
-                    'Other',
-                    'Officer',
                     'General',
-                    'Guild'
+                    'Guild',
+                    'Other',
+                    'Officer'
                 }
             },
             ClubType = {
                 fields = {
+                    'BattleNet',
                     'Guild',
                     'Other',
-                    'Character',
-                    'BattleNet'
+                    'Character'
                 }
             },
             CommunicationMode = {
@@ -39045,54 +39046,54 @@ globals = {
             },
             ConquestProgressBarDisplayType = {
                 fields = {
-                    'Seasonal',
                     'FirstChest',
-                    'AdditionalChest'
+                    'AdditionalChest',
+                    'Seasonal'
                 }
             },
             ConsoleCategory = {
                 fields = {
                     'Graphics',
-                    'Reveal',
-                    'Debug',
-                    'Net',
                     'Game',
-                    'Gm',
-                    'Combat',
-                    'None',
-                    'Console',
                     'Default',
+                    'Console',
+                    'Debug',
+                    'None',
+                    'Combat',
+                    'Reveal',
+                    'Net',
+                    'Gm',
                     'Sound'
                 }
             },
             ConsoleColorType = {
                 fields = {
-                    'DefaultColor',
-                    'DefaultGreen',
-                    'ClickbufferColor',
-                    'WarningColor',
-                    'AdminColor',
-                    'BackgroundColor',
-                    'GlobalColor',
                     'EchoColor',
-                    'PrivateColor',
-                    'InputColor',
                     'HighlightColor',
+                    'WarningColor',
+                    'ClickbufferColor',
+                    'DefaultGreen',
+                    'GlobalColor',
+                    'PrivateColor',
+                    'DefaultColor',
+                    'BackgroundColor',
+                    'InputColor',
+                    'AdminColor',
                     'ErrorColor'
                 }
             },
             ConsoleCommandType = {
                 fields = {
-                    'Command',
-                    'Script',
+                    'Cvar',
                     'Macro',
-                    'Cvar'
+                    'Command',
+                    'Script'
                 }
             },
             ContentTrackingError = {
                 fields = {
-                    'Untrackable',
                     'MaxTracked',
+                    'Untrackable',
                     'AlreadyTracked'
                 }
             },
@@ -39113,17 +39114,17 @@ globals = {
             ContentTrackingTargetType = {
                 fields = {
                     'Vendor',
-                    'Achievement',
                     'JournalEncounter',
-                    'Profession',
-                    'Quest'
+                    'Achievement',
+                    'Quest',
+                    'Profession'
                 }
             },
             ContentTrackingType = {
                 fields = {
                     'Mount',
-                    'Appearance',
-                    'Achievement'
+                    'Achievement',
+                    'Appearance'
                 }
             },
             ContributionAppearanceFlags = {
@@ -39133,23 +39134,23 @@ globals = {
             },
             ContributionResult = {
                 fields = {
-                    'FailedConditionCheck',
-                    'InvalidID',
+                    'IncorrectState',
                     'InternalError',
+                    'InvalidID',
+                    'Success',
                     'UnableToCompleteTurnIn',
                     'MustBeNearNpc',
                     'QuestDataMissing',
-                    'IncorrectState',
-                    'Success'
+                    'FailedConditionCheck'
                 }
             },
             ContributionState = {
                 fields = {
-                    'None',
-                    'Destroyed',
-                    'UnderAttack',
+                    'Active',
                     'Building',
-                    'Active'
+                    'UnderAttack',
+                    'Destroyed',
+                    'None'
                 }
             },
             CovenantAbilityType = {
@@ -39161,25 +39162,25 @@ globals = {
             },
             CovenantSkill = {
                 fields = {
-                    'NightFae',
                     'Venthyr',
                     'Necrolord',
+                    'NightFae',
                     'Kyrian'
                 }
             },
             CovenantType = {
                 fields = {
-                    'None',
+                    'Venthyr',
+                    'NightFae',
                     'Necrolord',
                     'Kyrian',
-                    'Venthyr',
-                    'NightFae'
+                    'None'
                 }
             },
             CraftingOrderCustomerCategoryType = {
                 fields = {
-                    'Secondary',
                     'Primary',
+                    'Secondary',
                     'Tertiary'
                 }
             },
@@ -39192,115 +39193,115 @@ globals = {
             },
             CraftingOrderFlags = {
                 fields = {
-                    'IsFulfillable',
                     'HasNoneReagents',
-                    'HasSomeReagents',
+                    'HasAllReagents',
                     'IsRecraft',
-                    'HasAllReagents'
+                    'IsFulfillable',
+                    'HasSomeReagents'
                 }
             },
             CraftingOrderItemType = {
                 fields = {
-                    'RemoveReagent',
+                    'Reagent',
                     'Recraft',
                     'CraftedResult',
-                    'Reagent'
+                    'RemoveReagent'
                 }
             },
             CraftingOrderReagentSource = {
                 fields = {
                     'Customer',
-                    'None',
                     'Any',
-                    'Crafter'
+                    'Crafter',
+                    'None'
                 }
             },
             CraftingOrderReagentsType = {
                 fields = {
-                    'Some',
                     'All',
-                    'None'
+                    'None',
+                    'Some'
                 }
             },
             CraftingOrderResult = {
                 fields = {
-                    'MissingOrder',
-                    'MissingNpc',
-                    'CannotCreate',
-                    'Ok',
-                    'TargetLocked',
-                    'MaxOrdersReached',
                     'CannotBeOrdered',
+                    'InvalidTarget',
+                    'Locked',
                     'AlreadyCrafted',
-                    'InvalidSort',
-                    'InvalidMinQuality',
-                    'InvalidRealm',
-                    'CannotClaimOwnOrder',
-                    'CannotRelease',
-                    'AlreadyClaimed',
-                    'CannotClaim',
-                    'MissingRecraftItem',
                     'InvalidType',
-                    'TooManyItems',
-                    'NotClaimed',
+                    'CannotCancel',
+                    'MissingOrder',
+                    'CannotFulfill',
+                    'AlreadyClaimed',
+                    'NotCrafted',
                     'Expired',
-                    'WrongVersion',
+                    'TargetLocked',
+                    'DatabaseError',
+                    'CannotRecraft',
+                    'MaxOrdersReached',
+                    'InvalidReagent',
+                    'OutOfPublicOrderCapacity',
+                    'Ok',
+                    'CannotCraft',
+                    'ServerIsNotAvailable',
+                    'CannotClaim',
                     'NotInGuild',
+                    'CannotCreate',
+                    'WrongVersion',
+                    'TooManyItems',
                     'Timeout',
-                    'MissingItem',
                     'TargetCannotCraft',
                     'ThrottleViolation',
-                    'ServerIsNotAvailable',
-                    'OutOfPublicOrderCapacity',
-                    'CannotReject',
-                    'CannotRecraft',
-                    'NotCrafted',
-                    'NotYetImplemented',
                     'Aborted',
-                    'CannotCraft',
-                    'CannotCancel',
-                    'MissingCraftingTable',
-                    'Locked',
-                    'InvalidRecipe',
-                    'InvalidNotes',
-                    'CannotFulfill',
-                    'InvalidReagent',
+                    'NotYetImplemented',
+                    'NotClaimed',
+                    'MissingRecraftItem',
+                    'InvalidMinQuality',
                     'InvalidDuration',
-                    'InvalidTarget',
-                    'DatabaseError',
-                    'CrafterIsIgnored'
+                    'MissingCraftingTable',
+                    'MissingItem',
+                    'InvalidSort',
+                    'CannotClaimOwnOrder',
+                    'MissingNpc',
+                    'InvalidRealm',
+                    'InvalidNotes',
+                    'InvalidRecipe',
+                    'CannotReject',
+                    'CrafterIsIgnored',
+                    'CannotRelease'
                 }
             },
             CraftingOrderSortType = {
                 fields = {
-                    'AveTip',
-                    'Tip',
                     'Status',
                     'Reagents',
-                    'TimeRemaining',
-                    'ItemName',
                     'Quantity',
-                    'MaxTip'
+                    'AveTip',
+                    'TimeRemaining',
+                    'MaxTip',
+                    'Tip',
+                    'ItemName'
                 }
             },
             CraftingOrderState = {
                 fields = {
-                    'None',
-                    'Claiming',
                     'Expired',
-                    'Releasing',
-                    'Created',
-                    'Rejecting',
-                    'Expiring',
                     'Rejected',
-                    'Claimed',
-                    'Canceled',
                     'Creating',
-                    'Crafting',
-                    'Fulfilling',
+                    'Recrafting',
+                    'Canceled',
                     'Canceling',
+                    'Releasing',
+                    'None',
+                    'Fulfilling',
+                    'Claimed',
+                    'Rejecting',
+                    'Created',
                     'Fulfilled',
-                    'Recrafting'
+                    'Crafting',
+                    'Claiming',
+                    'Expiring'
                 }
             },
             CraftingOrderType = {
@@ -39317,245 +39318,245 @@ globals = {
             },
             CraftingReagentType = {
                 fields = {
+                    'Basic',
                     'Finishing',
                     'Automatic',
-                    'Modifying',
-                    'Basic'
+                    'Modifying'
                 }
             },
             CurrencyDestroyReason = {
                 fields = {
-                    'Garrison',
-                    'DroppedToCorpse',
-                    'FulfillCraftingOrder',
-                    'Last',
-                    'VersionUpdate',
-                    'QuestTurnin',
-                    'Spell',
-                    'Vendor',
-                    'FactionConversion',
                     'Cheat',
+                    'FulfillCraftingOrder',
+                    'Script',
+                    'Last',
                     'BonusRoll',
-                    'Trade',
                     'Capped',
-                    'Script'
+                    'Vendor',
+                    'Trade',
+                    'DroppedToCorpse',
+                    'VersionUpdate',
+                    'Garrison',
+                    'Spell',
+                    'FactionConversion',
+                    'QuestTurnin'
                 }
             },
             CurrencyFlags = {
                 fields = {
-                    'CurrencyResetTrackedQuantity',
                     'DeprecatedCurrencyFlag',
-                    'CurrencyLimitWarmodeBonusOncePerTooltip',
-                    'CurrencyTrackQuantity',
-                    'CurrencyIsHordeOnly',
-                    'CurrencyDoNotLogAcquisitionToBi',
-                    'CurrencyIgnoreMaxQtyOnLoad',
-                    'CurrencyNoRaidDrop',
-                    'CurrencyIsAllianceOnly',
-                    'CurrencySuppressChatMessageOnVersionChange',
-                    'CurrencyAppearsInLootWindow',
-                    'CurrencySingleDropInLoot',
-                    'CurrencyHasWarmodeBonus',
-                    'CurrencyHideAsReward',
                     'CurrencyAllowOverflowMailer',
+                    'CurrencyIgnoreMaxQtyOnLoad',
+                    'CurrencyLimitWarmodeBonusOncePerTooltip',
+                    'CurrencyIsHordeOnly',
+                    'CurrencyTrackQuantity',
+                    'CurrencyDoNotCompressChat',
+                    'CurrencyAppearsInLootWindow',
+                    'CurrencyResetTrackedQuantity',
+                    'CurrencySuppressChatMessages',
+                    'CurrencyDoNotToast',
+                    'CurrencyDontShowTotalInTooltip',
+                    'CurrencyHasWeeklyCatchup',
+                    'CurrencyTradable',
+                    'CurrencyDestroyExtraOnLoot',
+                    'CurrencyDynamicMaximum',
+                    'CurrencyHasWarmodeBonus',
+                    'Currency_100_Scaler',
+                    'CurrencyNoLowLevelDrop',
+                    'CurrencyLogOnWorldChange',
+                    'CurrencyHideAsReward',
                     'CurrencyAccountWide',
                     'CurrencyDontCoalesceInLootWindow',
-                    'CurrencyDoNotCompressChat',
-                    'CurrencyDontShowTotalInTooltip',
-                    'CurrencyDestroyExtraOnLoot',
-                    'CurrencyDoNotToast',
-                    'CurrencyNoLowLevelDrop',
+                    'CurrencyNoRaidDrop',
                     'CurrencyUpdateVersionIgnoreMax',
-                    'CurrencySuppressChatMessages',
-                    'CurrencyDynamicMaximum',
-                    'CurrencyTradable',
-                    'CurrencyComputedWeeklyMaximum',
-                    'CurrencyHasWeeklyCatchup',
-                    'CurrencyNotPersistent',
                     'CurrencyDeprecated',
-                    'CurrencyLogOnWorldChange',
-                    'Currency_100_Scaler'
+                    'CurrencyNotPersistent',
+                    'CurrencyComputedWeeklyMaximum',
+                    'CurrencyDoNotLogAcquisitionToBi',
+                    'CurrencyIsAllianceOnly',
+                    'CurrencySingleDropInLoot',
+                    'CurrencySuppressChatMessageOnVersionChange'
                 }
             },
             CurrencyFlagsB = {
                 fields = {
+                    'CurrencyBDontDisplayIfZero',
+                    'CurrencyBScaleMaxQuantityBySeasonWeeks',
                     'CurrencyBUseTotalEarnedForEarned',
                     'CurrencyBNoNotificationMailOnOfflineProgress',
-                    'CurrencyBDontDisplayIfZero',
                     'CurrencyBShowQuestXPGainInTooltip',
                     'FutureCurrencyFlag',
-                    'CurrencyBScaleMaxQuantityBySeasonWeeks',
                     'CurrencyBBattlenetVirtualCurrency'
                 }
             },
             CurrencyGainFlags = {
                 fields = {
-                    'None',
+                    'FromAccountServer',
+                    'Autotracking',
                     'DroppedFromDeath',
                     'BonusAward',
-                    'FromAccountServer',
-                    'Autotracking'
+                    'None'
                 }
             },
             CurrencySource = {
                 fields = {
-                    'CraftingOrder',
-                    'CatalystCraft',
-                    'SpellSkipLinkedCurrency',
-                    'GarrisonFollowerActivation',
-                    'Last',
-                    'WeeklyQuestWarModeReward',
-                    'Pushloot',
-                    'PvPHonorReward',
-                    'GarrisonBuildingRefund',
-                    'GuildBankWithdrawal',
-                    'LFGReward',
                     'WeeklyQuestReward',
-                    'AzeriteRespec',
-                    'Vendor',
-                    'GarrisonTalentTreeReset',
-                    'Cheat',
-                    'DailyQuestWarModeReward',
-                    'PhBuffer_54',
-                    'Arena',
-                    'WeeklyRewardChest',
-                    'ProfessionInitialAward',
-                    'PvPCompletionBonus',
-                    'ConvertOldPvPCurrency',
-                    'Loot',
-                    'QuestReward',
-                    'PvPMetaCredit',
-                    'AddConduitToCollection',
-                    'WorldQuestReward',
-                    'AccountCopy',
-                    'WorldQuestRewardIgnoreCapsDeprecated',
-                    'PvPScriptedAward',
-                    'PlayerTraitRefund',
-                    'DailyReset',
-                    'GarrisonResourceOverTime',
-                    'PvPTeamContribution',
-                    'ItemDeletion',
-                    'QuestRewardIgnoreCapsDeprecated',
-                    'PvPKillCredit',
-                    'RandomBattleground',
-                    'PhBuffer_63',
-                    'GarrisonWorldQuestBonus',
-                    'PhBuffer_53',
-                    'AccountHwmUpdate',
-                    'RenownRepGain',
-                    'CatalystBalancing',
-                    'ConvertItemsToCurrencyAndReputation',
-                    'DailyQuestReward',
-                    'PvPDrop',
-                    'AuctionDeposit',
-                    'Script',
-                    'ConvertOldItem',
-                    'RatedBattleground',
                     'GarrisonTalent',
-                    'ItemRefund',
-                    'ConvertItemsToCurrencyValue',
+                    'PhBuffer_54',
+                    'Cheat',
                     'ExceededMaxQty',
-                    'Barbershop',
-                    'PlayerTrait',
-                    'GarrisonBuilding',
-                    'FactionConversion',
                     'GarrisonMissionReward',
-                    'BonusRoll',
-                    'Transmogrify',
+                    'SpellSkipLinkedCurrency',
+                    'Loot',
+                    'FactionConversion',
+                    'RandomBattleground',
+                    'Arena',
+                    'Pushloot',
+                    'PvPTeamContribution',
+                    'DailyQuestReward',
+                    'WorldQuestReward',
+                    'ItemDeletion',
+                    'RatedBattleground',
+                    'PvPMetaCredit',
+                    'ConvertOldItem',
+                    'ItemRefund',
+                    'QuestRewardIgnoreCapsDeprecated',
+                    'GarrisonFollowerActivation',
+                    'AccountCopy',
+                    'UpdatingVersion',
+                    'PvPHonorReward',
+                    'PvPCompletionBonus',
                     'Trade',
+                    'Barbershop',
                     'Spell',
-                    'UpdatingVersion'
+                    'GarrisonBuildingRefund',
+                    'AzeriteRespec',
+                    'ConvertItemsToCurrencyAndReputation',
+                    'PlayerTrait',
+                    'DailyReset',
+                    'QuestReward',
+                    'GarrisonResourceOverTime',
+                    'GarrisonBuilding',
+                    'Transmogrify',
+                    'Last',
+                    'GarrisonTalentTreeReset',
+                    'ProfessionInitialAward',
+                    'ConvertItemsToCurrencyValue',
+                    'PlayerTraitRefund',
+                    'CatalystCraft',
+                    'AccountHwmUpdate',
+                    'ConvertOldPvPCurrency',
+                    'CraftingOrder',
+                    'RenownRepGain',
+                    'PhBuffer_53',
+                    'PvPKillCredit',
+                    'Vendor',
+                    'AuctionDeposit',
+                    'CatalystBalancing',
+                    'WeeklyQuestWarModeReward',
+                    'LFGReward',
+                    'PhBuffer_63',
+                    'BonusRoll',
+                    'WeeklyRewardChest',
+                    'AddConduitToCollection',
+                    'DailyQuestWarModeReward',
+                    'GarrisonWorldQuestBonus',
+                    'WorldQuestRewardIgnoreCapsDeprecated',
+                    'PvPDrop',
+                    'GuildBankWithdrawal',
+                    'PvPScriptedAward',
+                    'Script'
                 }
             },
             CurrencyTokenCategoryFlags = {
                 fields = {
                     'FlagSortLast',
-                    'Virtual',
-                    'StartsCollapsed',
                     'Hidden',
-                    'FlagPlayerItemAssignment'
+                    'StartsCollapsed',
+                    'FlagPlayerItemAssignment',
+                    'Virtual'
                 }
             },
             CursorStyle = {
                 fields = {
-                    'Crosshair',
-                    'Mouse'
+                    'Mouse',
+                    'Crosshair'
                 }
             },
             Cursormode = {
                 fields = {
-                    'QuestTurninErrorCursor',
-                    'ItemErrorCursor',
-                    'MineErrorCursor',
-                    'AttackErrorCursor',
-                    'CastErrorCursor',
-                    'LockErrorCursor',
-                    'PingErrorCursor',
-                    'PickupCursor',
-                    'UIResizeCursor',
-                    'QuestRepeatableCursor',
-                    'GatherCursor',
-                    'TaxiCursor',
-                    'BuyErrorCursor',
-                    'UIMoveCursor',
-                    'LootAllErrorCursor',
-                    'CampaignQuestTurninCursor',
-                    'SpeakCursor',
-                    'InteractErrorCursor',
-                    'CastCursor',
-                    'PickupErrorCursor',
-                    'CustomCursor',
-                    'QuestLegendaryErrorCursor',
-                    'SkinAllianceErrorCursor',
-                    'SkinHordeCursor',
-                    'MineCursor',
-                    'CampaignQuestErrorCursor',
-                    'RepairnpcCursor',
-                    'SkinAllianceCursor',
-                    'InspectErrorCursor',
-                    'QuestImportantErrorCursor',
-                    'LootAllCursor',
-                    'QuestImportantTurninCursor',
-                    'QuestCursor',
-                    'CampaignQuestTurninErrorCursor',
-                    'NoCursor',
-                    'MapPinCursor',
-                    'MailCursor',
-                    'LockCursor',
-                    'GatherErrorCursor',
-                    'VehicleErrorCursor',
-                    'QuestLegendaryTurninErrorCursor',
-                    'PingCursor',
-                    'MapPinErrorCursor',
-                    'RepairCursor',
-                    'SkinErrorCursor',
-                    'CampaignQuestCursor',
-                    'SkinHordeErrorCursor',
-                    'QuestImportantTurninErrorCursor',
-                    'QuestTurninCursor',
-                    'QuestRepeatableErrorCursor',
-                    'SkinCursor',
-                    'InteractCursor',
-                    'TrainerErrorCursor',
-                    'TrainerCursor',
-                    'InnkeeperErrorCursor',
-                    'RepairnpcErrorCursor',
-                    'RepairErrorCursor',
-                    'BuyCursor',
-                    'TaxiErrorCursor',
-                    'MailErrorCursor',
-                    'QuestErrorCursor',
-                    'PointCursor',
-                    'InnkeeperCursor',
-                    'QuestImportantCursor',
-                    'PointErrorCursor',
                     'SpeakErrorCursor',
-                    'VehicleCursor',
+                    'InteractCursor',
+                    'InnkeeperErrorCursor',
+                    'LockErrorCursor',
+                    'CampaignQuestCursor',
+                    'CastErrorCursor',
+                    'TaxiErrorCursor',
+                    'GatherCursor',
+                    'PingCursor',
+                    'QuestImportantTurninCursor',
+                    'QuestRepeatableCursor',
+                    'SkinHordeErrorCursor',
+                    'QuestTurninCursor',
+                    'RepairCursor',
+                    'MailErrorCursor',
+                    'BuyErrorCursor',
+                    'QuestTurninErrorCursor',
+                    'CampaignQuestTurninCursor',
+                    'PingErrorCursor',
+                    'LootAllErrorCursor',
+                    'TrainerCursor',
+                    'LootAllCursor',
+                    'InteractErrorCursor',
+                    'VehicleErrorCursor',
+                    'RepairnpcCursor',
+                    'BuyCursor',
+                    'InspectErrorCursor',
+                    'RepairnpcErrorCursor',
+                    'CastCursor',
+                    'SkinCursor',
                     'InspectCursor',
+                    'QuestImportantCursor',
+                    'SkinErrorCursor',
+                    'SkinHordeCursor',
+                    'QuestCursor',
+                    'QuestLegendaryErrorCursor',
+                    'PickupErrorCursor',
+                    'LockCursor',
+                    'CampaignQuestErrorCursor',
+                    'CustomCursor',
                     'AttackCursor',
+                    'CampaignQuestTurninErrorCursor',
+                    'MapPinCursor',
+                    'QuestLegendaryTurninCursor',
+                    'MapPinErrorCursor',
+                    'QuestImportantTurninErrorCursor',
                     'QuestLegendaryCursor',
+                    'SkinAllianceCursor',
+                    'QuestImportantErrorCursor',
+                    'VehicleCursor',
+                    'QuestLegendaryTurninErrorCursor',
+                    'InnkeeperCursor',
+                    'QuestRepeatableErrorCursor',
+                    'MineCursor',
+                    'UIMoveCursor',
+                    'PointErrorCursor',
+                    'MailCursor',
+                    'PickupCursor',
+                    'AttackErrorCursor',
+                    'SkinAllianceErrorCursor',
+                    'ItemErrorCursor',
+                    'RepairErrorCursor',
+                    'PointCursor',
+                    'GatherErrorCursor',
+                    'MineErrorCursor',
+                    'TrainerErrorCursor',
+                    'NoCursor',
+                    'QuestErrorCursor',
+                    'UIResizeCursor',
                     'ItemCursor',
-                    'QuestLegendaryTurninCursor'
+                    'TaxiCursor',
+                    'SpeakCursor'
                 }
             },
             CustomBindingType = {
@@ -39571,130 +39572,130 @@ globals = {
             },
             Damageclass = {
                 fields = {
-                    'MaskHolystorm',
-                    'MaskShadow',
-                    'MaskPhysical',
+                    'MaskArcane',
                     'MaskHolyfire',
-                    'Shadow',
-                    'Physical',
                     'MaskFroststorm',
+                    'Frost',
+                    'MaskShadowstorm',
+                    'MaskFirestorm',
+                    'MaskElemental',
+                    'MaskNone',
                     'Nature',
-                    'LastResist',
-                    'MaskDivine',
-                    'FirstResist',
-                    'MaskShadowstrike',
-                    'MaskNature',
-                    'MaskFire',
-                    'Fire',
-                    'MaskTwilight',
-                    'MaskMagical',
                     'All',
-                    'AllMagical',
+                    'MaskSpellstrike',
+                    'Physical',
                     'Holy',
+                    'MaskDivine',
+                    'MaskChromatic',
+                    'MaskFrostfire',
+                    'Fire',
+                    'AllMagical',
+                    'MaskHolystrike',
                     'MaskChaos',
-                    'MaskFlamestrike',
                     'MaskSpellshadow',
                     'MaskSpellfrost',
-                    'MaskFroststrike',
-                    'MaskSpellfire',
-                    'MaskSpellstrike',
-                    'MaskShadowstorm',
-                    'MaskHoly',
-                    'MaskHolystrike',
-                    'Frost',
-                    'MaskFrostfire',
-                    'MaskChromatic',
-                    'MaskShadowfrost',
-                    'MaskShadowflame',
-                    'AllPhysical',
-                    'MaskHolyfrost',
-                    'MaskElemental',
-                    'MaskSpellstorm',
-                    'NumClasses',
-                    'MaskFrost',
-                    'MaskFirestorm',
-                    'Arcane',
-                    'MaskStormstrike',
-                    'MaskNone',
+                    'FirstResist',
+                    'MaskPhysical',
                     'MaskCosmic',
-                    'MaskArcane'
+                    'MaskSpellstorm',
+                    'MaskSpellfire',
+                    'MaskShadow',
+                    'Shadow',
+                    'MaskTwilight',
+                    'MaskShadowflame',
+                    'MaskShadowstrike',
+                    'MaskFroststrike',
+                    'LastResist',
+                    'MaskStormstrike',
+                    'MaskNature',
+                    'MaskMagical',
+                    'MaskHolyfrost',
+                    'MaskFrost',
+                    'MaskHolystorm',
+                    'NumClasses',
+                    'MaskFire',
+                    'MaskShadowfrost',
+                    'MaskHoly',
+                    'Arcane',
+                    'MaskFlamestrike',
+                    'AllPhysical'
                 }
             },
             DamageclassType = {
                 fields = {
-                    'Physical',
-                    'Magical'
+                    'Magical',
+                    'Physical'
                 }
             },
             DisableAccountProfilesFlags = {
                 fields = {
-                    'None',
-                    'PetsCollections',
                     'Document',
-                    'SharedCollections',
+                    'PetsCollections',
                     'MountsCollections',
-                    'ItemsCollections'
+                    'ItemsCollections',
+                    'SharedCollections',
+                    'None'
                 }
             },
             EditModeAccountSetting = {
                 fields = {
-                    'ShowPossessActionBar',
                     'GridSpacing',
                     'ShowLootFrame',
-                    'ShowHudTooltip',
-                    'ShowBossFrames',
+                    'ShowExtraAbilities',
                     'ShowEncounterBar',
-                    'ShowRaidFrames',
-                    'ShowBuffsAndDebuffs',
-                    'ShowCastBar',
-                    'ShowTargetAndFocus',
-                    'EnableAdvancedOptions',
+                    'SettingsExpanded',
                     'ShowPartyFrames',
-                    'ShowPetActionBar',
-                    'ShowArenaFrames',
-                    'ShowArchaeologyBar',
+                    'DeprecatedShowDebuffFrame',
+                    'ShowTargetAndFocus',
+                    'ShowStanceBar',
+                    'ShowBossFrames',
                     'ShowTimerBars',
-                    'ShowPetFrame',
+                    'ShowGrid',
+                    'ShowArenaFrames',
+                    'ShowBuffsAndDebuffs',
                     'ShowVehicleSeatIndicator',
-                    'ShowStatusTrackingBar2',
-                    'ShowTalkingHeadFrame',
+                    'ShowPetFrame',
                     'ShowDurabilityFrame',
                     'ShowVehicleLeaveButton',
-                    'SettingsExpanded',
-                    'DeprecatedShowDebuffFrame',
+                    'EnableAdvancedOptions',
                     'EnableSnap',
-                    'ShowGrid',
-                    'ShowExtraAbilities',
-                    'ShowStanceBar'
+                    'ShowStatusTrackingBar2',
+                    'ShowHudTooltip',
+                    'ShowPetActionBar',
+                    'ShowArchaeologyBar',
+                    'ShowTalkingHeadFrame',
+                    'ShowRaidFrames',
+                    'ShowCastBar',
+                    'ShowPossessActionBar'
                 }
             },
             EditModeActionBarSetting = {
                 fields = {
-                    'IconPadding',
-                    'HideBarArt',
-                    'NumIcons',
                     'VisibleSetting',
                     'IconSize',
-                    'Orientation',
-                    'NumRows',
                     'AlwaysShowButtons',
+                    'NumRows',
+                    'NumIcons',
+                    'IconPadding',
+                    'Orientation',
                     'HideBarScrolling',
-                    'DeprecatedSnapToSide'
+                    'DeprecatedSnapToSide',
+                    'HideBarArt'
                 }
             },
             EditModeActionBarSystemIndices = {
                 fields = {
-                    'Bar3',
-                    'StanceBar',
-                    'Bar2',
+                    'PetActionBar',
                     'RightBar2',
+                    'StanceBar',
+                    'PossessActionBar',
                     'MainBar',
                     'RightBar1',
-                    'PetActionBar',
-                    'ExtraBar1',
-                    'PossessActionBar',
                     'ExtraBar3',
-                    'ExtraBar2'
+                    'Bar2',
+                    'ExtraBar2',
+                    'ExtraBar1',
+                    'Bar3'
                 }
             },
             EditModeArchaeologyBarSetting = {
@@ -39704,34 +39705,34 @@ globals = {
             },
             EditModeAuraFrameSetting = {
                 fields = {
-                    'IconSize',
-                    'IconDirection',
+                    'DeprecatedShowFull',
+                    'IconPadding',
+                    'IconLimitBuffFrame',
+                    'IconWrap',
                     'Orientation',
                     'IconLimitDebuffFrame',
-                    'IconPadding',
-                    'IconWrap',
-                    'DeprecatedShowFull',
-                    'IconLimitBuffFrame'
+                    'IconSize',
+                    'IconDirection'
                 }
             },
             EditModeAuraFrameSystemIndices = {
                 fields = {
-                    'DebuffFrame',
-                    'BuffFrame'
+                    'BuffFrame',
+                    'DebuffFrame'
                 }
             },
             EditModeBagsSetting = {
                 fields = {
-                    'Size',
                     'Orientation',
+                    'Size',
                     'Direction'
                 }
             },
             EditModeCastBarSetting = {
                 fields = {
-                    'LockToPlayerFrame',
                     'BarSize',
-                    'ShowCastTime'
+                    'ShowCastTime',
+                    'LockToPlayerFrame'
                 }
             },
             EditModeChatFrameDisplayOnlySetting = {
@@ -39742,10 +39743,10 @@ globals = {
             },
             EditModeChatFrameSetting = {
                 fields = {
-                    'WidthHundreds',
-                    'HeightTensAndOnes',
                     'HeightHundreds',
-                    'WidthTensAndOnes'
+                    'HeightTensAndOnes',
+                    'WidthTensAndOnes',
+                    'WidthHundreds'
                 }
             },
             EditModeDurabilityFrameSetting = {
@@ -39755,25 +39756,25 @@ globals = {
             },
             EditModeLayoutType = {
                 fields = {
-                    'Override',
                     'Preset',
-                    'Account',
-                    'Character'
+                    'Override',
+                    'Character',
+                    'Account'
                 }
             },
             EditModeMicroMenuSetting = {
                 fields = {
-                    'Size',
-                    'Order',
                     'Orientation',
-                    'EyeSize'
+                    'Size',
+                    'EyeSize',
+                    'Order'
                 }
             },
             EditModeMinimapSetting = {
                 fields = {
-                    'HeaderUnderneath',
                     'Size',
-                    'RotateMinimap'
+                    'RotateMinimap',
+                    'HeaderUnderneath'
                 }
             },
             EditModeObjectiveTrackerSetting = {
@@ -39797,8 +39798,8 @@ globals = {
             },
             EditModeStatusTrackingBarSetting = {
                 fields = {
-                    'Width',
                     'TextSize',
+                    'Width',
                     'Height'
                 }
             },
@@ -39810,26 +39811,26 @@ globals = {
             },
             EditModeSystem = {
                 fields = {
+                    'Minimap',
+                    'ChatFrame',
+                    'MicroMenu',
                     'AuraFrame',
+                    'TimerBars',
+                    'VehicleSeatIndicator',
+                    'TalkingHeadFrame',
+                    'HudTooltip',
                     'VehicleLeaveButton',
+                    'DurabilityFrame',
+                    'ArchaeologyBar',
+                    'LootFrame',
                     'ActionBar',
                     'ObjectiveTracker',
-                    'CastBar',
-                    'DurabilityFrame',
-                    'Minimap',
-                    'TalkingHeadFrame',
-                    'EncounterBar',
                     'ExtraAbilities',
                     'UnitFrame',
-                    'Bags',
-                    'ArchaeologyBar',
-                    'VehicleSeatIndicator',
-                    'MicroMenu',
+                    'EncounterBar',
                     'StatusTrackingBar',
-                    'TimerBars',
-                    'ChatFrame',
-                    'HudTooltip',
-                    'LootFrame'
+                    'Bags',
+                    'CastBar'
                 }
             },
             EditModeTimerBarsSetting = {
@@ -39839,36 +39840,36 @@ globals = {
             },
             EditModeUnitFrameSetting = {
                 fields = {
-                    'BuffsOnTop',
-                    'ViewRaidSize',
-                    'FrameHeight',
-                    'UseHorizontalGroups',
-                    'UseRaidStylePartyFrames',
-                    'UseLargerFrame',
-                    'ShowPartyFrameBackground',
-                    'RaidGroupDisplayType',
-                    'DisplayBorder',
-                    'SortPlayersBy',
-                    'FrameSize',
                     'HidePortrait',
+                    'FrameSize',
+                    'BuffsOnTop',
+                    'UseLargerFrame',
+                    'CastBarUnderneath',
+                    'UseHorizontalGroups',
+                    'CastBarOnSide',
+                    'ViewRaidSize',
+                    'DisplayBorder',
+                    'UseRaidStylePartyFrames',
                     'ViewArenaSize',
                     'RowSize',
-                    'FrameWidth',
-                    'CastBarUnderneath',
+                    'SortPlayersBy',
+                    'ShowPartyFrameBackground',
+                    'RaidGroupDisplayType',
+                    'FrameHeight',
                     'ShowCastTime',
-                    'CastBarOnSide'
+                    'FrameWidth'
                 }
             },
             EditModeUnitFrameSystemIndices = {
                 fields = {
-                    'Pet',
-                    'Player',
                     'Raid',
-                    'Boss',
+                    'Focus',
+                    'Arena',
                     'Party',
                     'Target',
-                    'Arena',
-                    'Focus'
+                    'Player',
+                    'Boss',
+                    'Pet'
                 }
             },
             EditModeVehicleSeatIndicatorSetting = {
@@ -39878,80 +39879,80 @@ globals = {
             },
             EncounterLootDropRollState = {
                 fields = {
-                    'Greed',
                     'Transmog',
                     'NeedOffSpec',
-                    'Pass',
+                    'NeedMainSpec',
                     'NoRoll',
-                    'NeedMainSpec'
+                    'Greed',
+                    'Pass'
                 }
             },
             EnvironmentalDamageFlags = {
                 fields = {
-                    'OneTime',
-                    'DmgIsPct'
+                    'DmgIsPct',
+                    'OneTime'
                 }
             },
             Environmentaldamagetype = {
                 fields = {
-                    'Falling',
-                    'Fatigue',
                     'Slime',
                     'Lava',
+                    'Fire',
+                    'Falling',
                     'Drowning',
-                    'Fire'
+                    'Fatigue'
                 }
             },
             EventRealmQueues = {
                 fields = {
-                    'None',
+                    'PlunderstormSolo',
                     'PlunderstormDuo',
                     'PlunderstormTrio',
-                    'PlunderstormSolo'
+                    'None'
                 }
             },
             EventToastDisplayType = {
                 fields = {
-                    'NormalTextWithIcon',
-                    'Scenario',
-                    'LargeTextWithIcon',
-                    'ScenarioClickExpand',
                     'NormalBlockText',
-                    'WeeklyRewardUpgrade',
+                    'Scenario',
                     'WeeklyRewardUnlock',
-                    'NormalSingleLine',
+                    'WeeklyRewardUpgrade',
+                    'ScenarioClickExpand',
                     'NormalTitleAndSubTitle',
+                    'NormalTextWithIcon',
                     'ChallengeMode',
-                    'NormalTextWithIconAndRarity'
+                    'LargeTextWithIcon',
+                    'NormalTextWithIconAndRarity',
+                    'NormalSingleLine'
                 }
             },
             EventToastEventType = {
                 fields = {
                     'Scenario',
-                    'LevelUpOther',
-                    'MythicPlusWeeklyRecord',
-                    'BattlePetLevelChanged',
-                    'LevelUpPvP',
-                    'PlayerAuraAdded',
-                    'QuestTurnedIn',
-                    'LevelUp',
-                    'LevelUpRaid',
-                    'LevelUpDungeon',
-                    'CriteriaUpdated',
-                    'QuestBossEmote',
-                    'PetBattleFinalRound',
-                    'PlayerAuraRemoved',
                     'BattlePetLevelUpAbility',
-                    'WeeklyRewardUnlock',
-                    'PetBattleNewAbility',
-                    'TreasureItem',
-                    'SpellLearned',
-                    'PetBattleCapture',
+                    'LevelUpDungeon',
+                    'BattlePetLevelChanged',
+                    'PlayerAuraRemoved',
+                    'PlayerAuraAdded',
+                    'LevelUpRaid',
                     'PvPTierUpdate',
                     'WeeklyRewardUpgrade',
-                    'SpellScript',
+                    'QuestTurnedIn',
+                    'WeeklyRewardUnlock',
                     'WorldStateChange',
-                    'LevelUpSpell'
+                    'SpellLearned',
+                    'SpellScript',
+                    'CriteriaUpdated',
+                    'LevelUpSpell',
+                    'PetBattleCapture',
+                    'LevelUp',
+                    'LevelUpOther',
+                    'LevelUpPvP',
+                    'TreasureItem',
+                    'MythicPlusWeeklyRecord',
+                    'PetBattleFinalRound',
+                    'QuestBossEmote',
+                    'PetBattleNewAbility'
                 }
             },
             EventToastFlags = {
@@ -39961,22 +39962,22 @@ globals = {
             },
             ExcludedCensorSources = {
                 fields = {
-                    'None',
-                    'Reserve5',
-                    'All',
-                    'Reserve6',
-                    'Reserve1',
-                    'Reserve2',
-                    'Friends',
                     'Reserve3',
+                    'Friends',
+                    'Reserve1',
+                    'Guild',
+                    'Reserve2',
+                    'None',
+                    'Reserve6',
+                    'Reserve5',
                     'Reserve4',
-                    'Guild'
+                    'All'
                 }
             },
             ExpansionLandingPageType = {
                 fields = {
-                    'None',
-                    'Dragonflight'
+                    'Dragonflight',
+                    'None'
                 }
             },
             FlightPathFaction = {
@@ -39995,21 +39996,21 @@ globals = {
             },
             FollowerAbilityCastResult = {
                 fields = {
-                    'CannotTargetLimitedUseFollower',
-                    'CannotTargetNonAutoMissionFollower',
-                    'AlreadyAtMaxDurability',
                     'Failure',
-                    'MustTargetLimitedUseFollower',
-                    'MustBeUnique',
-                    'Success',
-                    'InvalidFollowerType',
-                    'MustTargetTrait',
-                    'MustTargetFollower',
-                    'SingleMissionDuration',
-                    'NoPendingCast',
                     'InvalidTarget',
+                    'Success',
+                    'MustTargetTrait',
+                    'AlreadyAtMaxDurability',
+                    'InvalidFollowerType',
+                    'CannotTargetNonAutoMissionFollower',
                     'RerollNotAllowed',
-                    'InvalidFollowerSpell'
+                    'MustTargetLimitedUseFollower',
+                    'CannotTargetLimitedUseFollower',
+                    'InvalidFollowerSpell',
+                    'SingleMissionDuration',
+                    'MustTargetFollower',
+                    'MustBeUnique',
+                    'NoPendingCast'
                 }
             },
             GameEnvironment = {
@@ -40026,179 +40027,179 @@ globals = {
             },
             GameModeFeatureSetting = {
                 fields = {
-                    'PlayerNamePlateDifficultyIcon',
-                    'SpectatingUI',
-                    'PlayerNamePlateAlternateHealthColor',
-                    'AlwaysAllowAlliedRaces',
-                    'LandingPageFactionID',
-                    'UnitFramePvPContextual',
-                    'Guilds',
-                    'IgnoreChrClassDisabledFlag',
-                    'WorldMapTrackingOptions',
-                    'InGameTracking',
-                    'RaceAlteredFormsEnabled',
-                    'MaxNameplateDistance',
-                    'InGameCalendar',
-                    'Store',
-                    'InstanceDifficultyBanner',
-                    'ScaleNonPlayerNamePlates',
-                    'ForcedChatLanguage',
-                    'CharacterCreateFullEnabled',
-                    'UserScripts',
-                    'ChatLinkLevelToasts',
-                    'UserAddOns',
-                    'EncounterJournal',
-                    'UniversalNameplateOcclusion',
-                    'FinderPanel',
-                    'QuestLogMicroButton',
-                    'SpellbookPanel',
-                    'TalentsPanel',
-                    'QuestLogPanel',
-                    'ForceAlteredFormsOn',
-                    'PetBattles',
-                    'FastAreaTriggerTick',
-                    'CharacterCreateUseFixedBackgroundModel',
-                    'Macros',
-                    'ActionBarIconIntro',
-                    'FrontEndChat',
-                    'MaxUnitNameDistance',
-                    'InGameMailNotification',
-                    'AllPlayersAreFastMovers',
-                    'EditMode',
-                    'CommunitiesPanel',
-                    'ForcedPartyFrameScale',
-                    'TargetFrameBuffs',
-                    'InGameFriendsList',
-                    'CustomActionBarOverlayHeightOffset',
-                    'InGameWhoList',
-                    'WorldMapHelpPlate',
-                    'PerksProgramActivityTracking',
-                    'QuestSuperTracking',
-                    'TutorialFrame',
-                    'Bags',
-                    'CollectionsPanel',
-                    'MapPlunderstormCircle',
-                    'DeleteItemConfirmation',
-                    'WorldMapTrackingPin',
-                    'MicroBarScale',
-                    'MaximizeWorldMap',
                     'AchievementsPanel',
-                    'CompactRaidFrameManager',
-                    'HelpPanel',
                     'ReleaseSpiritGhost',
-                    'CharacterPanel'
+                    'CharacterCreateFullEnabled',
+                    'EditMode',
+                    'Macros',
+                    'SpectatingUI',
+                    'RaceAlteredFormsEnabled',
+                    'UnitFramePvPContextual',
+                    'FinderPanel',
+                    'IgnoreChrClassDisabledFlag',
+                    'MaxUnitNameDistance',
+                    'TargetFrameBuffs',
+                    'Guilds',
+                    'InGameMailNotification',
+                    'DeleteItemConfirmation',
+                    'PlayerNamePlateAlternateHealthColor',
+                    'CommunitiesPanel',
+                    'InGameTracking',
+                    'PerksProgramActivityTracking',
+                    'PlayerNamePlateDifficultyIcon',
+                    'FrontEndChat',
+                    'QuestSuperTracking',
+                    'CharacterCreateUseFixedBackgroundModel',
+                    'UniversalNameplateOcclusion',
+                    'AlwaysAllowAlliedRaces',
+                    'QuestLogMicroButton',
+                    'UserScripts',
+                    'MaxNameplateDistance',
+                    'UserAddOns',
+                    'SpellbookPanel',
+                    'HelpPanel',
+                    'CompactRaidFrameManager',
+                    'AllPlayersAreFastMovers',
+                    'ForceAlteredFormsOn',
+                    'Store',
+                    'CustomActionBarOverlayHeightOffset',
+                    'LandingPageFactionID',
+                    'InGameFriendsList',
+                    'EncounterJournal',
+                    'FastAreaTriggerTick',
+                    'InGameWhoList',
+                    'InGameCalendar',
+                    'TutorialFrame',
+                    'MapPlunderstormCircle',
+                    'QuestLogPanel',
+                    'WorldMapHelpPlate',
+                    'WorldMapTrackingPin',
+                    'Bags',
+                    'ForcedChatLanguage',
+                    'CollectionsPanel',
+                    'MaximizeWorldMap',
+                    'ForcedPartyFrameScale',
+                    'TalentsPanel',
+                    'PetBattles',
+                    'ActionBarIconIntro',
+                    'ChatLinkLevelToasts',
+                    'ScaleNonPlayerNamePlates',
+                    'MicroBarScale',
+                    'WorldMapTrackingOptions',
+                    'CharacterPanel',
+                    'InstanceDifficultyBanner'
                 }
             },
             GamePadPowerLevel = {
                 fields = {
-                    'Medium',
-                    'High',
                     'Unknown',
                     'Wired',
-                    'Low',
-                    'Critical'
+                    'Critical',
+                    'Medium',
+                    'High',
+                    'Low'
                 }
             },
             GarrAutoBoardIndex = {
                 fields = {
-                    'None',
-                    'EnemyCenterRightBack',
                     'EnemyLeftFront',
-                    'AllyLeftBack',
-                    'AllyRightBack',
                     'AllyCenterFront',
+                    'EnemyRightBack',
+                    'EnemyRightFront',
+                    'EnemyCenterLeftBack',
+                    'None',
+                    'AllyRightBack',
                     'EnemyLeftBack',
                     'EnemyCenterRightFront',
-                    'EnemyRightBack',
-                    'EnemyCenterLeftBack',
-                    'AllyLeftFront',
-                    'EnemyRightFront',
+                    'EnemyCenterRightBack',
+                    'AllyRightFront',
                     'EnemyCenterLeftFront',
-                    'AllyRightFront'
+                    'AllyLeftBack',
+                    'AllyLeftFront'
                 }
             },
             GarrAutoCombatSpellTutorialFlag = {
                 fields = {
-                    'None',
-                    'Row',
                     'All',
+                    'Row',
                     'Column',
-                    'Single'
+                    'Single',
+                    'None'
                 }
             },
             GarrAutoCombatTutorial = {
                 fields = {
-                    'HealCompanion',
+                    'AttackAll',
+                    'EnvironmentalEffect',
+                    'AttackRow',
+                    'AttackSingle',
+                    'TroopTutorial',
                     'LevelHeal',
                     'PlaceCompanion',
-                    'TroopTutorial',
-                    'EnvironmentalEffect',
-                    'AttackSingle',
-                    'SelectMission',
                     'BeneficialEffect',
-                    'AttackColumn',
-                    'AttackAll',
-                    'AttackRow'
+                    'SelectMission',
+                    'HealCompanion',
+                    'AttackColumn'
                 }
             },
             GarrAutoCombatantRole = {
                 fields = {
-                    'None',
+                    'RangedMagic',
                     'Tank',
-                    'Melee',
                     'HealSupport',
+                    'Melee',
                     'RangedPhysical',
-                    'RangedMagic'
+                    'None'
                 }
             },
             GarrAutoEventFlags = {
                 fields = {
-                    'None',
                     'Environment',
+                    'AutoAttack',
                     'Passive',
-                    'AutoAttack'
+                    'None'
                 }
             },
             GarrAutoMissionEventType = {
                 fields = {
-                    'SpellMeleeDamage',
-                    'MeleeDamage',
-                    'Heal',
-                    'RemoveAura',
+                    'PeriodicHeal',
                     'PeriodicDamage',
+                    'MeleeDamage',
                     'RangeDamage',
-                    'SpellRangeDamage',
-                    'Died',
+                    'Heal',
                     'ApplyAura',
-                    'PeriodicHeal'
+                    'SpellMeleeDamage',
+                    'RemoveAura',
+                    'SpellRangeDamage',
+                    'Died'
                 }
             },
             GarrAutoPreviewTargetType = {
                 fields = {
-                    'None',
-                    'Heal',
                     'Damage',
+                    'Heal',
                     'Debuff',
-                    'Buff'
+                    'Buff',
+                    'None'
                 }
             },
             GarrFollowerMissionCompleteState = {
                 fields = {
-                    'KilledByMissionFailure',
-                    'OutOfDurability',
                     'Alive',
-                    'SavedByPreventDeath'
+                    'KilledByMissionFailure',
+                    'SavedByPreventDeath',
+                    'OutOfDurability'
                 }
             },
             GarrFollowerQuality = {
                 fields = {
-                    'None',
-                    'Legendary',
-                    'Uncommon',
-                    'Rare',
                     'Title',
+                    'Legendary',
+                    'Rare',
+                    'Uncommon',
                     'Epic',
-                    'Common'
+                    'Common',
+                    'None'
                 }
             },
             GarrTalentCostType = {
@@ -40211,23 +40212,23 @@ globals = {
             },
             GarrTalentFeatureSubtype = {
                 fields = {
-                    'Ardenweald',
-                    'Revendreth',
                     'Bastion',
                     'Generic',
-                    'Maldraxxus'
+                    'Revendreth',
+                    'Maldraxxus',
+                    'Ardenweald'
                 }
             },
             GarrTalentFeatureType = {
                 fields = {
                     'SoulBinds',
-                    'TravelPortals',
-                    'AnimaDiversion',
-                    'Adventures',
-                    'AnimaDiversionMap',
                     'Generic',
+                    'AnimaDiversion',
+                    'TravelPortals',
                     'SanctumUnique',
                     'Cyphers',
+                    'AnimaDiversionMap',
+                    'Adventures',
                     'ReservoirUpgrades'
                 }
             },
@@ -40239,9 +40240,9 @@ globals = {
             },
             GarrTalentSocketType = {
                 fields = {
-                    'None',
+                    'Spell',
                     'Conduit',
-                    'Spell'
+                    'None'
                 }
             },
             GarrTalentTreeType = {
@@ -40253,107 +40254,107 @@ globals = {
             GarrTalentType = {
                 fields = {
                     'Socket',
-                    'Major',
+                    'Standard',
                     'Minor',
-                    'Standard'
+                    'Major'
                 }
             },
             GarrTalentUI = {
                 fields = {
                     'Generic',
-                    'CovenantSanctum',
                     'SoulBinds',
+                    'CovenantSanctum',
                     'AnimaDiversionMap'
                 }
             },
             GarrisonFollowerType = {
                 fields = {
+                    'FollowerType_9_0_GarrisonFollower',
+                    'FollowerType_6_0_GarrisonFollower',
                     'FollowerType_7_0_GarrisonFollower',
                     'FollowerType_6_0_Boat',
-                    'FollowerType_6_0_GarrisonFollower',
-                    'FollowerType_9_0_GarrisonFollower',
                     'FollowerType_8_0_GarrisonFollower'
                 }
             },
             GarrisonTalentAvailability = {
                 fields = {
-                    'UnavailablePlayerCondition',
-                    'Available',
-                    'Unavailable',
-                    'UnavailableRequiresPrerequisiteTalent',
-                    'UnavailableAlreadyHave',
-                    'UnavailableTierUnavailable',
                     'UnavailableNotEnoughResources',
                     'UnavailableAnotherIsResearching',
-                    'UnavailableNotEnoughGold'
+                    'UnavailableNotEnoughGold',
+                    'UnavailableTierUnavailable',
+                    'UnavailablePlayerCondition',
+                    'Available',
+                    'UnavailableAlreadyHave',
+                    'UnavailableRequiresPrerequisiteTalent',
+                    'Unavailable'
                 }
             },
             GarrisonType = {
                 fields = {
-                    'Type_9_0_Garrison',
                     'Type_7_0_Garrison',
-                    'Type_8_0_Garrison',
-                    'Type_6_0_Garrison'
+                    'Type_6_0_Garrison',
+                    'Type_9_0_Garrison',
+                    'Type_8_0_Garrison'
                 }
             },
             GossipNpcOption = {
                 fields = {
-                    'EnableXPGain',
+                    'Mailbox',
+                    'CovenantRenownNpc',
+                    'CovenantPreviewNpc',
                     'NewPlayerGuide',
+                    'None',
+                    'PersonalTabardVendor',
+                    'BlackMarketAuctionHouse',
+                    'GarrisonTalent',
+                    'BarbersChoice',
+                    'GuildTabardVendor',
+                    'ArtifactRespec',
+                    'Soulbind',
+                    'AzeriteRespec',
+                    'ForgeMaster',
+                    'PetSpecializationMaster',
                     'MajorFactionRenown',
+                    'TraitSystem',
+                    'DisableXPGain',
+                    'ContributionCollector',
+                    'ProfessionsOpen',
+                    'ProfessionsCraftingOrder',
                     'LFGDungeon',
                     'Stablemaster',
-                    'SpiritHealer',
-                    'ArtifactRespec',
-                    'ProfessionsCraftingOrder',
-                    'Auctioneer',
-                    'Taxinode',
-                    'QueueScenario',
-                    'TalentMaster',
-                    'GuildTabardVendor',
-                    'AdventureMap',
-                    'PetitionVendor',
-                    'CemeterySelect',
-                    'Banker',
-                    'ForgeMaster',
-                    'Spellclick',
-                    'Battlemaster',
-                    'PersonalTabardVendor',
-                    'ProfessionsOpen',
-                    'WorldMap',
-                    'TraitSystem',
-                    'None',
-                    'GarrisonTradeskillNpc',
-                    'ProfessionsCustomerOrder',
-                    'BlackMarketAuctionHouse',
-                    'BarbersChoice',
-                    'PerksProgramVendor',
-                    'CovenantRenownNpc',
-                    'AzeriteRespec',
-                    'RuneforgeLegendaryUpgrade',
-                    'Vendor',
-                    'Mailbox',
-                    'GuildBanker',
-                    'GlyphMaster',
-                    'DisableXPGain',
-                    'RuneforgeLegendaryCrafting',
-                    'Soulbind',
-                    'Trainer',
-                    'WorldPvPQueue',
                     'ChromieTimeNpc',
-                    'GarrisonMissionNpc',
-                    'UIItemInteraction',
-                    'SpecializationMaster',
-                    'IslandsMissionNpc',
-                    'ShipmentCrafter',
-                    'Binder',
-                    'ContributionCollector',
-                    'GarrisonTalent',
-                    'GarrisonRecruitment',
+                    'TalentMaster',
                     'Transmogrify',
+                    'PerksProgramVendor',
+                    'Battlemaster',
                     'GarrisonArchitect',
-                    'CovenantPreviewNpc',
-                    'PetSpecializationMaster'
+                    'ShipmentCrafter',
+                    'Auctioneer',
+                    'Spellclick',
+                    'Trainer',
+                    'RuneforgeLegendaryCrafting',
+                    'RuneforgeLegendaryUpgrade',
+                    'EnableXPGain',
+                    'Taxinode',
+                    'UIItemInteraction',
+                    'Binder',
+                    'IslandsMissionNpc',
+                    'Vendor',
+                    'QueueScenario',
+                    'ProfessionsCustomerOrder',
+                    'AdventureMap',
+                    'GarrisonRecruitment',
+                    'GarrisonTradeskillNpc',
+                    'WorldPvPQueue',
+                    'GuildBanker',
+                    'PetitionVendor',
+                    'SpiritHealer',
+                    'GarrisonMissionNpc',
+                    'Banker',
+                    'WorldMap',
+                    'GlyphMaster',
+                    'SpecializationMaster',
+                    'CemeterySelect'
                 }
             },
             GossipNpcOptionDisplayFlags = {
@@ -40363,8 +40364,8 @@ globals = {
             },
             GossipOptionRecFlags = {
                 fields = {
-                    'HideOptionIDFromClient',
-                    'QuestLabelPrepend'
+                    'QuestLabelPrepend',
+                    'HideOptionIDFromClient'
                 }
             },
             GossipOptionRewardType = {
@@ -40375,504 +40376,504 @@ globals = {
             },
             GossipOptionStatus = {
                 fields = {
+                    'Available',
                     'AlreadyComplete',
                     'Locked',
-                    'Available',
                     'Unavailable'
                 }
             },
             GraphicsValidationResult = {
                 fields = {
-                    'NvapiWineUnsupported',
-                    'GpuDriver',
-                    'NeedsWindows_11',
-                    'NeedsAmdGpu',
-                    'NvidiaGpuUnsupported',
+                    'Graphics',
+                    'Supported',
                     'Dx12Win7Unsupported',
-                    'NeedsMacOs_11_0',
+                    'RemoteDesktopUnsupported',
+                    'NeedsMacOs_10_13',
+                    'NvidiaGpuUnsupported',
                     'WindowsUnsupported',
-                    'NeedsAppleGpu',
-                    'IntelGpuUnsupported',
+                    'NeedsWindows_10',
+                    'Unsupported',
+                    'NeedsWindows_11',
+                    'NeedsNvidiaGpu',
                     'Needs_5_0',
                     'NeedsDx12',
-                    'Supported',
-                    'NeedsWindows_10',
-                    'CpuMem_8',
-                    'NeedsMacOs_13_0',
-                    'NeedsQualcommGpu',
-                    'Graphics',
-                    'AppleGpuUnsupported',
-                    'Dx11Unsupported',
+                    'NeedsMacOs_10_15',
                     'Illegal',
-                    'Unknown',
-                    'CpuMem_2',
-                    'QualcommGpuUnsupported',
-                    'NeedsNvidiaGpu',
-                    'QuadCore',
-                    'NeedsIntelGpu',
+                    'NeedsDx12Vrs2',
+                    'GpuDriver',
                     'AmdGpuUnsupported',
                     'CpuMem_4',
-                    'RemoteDesktopUnsupported',
-                    'NeedsDx12Vrs2',
-                    'Unsupported',
-                    'LegacyUnsupported',
-                    'NeedsMacOs_10_14',
-                    'NeedsMacOs_12_0',
-                    'MacOsUnsupported',
-                    'NeedsMacOs_10_15',
-                    'NeedsMacOs_10_13',
+                    'Dx11Unsupported',
+                    'NeedsIntelGpu',
+                    'CpuMem_8',
+                    'CpuMem_2',
+                    'AppleGpuUnsupported',
+                    'NeedsMacOs_13_0',
+                    'NeedsAmdGpu',
+                    'Unknown',
+                    'WineUnsupported',
+                    'QualcommGpuUnsupported',
+                    'IntelGpuUnsupported',
                     'DualCore',
+                    'NeedsMacOs_10_14',
+                    'NeedsAppleGpu',
+                    'QuadCore',
+                    'NvapiWineUnsupported',
+                    'LegacyUnsupported',
+                    'MacOsUnsupported',
+                    'NeedsMacOs_12_0',
+                    'NeedsMacOs_11_0',
+                    'NeedsQualcommGpu',
                     'NeedsRt',
-                    'Needs_6_0',
-                    'WineUnsupported'
+                    'Needs_6_0'
                 }
             },
             HolidayCalendarFlags = {
                 fields = {
-                    'Horde',
-                    'Alliance'
+                    'Alliance',
+                    'Horde'
                 }
             },
             HolidayFlags = {
                 fields = {
+                    'DontDisplayBanner',
                     'NotAvailableClientSide',
+                    'IsRegionwide',
                     'BeginEventOnlyOnStageChange',
                     'DontShowInCalendar',
-                    'IsRegionwide',
-                    'DontDisplayEnd',
-                    'DontDisplayBanner',
-                    'DurationUseMinutes'
+                    'DurationUseMinutes',
+                    'DontDisplayEnd'
                 }
             },
             IconAndTextWidgetState = {
                 fields = {
                     'ShownWithDynamicIconNotFlashing',
                     'ShownWithDynamicIconFlashing',
-                    'Hidden',
-                    'Shown'
+                    'Shown',
+                    'Hidden'
                 }
             },
             IconState = {
                 fields = {
                     'ShowState2',
-                    'Hidden',
-                    'ShowState1'
+                    'ShowState1',
+                    'Hidden'
                 }
             },
             InputContext = {
                 fields = {
-                    'None',
+                    'Mouse',
                     'Keyboard',
                     'GamePad',
-                    'Mouse'
+                    'None'
                 }
             },
             InventoryType = {
                 fields = {
-                    'IndexRangedrightType',
+                    'IndexWeaponmainhandType',
+                    'IndexRelicType',
+                    'IndexShieldType',
+                    'IndexLegsType',
+                    'IndexQuiverType',
+                    'IndexHandType',
+                    'IndexTabardType',
                     'IndexShoulderType',
-                    'IndexCloakType',
+                    'IndexEquipablespellUtilityType',
+                    'IndexBagType',
+                    'IndexFeetType',
+                    'IndexHeadType',
+                    'IndexTrinketType',
                     'IndexWeaponType',
-                    'IndexRobeType',
+                    'IndexNeckType',
                     'IndexEquipablespellWeaponType',
+                    'IndexCloakType',
+                    'IndexEquipablespellOffensiveType',
+                    'IndexWeaponoffhandType',
+                    'IndexWristType',
+                    'IndexThrownType',
+                    'IndexNonEquipType',
+                    'IndexFingerType',
                     'IndexEquipablespellDefensiveType',
                     'IndexProfessionGearType',
-                    'IndexTabardType',
-                    'IndexFeetType',
-                    'IndexWeaponoffhandType',
-                    'IndexEquipablespellOffensiveType',
-                    'IndexBagType',
-                    'IndexNonEquipType',
-                    'IndexRelicType',
+                    'IndexProfessionToolType',
+                    'IndexRangedrightType',
+                    'IndexRobeType',
+                    'IndexChestType',
                     'IndexAmmoType',
-                    'IndexShieldType',
+                    'Index2HweaponType',
+                    'IndexBodyType',
                     'IndexRangedType',
                     'IndexWaistType',
-                    'IndexHoldableType',
-                    'IndexChestType',
-                    'IndexEquipablespellUtilityType',
-                    'IndexQuiverType',
-                    'IndexProfessionToolType',
-                    'IndexWeaponmainhandType',
-                    'IndexHeadType',
-                    'IndexThrownType',
-                    'IndexNeckType',
-                    'IndexWristType',
-                    'IndexLegsType',
-                    'IndexHandType',
-                    'IndexBodyType',
-                    'IndexTrinketType',
-                    'IndexFingerType',
-                    'Index2HweaponType'
+                    'IndexHoldableType'
                 }
             },
             ItemArmorSubclass = {
                 fields = {
+                    'Plate',
+                    'Mail',
+                    'Generic',
                     'Leather',
                     'Cloth',
-                    'Plate',
                     'Sigil',
+                    'Shield',
                     'Relic',
                     'Totem',
-                    'Cosmetic',
-                    'Shield',
-                    'Generic',
                     'Idol',
-                    'Libram',
-                    'Mail'
+                    'Cosmetic',
+                    'Libram'
                 }
             },
             ItemBind = {
                 fields = {
-                    'None',
                     'OnAcquire',
-                    'Unused2',
-                    'Quest',
                     'Unused1',
                     'OnEquip',
-                    'OnUse'
+                    'Unused2',
+                    'OnUse',
+                    'Quest',
+                    'None'
                 }
             },
             ItemClass = {
                 fields = {
-                    'Key',
-                    'Gem',
-                    'Tradegoods',
-                    'Container',
                     'Armor',
-                    'Reagent',
                     'CurrencyTokenObsolete',
-                    'Weapon',
-                    'Glyph',
-                    'Consumable',
-                    'Profession',
-                    'WoWToken',
-                    'Battlepet',
-                    'Projectile',
-                    'Miscellaneous',
+                    'Key',
+                    'Reagent',
                     'Questitem',
-                    'PermanentObsolete',
-                    'Quiver',
+                    'Miscellaneous',
                     'Recipe',
-                    'ItemEnhancement'
+                    'Container',
+                    'Profession',
+                    'Consumable',
+                    'ItemEnhancement',
+                    'WoWToken',
+                    'Quiver',
+                    'Weapon',
+                    'Gem',
+                    'Glyph',
+                    'Tradegoods',
+                    'PermanentObsolete',
+                    'Projectile',
+                    'Battlepet'
                 }
             },
             ItemCommodityStatus = {
                 fields = {
                     'Unknown',
-                    'Commodity',
-                    'Item'
+                    'Item',
+                    'Commodity'
                 }
             },
             ItemConsumableSubclass = {
                 fields = {
+                    'Scroll',
                     'Fooddrink',
                     'Other',
-                    'Scroll',
-                    'Potion',
-                    'Generic',
-                    'Elixir',
                     'Bandage',
-                    'Itemenhancement'
+                    'Generic',
+                    'Itemenhancement',
+                    'Potion',
+                    'Elixir'
                 }
             },
             ItemCreationContext = {
                 fields = {
-                    'RaidNormalExtended_2',
-                    'ChallengeMode_2',
-                    'WorldQuest_8',
-                    'PvPRanked_2',
-                    'WorldQuest_11',
-                    'WarMode',
-                    'WorldQuest_7',
-                    'DungeonMythic',
-                    'RaidHeroicExtended',
-                    'PvPRanked_1',
-                    'TemplateCharacter_4',
-                    'Store',
-                    'WorldQuest_1',
-                    'BlackMarket',
-                    'PvPRanked_4',
                     'ChallengeMode_1',
-                    'DungeonHeroicJackpot',
-                    'PvPHonorReward',
-                    'WorldBoss',
-                    'MissionReward_2',
-                    'None',
-                    'WorldQuestJackpot',
-                    'RaidNormalExtended_3',
-                    'WorldQuest_3',
-                    'PvPUnranked_7',
-                    'ChallengeModeJackpot',
-                    'Vendor',
-                    'WorldQuest_13',
-                    'Relinquished',
-                    'DungeonLevelUp_4',
-                    'TradeSkill',
-                    'WorldQuest_5',
-                    'DungeonLevelUp_3',
-                    'LegendaryForge',
-                    'WeeklyRewardsAdditional',
-                    'PvPRankedJackpot',
-                    'LegendaryCrafting_5',
-                    'NewCharacter',
-                    'RaidHeroic',
-                    'WorldQuest_9',
-                    'DungeonMythicJackpot',
-                    'Timerunning',
-                    'Delves',
-                    'DungeonNormalJackpot',
-                    'PvPRanked_8',
-                    'RaidMythic',
-                    'RaidFinderExtended_2',
-                    'TemplateCharacter_2',
-                    'TemplateCharacter_1',
-                    'QuestReward',
-                    'RaidMythicExtended_3',
-                    'PvPRanked_6',
-                    'RaidMythicExtended_2',
-                    'RaidFinder',
-                    'ScenarioHeroic',
-                    'RaidFinderExtended_3',
-                    'RaidHeroicExtended_2',
-                    'DungeonLevelUp_1',
-                    'PvPRanked_9',
-                    'TournamentRealm',
-                    'PvPRanked_7',
-                    'ChallengeMode_4',
-                    'CharacterBoost_3',
-                    'DungeonLevelUp_2',
-                    'RaidMythicExtended',
-                    'RaidFinderExtended',
-                    'TemplateCharacter_3',
-                    'CorpseRecovery',
-                    'PvPUnranked_2',
-                    'PvPUnranked_1',
-                    'PvPUnranked_4',
-                    'CharacterBoost_1',
-                    'PvPBrawl_1',
-                    'WeeklyRewardsConcession',
-                    'WorldQuest_4',
-                    'ChallengeMode_3',
-                    'LegendaryCrafting_9',
-                    'LegendaryCrafting_8',
-                    'LegendaryCrafting_7',
-                    'RaidNormalExtended',
-                    'PvPRanked_3',
-                    'DungeonHeroic',
-                    'PvPUnranked_3',
-                    'LegendaryCrafting_4',
-                    'PvPUnranked_5',
-                    'RaidNormal',
-                    'LegendaryCrafting_2',
-                    'DungeonNormal',
-                    'LegendaryCrafting_1',
-                    'CharacterBoost_2',
-                    'PvPBrawl_2',
-                    'QuestBonusLoot',
-                    'PvPRanked_5',
-                    'WorldQuest_12',
-                    'LegendaryCrafting_6',
-                    'PvPUnranked_6',
-                    'MissionReward_1',
-                    'LegendaryCrafting_3',
-                    'WorldQuest_6',
-                    'RaidHeroicExtended_3',
-                    'Timewalker',
                     'ForceNone',
-                    'WorldQuest_10',
-                    'Torghast',
+                    'LegendaryCrafting_6',
+                    'LegendaryCrafting_2',
+                    'PvPRanked_8',
+                    'RaidMythicExtended_2',
+                    'None',
+                    'PvPBrawl_1',
+                    'PvPRanked_5',
+                    'WeeklyRewardsConcession',
+                    'WorldQuest_6',
+                    'PvPUnranked_1',
+                    'DungeonLevelUp_4',
+                    'RaidFinderExtended_2',
+                    'MissionReward_2',
+                    'PvPUnranked_6',
                     'WorldQuest_2',
-                    'ScenarioNormal'
+                    'PvPRankedJackpot',
+                    'TradeSkill',
+                    'PvPRanked_2',
+                    'LegendaryForge',
+                    'PvPBrawl_2',
+                    'PvPRanked_1',
+                    'Store',
+                    'DungeonHeroic',
+                    'WorldBoss',
+                    'MissionReward_1',
+                    'DungeonLevelUp_3',
+                    'WorldQuest_11',
+                    'RaidNormalExtended_3',
+                    'DungeonNormal',
+                    'ChallengeMode_3',
+                    'PvPRanked_7',
+                    'Timerunning',
+                    'LegendaryCrafting_5',
+                    'Delves',
+                    'DungeonMythicJackpot',
+                    'DungeonHeroicJackpot',
+                    'RaidMythicExtended',
+                    'WeeklyRewardsAdditional',
+                    'WorldQuest_9',
+                    'DungeonNormalJackpot',
+                    'TemplateCharacter_4',
+                    'Timewalker',
+                    'NewCharacter',
+                    'TemplateCharacter_3',
+                    'Relinquished',
+                    'PvPHonorReward',
+                    'TemplateCharacter_1',
+                    'WorldQuest_3',
+                    'ChallengeModeJackpot',
+                    'PvPRanked_3',
+                    'RaidNormal',
+                    'RaidMythic',
+                    'PvPUnranked_2',
+                    'Torghast',
+                    'WorldQuest_1',
+                    'RaidHeroicExtended_2',
+                    'LegendaryCrafting_3',
+                    'RaidNormalExtended_2',
+                    'RaidFinder',
+                    'ChallengeMode_2',
+                    'PvPRanked_9',
+                    'ChallengeMode_4',
+                    'LegendaryCrafting_7',
+                    'CharacterBoost_3',
+                    'RaidHeroicExtended',
+                    'DungeonLevelUp_1',
+                    'RaidFinderExtended',
+                    'QuestReward',
+                    'DungeonLevelUp_2',
+                    'QuestBonusLoot',
+                    'RaidNormalExtended',
+                    'CorpseRecovery',
+                    'LegendaryCrafting_4',
+                    'RaidFinderExtended_3',
+                    'BlackMarket',
+                    'WarMode',
+                    'LegendaryCrafting_9',
+                    'WorldQuestJackpot',
+                    'RaidHeroic',
+                    'WorldQuest_7',
+                    'CharacterBoost_2',
+                    'LegendaryCrafting_1',
+                    'WorldQuest_4',
+                    'WorldQuest_10',
+                    'DungeonMythic',
+                    'ScenarioHeroic',
+                    'LegendaryCrafting_8',
+                    'PvPUnranked_7',
+                    'Vendor',
+                    'PvPUnranked_5',
+                    'TemplateCharacter_2',
+                    'TournamentRealm',
+                    'WorldQuest_12',
+                    'WorldQuest_13',
+                    'CharacterBoost_1',
+                    'PvPUnranked_4',
+                    'ScenarioNormal',
+                    'WorldQuest_5',
+                    'PvPUnranked_3',
+                    'PvPRanked_6',
+                    'PvPRanked_4',
+                    'RaidHeroicExtended_3',
+                    'WorldQuest_8',
+                    'RaidMythicExtended_3'
                 }
             },
             ItemDisplayTextDisplayStyle = {
                 fields = {
-                    'WorldQuestReward',
                     'ItemNameAndInfoText',
+                    'WorldQuestReward',
                     'PlayerChoiceReward',
                     'ItemNameOnlyCentered'
                 }
             },
             ItemDisplayTooltipEnabledType = {
                 fields = {
-                    'Enabled',
-                    'Disabled'
+                    'Disabled',
+                    'Enabled'
                 }
             },
             ItemGemColor = {
                 fields = {
-                    'PunchcardRed',
-                    'Life',
-                    'DominationBlood',
-                    'Holy',
+                    'DominationFrost',
+                    'Fire',
+                    'Hydraulic',
                     'Primordial',
+                    'Blood',
                     'Shadow',
                     'Red',
-                    'PunchcardBlue',
-                    'Tinker',
-                    'Blood',
-                    'Arcane',
-                    'Fel',
-                    'FutureUse',
-                    'Wind',
-                    'Meta',
-                    'Cypher',
-                    'DominationUnholy',
-                    'DominationFrost',
-                    'Yellow',
-                    'Blue',
-                    'Cogwheel',
-                    'Hydraulic',
                     'PunchcardYellow',
+                    'Iron',
+                    'PunchcardRed',
+                    'DominationUnholy',
+                    'Yellow',
+                    'Fel',
                     'Water',
-                    'Fire',
+                    'Tinker',
+                    'Cypher',
+                    'Meta',
+                    'DominationBlood',
+                    'PunchcardBlue',
+                    'Holy',
+                    'Blue',
+                    'Wind',
+                    'Life',
+                    'Cogwheel',
+                    'Arcane',
                     'Frost',
-                    'Iron'
+                    'FutureUse'
                 }
             },
             ItemGemSubclass = {
                 fields = {
-                    'Haste',
-                    'Multiplestats',
-                    'Versatility',
-                    'Spirit',
-                    'Artifactrelic',
-                    'Mastery',
-                    'Other',
-                    'Criticalstrike',
-                    'Strength',
                     'Intellect',
+                    'Haste',
+                    'Criticalstrike',
                     'Agility',
+                    'Spirit',
+                    'Multiplestats',
+                    'Strength',
+                    'Mastery',
+                    'Artifactrelic',
+                    'Other',
+                    'Versatility',
                     'Stamina'
                 }
             },
             ItemMiscellaneousSubclass = {
                 fields = {
-                    'Other',
+                    'Reagent',
                     'MountEquipment',
                     'Junk',
-                    'CompanionPet',
                     'Mount',
                     'Holiday',
-                    'Reagent'
+                    'Other',
+                    'CompanionPet'
                 }
             },
             ItemModification = {
                 fields = {
-                    'KeystoneAffix02',
-                    'ChangeModifiedCraftingStat_1',
-                    'KeystoneAffix0',
-                    'CraftingReagentSlot_12',
-                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_4',
-                    'Reforge',
-                    'CraftingReagentSlot_14',
-                    'CraftingReagentSlot_0',
-                    'CraftingReagentSlot_6',
-                    'CraftingReagentSlot_13',
-                    'CraftingReagentSlot_10',
-                    'CraftingReagentSlot_11',
-                    'KeystonePowerLevel',
-                    'CraftingReagentSlot_9',
-                    'TransmogrifyItemModifiedAppearanceIDSpec_2',
-                    'CraftingReagentSlot_8',
-                    'CraftingReagentSlot_4',
-                    'BattlePetLevel',
-                    'TransmogrifyOverrideEnchantVisualIDSpecAll',
-                    'CraftingReagentSlot_5',
-                    'CraftingReagentSlot_7',
-                    'TransmogrifyOverrideEnchantVisualIDSpec_1',
-                    'CraftingReagentSlot_3',
-                    'CraftingReagentSlot_2',
-                    'TransmogrifyItemModifiedAppearanceIDSpec_0',
-                    'TransmogrifyItemModifiedAppearanceIDSpec_3',
-                    'TransmogrifyOverrideEnchantVisualIDSpec_0',
-                    'PvPRating',
-                    'TransmogrifyItemModifiedAppearanceIDSpec_4',
-                    'CraftingSkillReagents',
-                    'ChangeModifiedCraftingStat_2',
-                    'CraftingQualityID',
-                    'ArtifactTier',
-                    'KeystoneAffix03',
-                    'TransmogrifyItemModifiedAppearanceIDSpecAll',
-                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_0',
-                    'TransmogrifyOverrideEnchantVisualIDSpec_3',
-                    'SoulbindConduitRank',
-                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_3',
-                    'TransmogrifyOverrideEnchantVisualIDSpec_4',
-                    'LegionArtifactKnowledgeObsolete',
-                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_2',
-                    'BattlePetCreaturedisplayid',
-                    'TimewalkerLevel',
-                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_1',
-                    'ArtifactAppearanceID',
-                    'ContentTuningID',
                     'IncrementLevelObsolete',
-                    'CraftingSkillWatermark',
-                    'BattlePetBreed',
-                    'CraftingDataID',
-                    'CraftingSkillLineAbilityID',
-                    'KeystoneMapChallengeModeID',
-                    'KeystoneAffix01',
-                    'TransmogrifyOverrideEnchantVisualIDSpec_2',
                     'TransmogrifyItemModifiedAppearanceIDSpec_1',
-                    'CraftingReagentSlot_1',
+                    'KeystoneMapChallengeModeID',
+                    'CraftingReagentSlot_4',
+                    'Reforge',
+                    'CraftingReagentSlot_10',
+                    'CraftingReagentSlot_14',
+                    'CraftingDataID',
+                    'BattlePetLevel',
+                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_3',
+                    'ChangeModifiedCraftingStat_2',
+                    'BattlePetSpecies',
+                    'CraftingReagentSlot_13',
+                    'TransmogrifyOverrideEnchantVisualIDSpec_4',
+                    'CraftingSkillWatermark',
+                    'TransmogrifyItemModifiedAppearanceIDSpec_2',
+                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_4',
+                    'CraftingReagentSlot_12',
+                    'CraftingReagentSlot_11',
+                    'TransmogrifyItemModifiedAppearanceIDSpec_4',
+                    'CraftingQualityID',
+                    'KeystonePowerLevel',
+                    'TransmogrifyItemModifiedAppearanceIDSpec_3',
+                    'CraftingReagentSlot_8',
                     'TransmogrifySecondaryItemModifiedAppearanceIDSpecAll',
-                    'BattlePetSpecies'
+                    'CraftingReagentSlot_7',
+                    'CraftingReagentSlot_2',
+                    'TransmogrifyOverrideEnchantVisualIDSpec_1',
+                    'CraftingReagentSlot_5',
+                    'CraftingReagentSlot_3',
+                    'CraftingReagentSlot_6',
+                    'CraftingReagentSlot_1',
+                    'CraftingReagentSlot_0',
+                    'TransmogrifyOverrideEnchantVisualIDSpecAll',
+                    'ChangeModifiedCraftingStat_1',
+                    'CraftingSkillReagents',
+                    'TransmogrifyItemModifiedAppearanceIDSpec_0',
+                    'KeystoneAffix01',
+                    'CraftingSkillLineAbilityID',
+                    'KeystoneAffix03',
+                    'ArtifactAppearanceID',
+                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_2',
+                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_0',
+                    'KeystoneAffix02',
+                    'ContentTuningID',
+                    'PvPRating',
+                    'TransmogrifySecondaryItemModifiedAppearanceIDSpec_1',
+                    'TransmogrifyOverrideEnchantVisualIDSpec_2',
+                    'TimewalkerLevel',
+                    'ArtifactTier',
+                    'BattlePetBreed',
+                    'TransmogrifyItemModifiedAppearanceIDSpecAll',
+                    'TransmogrifyOverrideEnchantVisualIDSpec_3',
+                    'LegionArtifactKnowledgeObsolete',
+                    'TransmogrifyOverrideEnchantVisualIDSpec_0',
+                    'SoulbindConduitRank',
+                    'KeystoneAffix0',
+                    'CraftingReagentSlot_9',
+                    'BattlePetCreaturedisplayid'
                 }
             },
             ItemProfessionSubclass = {
                 fields = {
+                    'Alchemy',
+                    'Engineering',
+                    'Blacksmithing',
+                    'Skinning',
+                    'Archaeology',
                     'Leatherworking',
+                    'Inscription',
+                    'Enchanting',
+                    'Tailoring',
+                    'Fishing',
                     'Herbalism',
                     'Mining',
-                    'Alchemy',
-                    'Inscription',
                     'Jewelcrafting',
-                    'Cooking',
-                    'Skinning',
-                    'Blacksmithing',
-                    'Archaeology',
-                    'Enchanting',
-                    'Fishing',
-                    'Tailoring',
-                    'Engineering'
+                    'Cooking'
                 }
             },
             ItemQuality = {
                 fields = {
-                    'Heirloom',
-                    'Uncommon',
-                    'Common',
-                    'Artifact',
-                    'Legendary',
-                    'Poor',
-                    'WoWToken',
                     'Epic',
-                    'Rare'
+                    'Common',
+                    'WoWToken',
+                    'Heirloom',
+                    'Rare',
+                    'Artifact',
+                    'Poor',
+                    'Legendary',
+                    'Uncommon'
                 }
             },
             ItemReagentSubclass = {
                 fields = {
-                    'ContextToken',
+                    'Reagent',
                     'Keystone',
-                    'Reagent'
+                    'ContextToken'
                 }
             },
             ItemRecipeSubclass = {
                 fields = {
+                    'Tailoring',
+                    'Engineering',
+                    'Blacksmithing',
+                    'Book',
                     'Leatherworking',
+                    'Enchanting',
+                    'Inscription',
                     'Fishing',
                     'Alchemy',
-                    'Inscription',
-                    'Jewelcrafting',
-                    'Cooking',
                     'FirstAid',
-                    'Blacksmithing',
-                    'Enchanting',
-                    'Engineering',
-                    'Tailoring',
-                    'Book'
+                    'Jewelcrafting',
+                    'Cooking'
                 }
             },
             ItemRecraftFlags = {
@@ -40882,222 +40883,222 @@ globals = {
             },
             ItemRedundancySlot = {
                 fields = {
-                    'Waist',
-                    'Chest',
-                    'Neck',
-                    'Hand',
-                    'Offhand',
-                    'Head',
-                    'Wrist',
-                    'OnehandWeaponSecond',
-                    'OnehandWeapon',
+                    'Legs',
                     'MainhandWeapon',
-                    'Shoulder',
+                    'Hand',
+                    'OnehandWeapon',
+                    'Waist',
                     'Feet',
-                    'Twohand',
+                    'Neck',
+                    'Head',
                     'Trinket',
+                    'Offhand',
+                    'Chest',
+                    'Shoulder',
+                    'OnehandWeaponSecond',
+                    'Twohand',
+                    'Wrist',
                     'Cloak',
-                    'Finger',
-                    'Legs'
+                    'Finger'
                 }
             },
             ItemSlotFilterType = {
                 fields = {
-                    'Head',
-                    'NoFilter',
-                    'Waist',
-                    'Chest',
-                    'Other',
-                    'Wrist',
-                    'OffHand',
                     'Neck',
-                    'Legs',
-                    'Shoulder',
-                    'Feet',
-                    'Cloak',
+                    'Head',
+                    'OffHand',
+                    'NoFilter',
+                    'Other',
                     'Trinket',
-                    'MainHand',
                     'Finger',
-                    'Hand'
+                    'Chest',
+                    'Shoulder',
+                    'MainHand',
+                    'Waist',
+                    'Feet',
+                    'Legs',
+                    'Cloak',
+                    'Hand',
+                    'Wrist'
                 }
             },
             ItemSocketType = {
                 fields = {
-                    'None',
-                    'Life',
-                    'Holy',
+                    'Fire',
+                    'Hydraulic',
                     'Primordial',
-                    'Shadow',
-                    'Red',
-                    'PunchcardBlue',
-                    'Cypher',
-                    'Tinker',
                     'Blood',
-                    'Arcane',
-                    'Fel',
-                    'FutureUse',
-                    'Wind',
-                    'Meta',
-                    'Domination',
+                    'Shadow',
+                    'None',
+                    'Red',
                     'PunchcardYellow',
+                    'Iron',
+                    'PunchcardRed',
                     'Prismatic',
                     'Yellow',
-                    'Blue',
-                    'Cogwheel',
-                    'Hydraulic',
-                    'PunchcardRed',
+                    'Fel',
                     'Water',
-                    'Fire',
+                    'Tinker',
+                    'Cypher',
+                    'Meta',
+                    'Domination',
+                    'PunchcardBlue',
+                    'Holy',
+                    'Blue',
+                    'Wind',
+                    'Life',
+                    'Cogwheel',
+                    'Arcane',
                     'Frost',
-                    'Iron'
+                    'FutureUse'
                 }
             },
             ItemSoundType = {
                 fields = {
-                    'Use',
-                    'Pickup',
                     'Close',
-                    'Drop'
+                    'Pickup',
+                    'Drop',
+                    'Use'
                 }
             },
             ItemSubclassDisplay = {
                 fields = {
-                    'HideSubclassInAuction',
                     'HideSubclassInTooltips',
-                    'ShowItemCount'
+                    'ShowItemCount',
+                    'HideSubclassInAuction'
                 }
             },
             ItemSubclassFlag = {
                 fields = {
-                    'ItemsubclassQuivernotrequired',
-                    'WeaponsubclassIsthrown',
-                    'ArmorsubclassLfgscalingarmor',
-                    'WeaponsubclassCanparry',
-                    'ItemsubclassUsesInvtype',
-                    'WeaponsubclassIsunarmed',
-                    'WeaponsubclassIsrifle',
-                    'WeaponsubclassDeprecatedReuseMe',
+                    'WeaponsubclassRanged',
                     'WeaponsubclassRighthandRanged',
                     'WeaponsubclassSetfingerseq',
-                    'WeaponsubclassRanged'
+                    'WeaponsubclassIsthrown',
+                    'ItemsubclassUsesInvtype',
+                    'WeaponsubclassIsunarmed',
+                    'WeaponsubclassCanparry',
+                    'ArmorsubclassLfgscalingarmor',
+                    'WeaponsubclassDeprecatedReuseMe',
+                    'WeaponsubclassIsrifle',
+                    'ItemsubclassQuivernotrequired'
                 }
             },
             ItemTryOnReason = {
                 fields = {
-                    'DataPending',
                     'WrongRace',
+                    'DataPending',
                     'NotEquippable',
                     'Success'
                 }
             },
             ItemWeaponSubclass = {
                 fields = {
+                    'Warglaive',
+                    'Axe1H',
+                    'Mace2H',
+                    'Sword1H',
+                    'Thrown',
+                    'Fishingpole',
+                    'Axe2H',
+                    'Obsolete3',
+                    'Dagger',
+                    'Generic',
+                    'Staff',
+                    'Wand',
+                    'Sword2H',
+                    'Catclaw',
                     'Mace1H',
                     'Polearm',
-                    'Warglaive',
-                    'Dagger',
-                    'Bows',
-                    'Thrown',
-                    'Axe2H',
-                    'Sword2H',
-                    'Bearclaw',
-                    'Wand',
-                    'Guns',
-                    'Obsolete3',
-                    'Fishingpole',
                     'Crossbow',
-                    'Sword1H',
-                    'Catclaw',
                     'Unarmed',
-                    'Generic',
-                    'Mace2H',
-                    'Staff',
-                    'Axe1H'
+                    'Bows',
+                    'Bearclaw',
+                    'Guns'
                 }
             },
             Itemclassfilterflags = {
                 fields = {
-                    'Key',
-                    'Gem',
-                    'Tradegoods',
-                    'Container',
                     'Armor',
-                    'Reagent',
                     'CurrencyTokenObsolete',
-                    'Weapon',
-                    'Glyph',
-                    'Consumable',
-                    'Battlepet',
-                    'Projectile',
+                    'Key',
+                    'Reagent',
                     'Miscellaneous',
-                    'Quiver',
-                    'PermanentObsolete',
-                    'Questitemclassfilterflags',
                     'Recipe',
-                    'ItemEnhancement'
+                    'Container',
+                    'Consumable',
+                    'ItemEnhancement',
+                    'Weapon',
+                    'Quiver',
+                    'Glyph',
+                    'Gem',
+                    'PermanentObsolete',
+                    'Tradegoods',
+                    'Questitemclassfilterflags',
+                    'Projectile',
+                    'Battlepet'
                 }
             },
             Itemsetflags = {
                 fields = {
-                    'Legacy',
+                    'UseItemHistorySetSlots',
                     'RequiresPvPTalentsActive',
-                    'UseItemHistorySetSlots'
+                    'Legacy'
                 }
             },
             JailersTowerType = {
                 fields = {
-                    'AdamantVaults',
+                    'TormentChamberThrall',
                     'Mortregar',
                     'TwistingCorridors',
+                    'SkoldusHalls',
                     'FractureChambers',
-                    'ForgottenCatacombs',
-                    'Soulforges',
-                    'BossRush',
-                    'Ossuary',
-                    'TormentChamberJaina',
+                    'AdamantVaults',
                     'Coldheart',
-                    'ArkobanHall',
-                    'TormentChamberThrall',
+                    'Soulforges',
                     'TormentChamberAnduin',
+                    'BossRush',
+                    'TormentChamberJaina',
+                    'Ossuary',
                     'UpperReaches',
-                    'SkoldusHalls'
+                    'ForgottenCatacombs',
+                    'ArkobanHall'
                 }
             },
             JournalEncounterFlags = {
                 fields = {
                     'LimitDifficulties',
-                    'Obsolete',
+                    'AllianceOnly',
                     'HordeOnly',
-                    'NoMap',
+                    'Obsolete',
                     'InternalOnly',
-                    'AllianceOnly'
+                    'NoMap'
                 }
             },
             JournalEncounterIconFlags = {
                 fields = {
-                    'Bleed',
-                    'Tank',
-                    'Curse',
-                    'Mythic',
-                    'Enrage',
-                    'Poison',
-                    'Healer',
-                    'Disease',
                     'Magic',
+                    'Enrage',
+                    'Tank',
                     'Heroic',
                     'Important',
+                    'Mythic',
+                    'Curse',
+                    'Disease',
+                    'Dps',
+                    'Healer',
+                    'Bleed',
                     'Deadly',
                     'Interruptible',
-                    'Dps'
+                    'Poison'
                 }
             },
             JournalEncounterItemFlags = {
                 fields = {
-                    'DisplayAsPerPlayerLoot',
+                    'LimitDifficulties',
                     'Obsolete',
+                    'DisplayAsPerPlayerLoot',
                     'DisplayAsExtremelyRare',
-                    'DisplayAsVeryRare',
-                    'LimitDifficulties'
+                    'DisplayAsVeryRare'
                 }
             },
             JournalEncounterLocFlags = {
@@ -41109,8 +41110,8 @@ globals = {
                 fields = {
                     'Generic',
                     'Overview',
-                    'Creature',
-                    'Ability'
+                    'Ability',
+                    'Creature'
                 }
             },
             JournalEncounterSectionFlags = {
@@ -41121,69 +41122,69 @@ globals = {
             },
             JournalInstanceFlags = {
                 fields = {
-                    'DoNotDisplayInstance',
                     'Timewalker',
-                    'HideUserSelectableDifficulty'
+                    'HideUserSelectableDifficulty',
+                    'DoNotDisplayInstance'
                 }
             },
             JournalLinkTypes = {
                 fields = {
-                    'Instance',
-                    'Tier',
                     'Section',
-                    'Encounter'
+                    'Instance',
+                    'Encounter',
+                    'Tier'
                 }
             },
             LFGEntryPlaystyle = {
                 fields = {
-                    'None',
-                    'Casual',
                     'Hardcore',
-                    'Standard'
+                    'Standard',
+                    'Casual',
+                    'None'
                 }
             },
             LFGListDisplayType = {
                 fields = {
-                    'HideAll',
-                    'PlayerCount',
-                    'ClassEnumerate',
                     'RoleCount',
                     'Comment',
-                    'RoleEnumerate'
+                    'RoleEnumerate',
+                    'ClassEnumerate',
+                    'PlayerCount',
+                    'HideAll'
                 }
             },
             LFGListFilter = {
                 fields = {
                     'PvE',
-                    'PvP',
-                    'Recommended',
-                    'CurrentSeason',
                     'NotRecommended',
-                    'NotCurrentSeason',
+                    'Timerunning',
                     'CurrentExpansion',
-                    'Timerunning'
+                    'PvP',
+                    'CurrentSeason',
+                    'Recommended',
+                    'NotCurrentSeason'
                 }
             },
             LFGRole = {
                 fields = {
-                    'Healer',
                     'Damage',
-                    'Tank'
+                    'Tank',
+                    'Healer'
                 }
             },
             LanguageFlag = {
                 fields = {
-                    'IsExotic',
                     'HiddenFromPlayer',
-                    'HideLanguageNameInChat'
+                    'HideLanguageNameInChat',
+                    'IsExotic'
                 }
             },
             LinkedCurrencyFlags = {
                 fields = {
-                    'AddIgnoresMax',
                     'IgnoreAdd',
+                    'IgnoreSubtract',
                     'SuppressChatLog',
-                    'IgnoreSubtract'
+                    'AddIgnoresMax'
                 }
             },
             LoadConfigResult = {
@@ -41196,10 +41197,10 @@ globals = {
             },
             LootSlotType = {
                 fields = {
-                    'None',
                     'Money',
+                    'Item',
                     'Currency',
-                    'Item'
+                    'None'
                 }
             },
             MajorFactionFeatureAbility = {
@@ -41211,28 +41212,28 @@ globals = {
             },
             MajorFactionType = {
                 fields = {
-                    'None',
-                    'DragonscaleExpedition',
                     'ValdrakkenAccord',
+                    'DragonscaleExpedition',
+                    'IskaaraTuskarr',
                     'MaruukCentaur',
-                    'IskaaraTuskarr'
+                    'None'
                 }
             },
             ManipulatorEventType = {
                 fields = {
                     'Start',
                     'Delete',
-                    'Move',
-                    'Complete'
+                    'Complete',
+                    'Move'
                 }
             },
             MapCanvasPosition = {
                 fields = {
-                    'None',
-                    'TopLeft',
-                    'BottomLeft',
                     'TopRight',
-                    'BottomRight'
+                    'BottomRight',
+                    'BottomLeft',
+                    'TopLeft',
+                    'None'
                 }
             },
             MapIconUIWidgetSetType = {
@@ -41244,17 +41245,17 @@ globals = {
             MapOverlayDisplayLocation = {
                 fields = {
                     'TopRight',
-                    'TopLeft',
-                    'BottomLeft',
                     'Hidden',
+                    'BottomRight',
+                    'BottomLeft',
                     'Default',
-                    'BottomRight'
+                    'TopLeft'
                 }
             },
             MapPinAnimationType = {
                 fields = {
-                    'None',
-                    'Pulse'
+                    'Pulse',
+                    'None'
                 }
             },
             MicroMenuOrder = {
@@ -41265,46 +41266,46 @@ globals = {
             },
             MicroMenuOrientation = {
                 fields = {
-                    'Horizontal',
-                    'Vertical'
+                    'Vertical',
+                    'Horizontal'
                 }
             },
             MinimapTrackingFilter = {
                 fields = {
-                    'VendorReagent',
-                    'QuestPoIs',
-                    'Stablemaster',
-                    'TaxiNode',
-                    'Auctioneer',
-                    'Repair',
-                    'POI',
-                    'VendorPoison',
-                    'ItemUpgrade',
-                    'Innkeeper',
                     'Mailbox',
-                    'Digsites',
+                    'QuestPoIs',
+                    'Battlemaster',
+                    'Auctioneer',
+                    'Innkeeper',
+                    'VenderFood',
+                    'TrainerProfession',
                     'TrivialQuests',
                     'Focus',
-                    'Banker',
-                    'TrainerProfession',
-                    'VenderFood',
-                    'Unfiltered',
-                    'Transmogrifier',
+                    'Repair',
                     'Target',
+                    'VendorPoison',
+                    'ItemUpgrade',
+                    'Digsites',
+                    'TaxiNode',
+                    'POI',
                     'Barber',
-                    'Battlemaster'
+                    'Banker',
+                    'VendorReagent',
+                    'Transmogrifier',
+                    'Stablemaster',
+                    'Unfiltered'
                 }
             },
             ModelBlendOperation = {
                 fields = {
-                    'None',
-                    'Anim'
+                    'Anim',
+                    'None'
                 }
             },
             ModelLightType = {
                 fields = {
-                    'Directional',
-                    'Point'
+                    'Point',
+                    'Directional'
                 }
             },
             ModelSceneSetting = {
@@ -41314,252 +41315,252 @@ globals = {
             },
             ModelSceneType = {
                 fields = {
-                    'HeartOfAzeroth',
-                    'PartyPose',
-                    'PetJournalCard',
                     'CommentatorVictoryFanfare',
-                    'PetJournalLoadout',
-                    'ShopCard',
-                    'PvPWarModeOrb',
-                    'JailersTowerAnimaGlow',
-                    'AzeritePowers',
-                    'ArtifactTier2',
-                    'MountJournal',
-                    'AzeriteItemLevelUpToast',
+                    'ArtifactRelicTalentEffect',
                     'EncounterJournal',
-                    'Soulbinds',
+                    'ShopCard',
+                    'PartyPose',
+                    'PvPWarModeFire',
+                    'PetJournalLoadout',
+                    'AzeritePowers',
                     'AzeriteRewardGlow',
+                    'JailersTowerAnimaGlow',
+                    'Soulbinds',
+                    'PvPWarModeOrb',
+                    'MountJournal',
+                    'PetJournalCard',
+                    'ArtifactTier2',
+                    'ArtifactTier2ForgingScene',
+                    'HeartOfAzeroth',
                     'ArtifactTier2SlamEffect',
                     'WorldMapThreat',
-                    'PvPWarModeFire',
-                    'ArtifactRelicTalentEffect',
-                    'ArtifactTier2ForgingScene'
+                    'AzeriteItemLevelUpToast'
                 }
             },
             ModelSoundTagType = {
                 fields = {
-                    'Looping',
-                    'Oneshot'
+                    'Oneshot',
+                    'Looping'
                 }
             },
             MountType = {
                 fields = {
-                    'Aquatic',
-                    'Ground',
                     'Dragonriding',
-                    'Flying'
+                    'Ground',
+                    'Flying',
+                    'Aquatic'
                 }
             },
             MountTypeFlag = {
                 fields = {
-                    'IsDragonRidingMount',
                     'IsFlyingMount',
+                    'IsDragonRidingMount',
                     'IsAquaticMount'
                 }
             },
             NavigationState = {
                 fields = {
+                    'Invalid',
                     'Disabled',
-                    'Occluded',
                     'InRange',
-                    'Invalid'
+                    'Occluded'
                 }
             },
             NodeOpFailureReason = {
                 fields = {
-                    'None',
-                    'MissingEdgeConnection',
-                    'MaxRank',
-                    'WrongTreeID',
-                    'WrongSelection',
-                    'NodeNotFound',
-                    'MissingRequiredEdge',
-                    'LevelTooLow',
-                    'TreeFlaggedNoRefund',
-                    'NotEnoughSourcedCurrencySpent',
-                    'DataError',
                     'EntryNotFound',
-                    'HasMutuallyExclusiveEdge',
-                    'NotEnoughSourcedCurrency',
-                    'NodeNeverPurchasable',
                     'RequiredForCondition',
-                    'NotEnoughCurrencySpent',
+                    'MaxRank',
+                    'NotEnoughGoldSpent',
+                    'MissingRequiredEdge',
+                    'None',
+                    'NotEnoughSourcedCurrencySpent',
+                    'TreeFlaggedNoRefund',
+                    'LevelTooLow',
+                    'WrongSelection',
+                    'NodeNeverPurchasable',
                     'NotEnoughCurrency',
+                    'NotEnoughCurrencySpent',
+                    'MissingEdgeConnection',
+                    'NodeNotFound',
+                    'SameSelection',
+                    'NotEnoughGold',
+                    'WrongTreeID',
+                    'NotEnoughSourcedCurrency',
+                    'DataError',
+                    'WrongSpec',
                     'MissingQuest',
                     'RequiredForEdge',
-                    'SameSelection',
-                    'WrongSpec',
-                    'NotEnoughGold',
                     'MissingAchievement',
-                    'NotEnoughGoldSpent'
+                    'HasMutuallyExclusiveEdge'
                 }
             },
             PartyRequestJoinRelation = {
                 fields = {
-                    'None',
                     'Club',
                     'Friend',
+                    'Guild',
                     'NumPartyRequestJoinRelations',
-                    'Guild'
+                    'None'
                 }
             },
             PerksVendorCategoryType = {
                 fields = {
-                    'Illusion',
                     'Mount',
                     'Transmog',
-                    'Pet',
+                    'Illusion',
                     'Toy',
-                    'Transmogset'
+                    'Transmogset',
+                    'Pet'
                 }
             },
             PermanentChatChannelType = {
                 fields = {
-                    'None',
+                    'Zone',
                     'Communities',
                     'Custom',
-                    'Zone'
+                    'None'
                 }
             },
             PetBattleQueueStatus = {
                 fields = {
-                    'None',
-                    'JoinFailedJournalLock',
-                    'AlreadyQueued',
-                    'Matchmaking',
-                    'MatchOpponentDeclined',
-                    'Removed',
-                    'Suspended',
-                    'LostConnection',
-                    'ProposalTimedOut',
-                    'Shutdown',
-                    'InBattle',
-                    'JoinFailedNeutral',
-                    'NoBattlingHere',
                     'Unsuspended',
-                    'RequeuedAfterOpponentRemoved',
                     'MatchAccepted',
-                    'JoinFailedSlots',
-                    'MatchDeclined',
-                    'RequeuedAfterInternalError',
+                    'AlreadyQueued',
+                    'None',
                     'JoinFailed',
                     'QueuedUpdate',
-                    'Queued'
+                    'JoinFailedNeutral',
+                    'Matchmaking',
+                    'Shutdown',
+                    'Queued',
+                    'NoBattlingHere',
+                    'MatchOpponentDeclined',
+                    'InBattle',
+                    'Suspended',
+                    'LostConnection',
+                    'RequeuedAfterOpponentRemoved',
+                    'ProposalTimedOut',
+                    'Removed',
+                    'JoinFailedJournalLock',
+                    'RequeuedAfterInternalError',
+                    'MatchDeclined',
+                    'JoinFailedSlots'
                 }
             },
             PetJournalError = {
                 fields = {
-                    'None',
+                    'PetIsDead',
+                    'NoFavoritesToSummon',
+                    'InvalidFaction',
                     'JournalIsLocked',
                     'InvalidCovenant',
                     'NoValidRandomSummon',
-                    'NoFavoritesToSummon',
-                    'InvalidFaction',
-                    'PetIsDead'
+                    'None'
                 }
             },
             PetbattleAuraStateFlags = {
                 fields = {
-                    'None',
-                    'Canceled',
                     'InitDisabled',
                     'Infinite',
                     'RemoveEventHandled',
                     'CountdownFirstRound',
-                    'JustApplied'
+                    'JustApplied',
+                    'Canceled',
+                    'None'
                 }
             },
             PetbattleCheatFlags = {
                 fields = {
-                    'None',
-                    'AutoPlay'
+                    'AutoPlay',
+                    'None'
                 }
             },
             PetbattleEffectFlags = {
                 fields = {
-                    'None',
-                    'Unkillable',
-                    'Strong',
-                    'Crit',
+                    'Reflect',
+                    'InvalidTarget',
+                    'Dodge',
+                    'Weak',
                     'Blocked',
                     'SuccessChain',
-                    'Weak',
+                    'None',
                     'Immune',
-                    'Miss',
-                    'Dodge',
-                    'Absorb',
-                    'AuraReapply',
-                    'InvalidTarget',
                     'Heal',
-                    'Reflect'
+                    'AuraReapply',
+                    'Absorb',
+                    'Strong',
+                    'Unkillable',
+                    'Miss',
+                    'Crit'
                 }
             },
             PetbattleEffectType = {
                 fields = {
-                    'AuraCancel',
-                    'ReplacePet',
-                    'AuraProcessingEnd',
-                    'AuraProcessingBegin',
-                    'AuraApply',
-                    'NpcEmote',
-                    'SetMaxHealth',
-                    'TriggerAbility',
-                    'SetPower',
+                    'StatusChange',
                     'SetHealth',
                     'WorldStateUpdate',
-                    'SetSpeed',
-                    'AbilityChange',
-                    'StatusChange',
-                    'AuraChange',
-                    'OverrideAbility',
+                    'SetPower',
                     'SetState',
-                    'PetSwap'
+                    'SetSpeed',
+                    'AuraProcessingBegin',
+                    'AuraProcessingEnd',
+                    'AuraChange',
+                    'PetSwap',
+                    'TriggerAbility',
+                    'AbilityChange',
+                    'NpcEmote',
+                    'OverrideAbility',
+                    'SetMaxHealth',
+                    'ReplacePet',
+                    'AuraCancel',
+                    'AuraApply'
                 }
             },
             PetbattleEnviros = {
                 fields = {
-                    'Weather',
                     'Pad1',
+                    'Weather',
                     'Pad0'
                 }
             },
             PetbattleInputMoveMsgDebugFlag = {
                 fields = {
-                    'None',
+                    'DontValidate',
                     'EnemyCast',
-                    'DontValidate'
+                    'None'
                 }
             },
             PetbattleMoveType = {
                 fields = {
-                    'Trap',
-                    'Ability',
                     'Quit',
-                    'FinalRoundOk',
+                    'Trap',
                     'Pass',
+                    'FinalRoundOk',
+                    'Ability',
                     'Swap'
                 }
             },
             PetbattlePboid = {
                 fields = {
-                    'P1Pet_2',
-                    'P0Pet_2',
-                    'P1Pet_1',
-                    'EnvPad_1',
-                    'P0Pet_1',
-                    'EnvWeather',
-                    'EnvPad_0',
                     'P1Pet_0',
-                    'P0Pet_0'
+                    'EnvWeather',
+                    'P0Pet_1',
+                    'P0Pet_2',
+                    'P1Pet_2',
+                    'P0Pet_0',
+                    'EnvPad_1',
+                    'EnvPad_0',
+                    'P1Pet_1'
                 }
             },
             PetbattlePetStatus = {
                 fields = {
-                    'SwapInLocked',
                     'FlagNone',
-                    'SwapOutLocked',
+                    'FlagTrapped',
                     'Stunned',
-                    'FlagTrapped'
+                    'SwapInLocked',
+                    'SwapOutLocked'
                 }
             },
             PetbattlePlayer = {
@@ -41570,65 +41571,65 @@ globals = {
             },
             PetbattlePlayerInputFlags = {
                 fields = {
-                    'None',
                     'WaitingForPet',
-                    'AbilityLocked',
+                    'SwapLocked',
                     'TurnInProgress',
-                    'SwapLocked'
+                    'AbilityLocked',
+                    'None'
                 }
             },
             PetbattleResult = {
                 fields = {
-                    'FailNotATrainer',
-                    'FailNotHere',
-                    'FailNotHereObstructed',
-                    'FailNotWhileFlying',
-                    'FailNotWhileDead',
-                    'FailNotHereUnevenGround',
+                    'FailNoJournalLock',
+                    'FailInvalidLoadoutNoneSlotted',
                     'FailTargetInvalid',
+                    'FailNotWhileFlying',
+                    'FailNotWhileInCombat',
+                    'FailNotATrainer',
+                    'FailNotHereUnevenGround',
+                    'FailNotHere',
+                    'FailNotHereOnTransport',
+                    'FailInBattle',
+                    'FailDisconnect',
+                    'Success',
+                    'FailOpponentNotAvailable',
                     'FailLogout',
                     'FailRestrictedAccount',
-                    'Success',
-                    'FailDisconnect',
-                    'FailOpponentNotAvailable',
-                    'FailNoJournalLock',
-                    'FailWildPetTapped',
-                    'FailTargetNotCapturable',
-                    'FailDeclined',
                     'FailInvalidLoadoutAllDead',
-                    'FailTargetOutOfRange',
-                    'FailUnknown',
                     'FailInvalidLoadout',
-                    'FailInBattle',
-                    'FailInvalidLoadoutNoneSlotted',
-                    'FailNotHereOnTransport',
-                    'FailNotWhileInCombat'
+                    'FailWildPetTapped',
+                    'FailNotHereObstructed',
+                    'FailDeclined',
+                    'FailTargetNotCapturable',
+                    'FailUnknown',
+                    'FailNotWhileDead',
+                    'FailTargetOutOfRange'
                 }
             },
             PetbattleSlot = {
                 fields = {
-                    'Slot_1',
+                    'Slot_0',
                     'Slot_2',
-                    'Slot_0'
+                    'Slot_1'
                 }
             },
             PetbattleSlotAbility = {
                 fields = {
-                    'Ability_0',
                     'Ability_1',
+                    'Ability_0',
                     'Ability_2'
                 }
             },
             PetbattleSlotResult = {
                 fields = {
-                    'SlotLocked',
                     'NoPet',
+                    'SlotEmpty',
                     'Success',
                     'NoTracker',
-                    'NoSpeciesRec',
-                    'SlotEmpty',
-                    'Dead',
                     'Revoked',
+                    'NoSpeciesRec',
+                    'SlotLocked',
+                    'Dead',
                     'CantBattle'
                 }
             },
@@ -41636,39 +41637,39 @@ globals = {
                 fields = {
                     'WaitingPreBattle',
                     'WaitingForFrontPets',
-                    'CreatedFailed',
                     'Created',
-                    'FinalRound',
+                    'CreatedFailed',
                     'RoundInProgress',
+                    'FinalRound',
                     'Finished'
                 }
             },
             PetbattleTrapstatus = {
                 fields = {
-                    'CantTrapPetDead',
-                    'CantTrapTwice',
-                    'CanTrap',
-                    'CantTrapTrainerBattle',
-                    'CantTrapPetHealth',
+                    'Invalid',
                     'CantTrapPetNotCapturable',
-                    'CantTrapNoRoomInJournal',
                     'CantTrapNewbie',
-                    'Invalid'
+                    'CantTrapTrainerBattle',
+                    'CantTrapTwice',
+                    'CantTrapNoRoomInJournal',
+                    'CanTrap',
+                    'CantTrapPetDead',
+                    'CantTrapPetHealth'
                 }
             },
             PetbattleType = {
                 fields = {
                     'PvE',
+                    'Lfpb',
                     'PvP',
-                    'Npc',
-                    'Lfpb'
+                    'Npc'
                 }
             },
             PhaseReason = {
                 fields = {
-                    'ChromieTime',
-                    'Phasing',
                     'WarMode',
+                    'Phasing',
+                    'ChromieTime',
                     'Sharding'
                 }
             },
@@ -41680,31 +41681,31 @@ globals = {
             },
             PingResult = {
                 fields = {
-                    'FailedUnspecified',
                     'FailedSpamming',
-                    'FailedGeneric',
                     'FailedSquelched',
+                    'FailedGeneric',
+                    'Success',
                     'FailedDisabledByLeader',
-                    'FailedDisabledBySettings',
                     'FailedOutOfPingArea',
-                    'Success'
+                    'FailedUnspecified',
+                    'FailedDisabledBySettings'
                 }
             },
             PingSubjectType = {
                 fields = {
-                    'Warning',
-                    'AlertNotThreat',
-                    'OnMyWay',
                     'AlertThreat',
+                    'Assist',
                     'Attack',
-                    'Assist'
+                    'Warning',
+                    'OnMyWay',
+                    'AlertNotThreat'
                 }
             },
             PingTextureType = {
                 fields = {
-                    'Center',
                     'Expand',
-                    'Rotation'
+                    'Rotation',
+                    'Center'
                 }
             },
             PingTypeFlags = {
@@ -41716,20 +41717,20 @@ globals = {
                 fields = {
                     'Rare',
                     'Epic',
-                    'Uncommon',
-                    'Common'
+                    'Common',
+                    'Uncommon'
                 }
             },
             PlayerClubRequestStatus = {
                 fields = {
-                    'None',
-                    'Canceled',
-                    'Joined',
-                    'AutoApproved',
                     'JoinedAnother',
+                    'Canceled',
                     'Pending',
+                    'Joined',
                     'Approved',
-                    'Declined'
+                    'AutoApproved',
+                    'Declined',
+                    'None'
                 }
             },
             PlayerCurrencyFlags = {
@@ -41740,200 +41741,200 @@ globals = {
             },
             PlayerCurrencyFlagsDbFlags = {
                 fields = {
-                    'InBackpack',
+                    'Reuse1',
                     'IgnoreMaxQtyOnload',
                     'Reuse2',
                     'UnusedInUI',
-                    'Reuse1'
+                    'InBackpack'
                 }
             },
             PlayerInteractionType = {
                 fields = {
-                    'NewPlayerGuide',
-                    'Gossip',
-                    'TaxiNode',
-                    'ProfessionsCraftingOrder',
-                    'ItemInteraction',
-                    'JailersTowerBuffs',
-                    'GuildTabardVendor',
-                    'AdventureMap',
-                    'GarrTradeskill',
-                    'BlackMarketAuctioneer',
-                    'Registrar',
-                    'GarrRecruitment',
-                    'None',
-                    'BarbersChoice',
-                    'AzeriteRespec',
-                    'PlayerChoice',
-                    'Vendor',
-                    'Item',
-                    'VoidStorageBanker',
-                    'Binder',
-                    'LegendaryCrafting',
-                    'CovenantSanctum',
-                    'MajorFactionRenown',
-                    'LFGDungeon',
-                    'SpiritHealer',
-                    'PersonalTabardVendor',
-                    'Auctioneer',
-                    'ItemUpgrade',
-                    'GarrTalent',
-                    'ForgeMaster',
-                    'TalentMaster',
-                    'AlliedRaceDetailsGiver',
-                    'QuestGiver',
-                    'Banker',
-                    'ObliterumForge',
-                    'WorldMap',
-                    'TraitSystem',
-                    'Renown',
                     'Merchant',
-                    'ProfessionsCustomerOrder',
-                    'Professions',
-                    'WeeklyRewards',
-                    'BattleMaster',
-                    'PerksProgramVendor',
-                    'ChromieTime',
-                    'AzeriteForge',
-                    'GuildBanker',
-                    'TradePartner',
-                    'ContributionCollector',
-                    'AdventureJournal',
-                    'GarrMission',
-                    'Trainer',
-                    'CovenantPreview',
-                    'Soulbind',
-                    'AreaSpiritHealer',
-                    'GarrArchitect',
-                    'SpecializationMaster',
                     'AnimaDiversion',
+                    'None',
+                    'Registrar',
+                    'GarrTradeskill',
+                    'GuildTabardVendor',
+                    'Soulbind',
+                    'ProfessionsCraftingOrder',
+                    'BattleMaster',
                     'IslandQueue',
-                    'Trophy',
+                    'ObliterumForge',
+                    'CovenantPreview',
+                    'ChromieTime',
+                    'TaxiNode',
+                    'GarrRecruitment',
+                    'VoidStorageBanker',
+                    'SpecializationMaster',
+                    'ContributionCollector',
                     'ScrappingMachine',
-                    'ArtifactForge',
-                    'ShipmentCrafter',
-                    'Transmogrifier',
                     'MailInfo',
-                    'StableMaster',
-                    'PetitionVendor'
+                    'TraitSystem',
+                    'ProfessionsCustomerOrder',
+                    'GarrArchitect',
+                    'WeeklyRewards',
+                    'WorldMap',
+                    'QuestGiver',
+                    'Professions',
+                    'GarrTalent',
+                    'TradePartner',
+                    'AreaSpiritHealer',
+                    'ArtifactForge',
+                    'Gossip',
+                    'AzeriteRespec',
+                    'AlliedRaceDetailsGiver',
+                    'LFGDungeon',
+                    'PlayerChoice',
+                    'TalentMaster',
+                    'ForgeMaster',
+                    'PersonalTabardVendor',
+                    'ShipmentCrafter',
+                    'MajorFactionRenown',
+                    'Auctioneer',
+                    'JailersTowerBuffs',
+                    'Trainer',
+                    'BarbersChoice',
+                    'PerksProgramVendor',
+                    'AzeriteForge',
+                    'AdventureJournal',
+                    'Renown',
+                    'Binder',
+                    'Trophy',
+                    'Vendor',
+                    'ItemUpgrade',
+                    'CovenantSanctum',
+                    'NewPlayerGuide',
+                    'LegendaryCrafting',
+                    'GarrMission',
+                    'ItemInteraction',
+                    'GuildBanker',
+                    'PetitionVendor',
+                    'SpiritHealer',
+                    'AdventureMap',
+                    'Banker',
+                    'BlackMarketAuctioneer',
+                    'Item',
+                    'Transmogrifier',
+                    'StableMaster'
                 }
             },
             PlayerMentorshipApplicationResult = {
                 fields = {
-                    'Ineligible',
                     'AlreadyMentor',
+                    'Ineligible',
                     'Success'
                 }
             },
             PlayerMentorshipStatus = {
                 fields = {
-                    'None',
                     'Mentor',
-                    'Newcomer'
+                    'Newcomer',
+                    'None'
                 }
             },
             PointsModifierSourceType = {
                 fields = {
-                    'InstanceGroupSize',
-                    'FollowerLevelForCurrentShipment',
-                    'PvPTier',
-                    'FollowerLevelInBuilding',
-                    'ProfessionQualityLevel',
-                    'NumWeeklyRewardsThresholdsEarned',
-                    'CreatureClassification',
-                    'LootLevel',
-                    'ProgressiveEventNumRemainingForClass',
-                    'PvPBracketRatingSpecific',
-                    'WorldStateExpression',
-                    'PlayerCondition',
-                    'PercentThroughExpansion',
-                    'SalvagedItemIsMail',
-                    'WeeklyMythicPlusCount',
-                    'Reserved_2',
-                    'CreatureHealthMod',
-                    'RenownRapidCatchup',
-                    'HonorEarnedThisPvPMatch',
-                    'ProgressiveEventItemWinCount',
-                    'QuestExpansionID',
-                    'SalvagedItemIsLeather',
+                    'HasLegendaryCloakUpdgradeAvailable',
                     'FirstTimeQuestCompletionRewards',
-                    'CurrencyMaxDelta',
-                    'WorldStateValue',
-                    'ProfessionTraitRanksByLabel',
+                    'NumPlayersThatGainedDungeonScore',
+                    'FollowerLevelInBuilding',
+                    'SalvagedItemIsCloth',
                     'ProgressiveEventNumWinsForLootSpec',
+                    'FollowerQualityInBuilding',
+                    'InstanceGroupSize',
+                    'ProfessionRatingFinessePercent',
+                    'PvPBracketRatingCurrentInstance',
+                    'SalvagedItemIsMisc',
+                    'LootLevel',
+                    'ProgressiveEventNumRemainingForLootSpec',
+                    'ProfessionRatingPerceptionPercent',
+                    'ProgressiveEventItemWinCount',
+                    'NumLooters',
+                    'JailersTowerActiveFloorDifficulty',
+                    'Reserved_2',
+                    'TreasureItemPvalue',
+                    'PlayerCondition',
                     'QuestItemGroupMissCount',
-                    'ChallengeModeLevel',
-                    'PvPTeamSize',
+                    'PlayerKeystoneLevel',
+                    'FollowerQualityForCurrentShipment',
+                    'ProfessionQualityLevel',
+                    'CraftSkill',
+                    'PvPJackpotTier',
+                    'NumTappers',
+                    'SalvagedItemLevel',
+                    'ObjectLevel',
+                    'WorldStateExpression',
+                    'ProfessionTraitRanksByLabel',
+                    'CurrencyQuantity',
+                    'WeeklyMythicPlusCount',
+                    'AreaGroup',
+                    'ProgressiveEventMissCount',
+                    'WorldStateValue',
+                    'CurrencyMaxDelta',
+                    'PvPBracketRatingSpecific',
+                    'ParagonLevel',
+                    'NumWeeklyRewardsThresholdsEarned',
+                    'CreatureHealthMod',
+                    'SkillRank',
+                    'RenownRapidCatchup',
                     'ObjectLabelID',
                     'AutoMissionScalar',
-                    'ParagonLevel',
-                    'BaseItemLevel',
-                    'NumLooters',
-                    'CraftSkill',
-                    'ObjectLevel',
-                    'ProfessionRatingPerceptionPercent',
-                    'HasLegendaryCloakUpdgradeAvailable',
-                    'TreasureItemPvalue',
-                    'ProfessionRatingFinessePercent',
-                    'SalvagedItemLevel',
-                    'NumPlayersThatGainedDungeonScore',
+                    'PvPTeamSize',
                     'RenownCatchup',
+                    'PercentThroughExpansion',
                     'PlayerLevelContentTuningMax',
-                    'AreaGroup',
-                    'NumGroupFriends',
-                    'CurrencyQuantity',
-                    'SalvagedItemIsCloth',
-                    'SkillRank',
-                    'SalvagedItemIsMisc',
-                    'FollowerQualityForCurrentShipment',
-                    'ItemLevelHighWaterMarkAverage',
-                    'JailersTowerActiveFloorDifficulty',
-                    'NumLootSourceAuraStacks',
-                    'PvPJackpotTier',
-                    'PassesTreasureTrackingQuestEligibility',
-                    'PlayerLevel',
-                    'SalvagedItemIsPlate',
+                    'CreatureClassification',
                     'PercentThroughContentTuning',
-                    'ProgressiveEventMissCount',
-                    'NumTappers',
-                    'PvPBracketRatingCurrentInstance',
-                    'ProgressiveEventNumRemainingForLootSpec',
-                    'PlayerKeystoneLevel',
-                    'FollowerQualityInBuilding'
+                    'NumLootSourceAuraStacks',
+                    'FollowerLevelForCurrentShipment',
+                    'QuestExpansionID',
+                    'SalvagedItemIsPlate',
+                    'PlayerLevel',
+                    'ChallengeModeLevel',
+                    'HonorEarnedThisPvPMatch',
+                    'SalvagedItemIsMail',
+                    'SalvagedItemIsLeather',
+                    'ProgressiveEventNumRemainingForClass',
+                    'ItemLevelHighWaterMarkAverage',
+                    'PvPTier',
+                    'PassesTreasureTrackingQuestEligibility',
+                    'NumGroupFriends',
+                    'BaseItemLevel'
                 }
             },
             PowerType = {
                 fields = {
-                    'None',
+                    'Essence',
+                    'Pain',
+                    'Energy',
                     'AlternateQuest',
-                    'Chi',
-                    'AlternateMount',
+                    'LunarPower',
+                    'Alternate',
+                    'RuneUnholy',
+                    'None',
+                    'Obsolete2',
+                    'ArcaneCharges',
+                    'SoulShards',
+                    'Runes',
+                    'HealthCost',
                     'NumPowerTypes',
                     'Balance',
-                    'RuneBlood',
-                    'AlternateEncounter',
-                    'RuneUnholy',
-                    'Pain',
-                    'ComboPoints',
-                    'RuneFrost',
-                    'HealthCost',
-                    'Essence',
-                    'Mana',
-                    'Insanity',
-                    'Runes',
-                    'RunicPower',
-                    'LunarPower',
-                    'ArcaneCharges',
-                    'Fury',
                     'Focus',
+                    'AlternateMount',
+                    'AlternateEncounter',
                     'Obsolete',
-                    'SoulShards',
+                    'RuneFrost',
+                    'Chi',
+                    'RuneBlood',
+                    'Fury',
+                    'ComboPoints',
+                    'RunicPower',
+                    'Insanity',
                     'Rage',
                     'Maelstrom',
-                    'Alternate',
-                    'Obsolete2',
-                    'Energy',
-                    'HolyPower'
+                    'HolyPower',
+                    'Mana'
                 }
             },
             ProfTraitPerkNodeFlags = {
@@ -41944,21 +41945,21 @@ globals = {
             },
             Profession = {
                 fields = {
-                    'Leatherworking',
-                    'Herbalism',
-                    'Archaeology',
-                    'Mining',
                     'Alchemy',
-                    'Inscription',
-                    'Jewelcrafting',
-                    'Cooking',
+                    'Engineering',
                     'FirstAid',
-                    'Blacksmithing',
                     'Skinning',
+                    'Archaeology',
+                    'Inscription',
+                    'Leatherworking',
+                    'Cooking',
                     'Enchanting',
-                    'Fishing',
                     'Tailoring',
-                    'Engineering'
+                    'Fishing',
+                    'Herbalism',
+                    'Mining',
+                    'Jewelcrafting',
+                    'Blacksmithing'
                 }
             },
             ProfessionActionType = {
@@ -41969,45 +41970,45 @@ globals = {
             },
             ProfessionEffect = {
                 fields = {
-                    'ModDeftness',
                     'StatCraftingSpeed',
-                    'StatDeftness',
-                    'ModInspiration',
-                    'ModCraftReductionQuantity',
-                    'StatResourcefulness',
-                    'ModUnused_2',
-                    'ModResourcefulness',
-                    'ModPerception',
-                    'StatPerception',
-                    'DecreaseDifficulty',
-                    'StatMulticraft',
+                    'ModFinesse',
                     'Skill',
+                    'StatInspiration',
+                    'ModResourcefulness',
+                    'ModMulticraft',
+                    'StatPerception',
+                    'StatDeftness',
                     'ModCraftingSpeed',
                     'ModSkillGain',
-                    'AccumulateRanksByLabel',
-                    'ModCraftCritSize',
-                    'ModGatherExtraQuantity',
-                    'ModFinesse',
-                    'ModMulticraft',
-                    'ModUnused_1',
-                    'UnlockReagentSlot',
-                    'ModCraftExtraQuantity',
-                    'StatInspiration',
                     'IncreaseDifficulty',
+                    'DecreaseDifficulty',
+                    'ModCraftReductionQuantity',
+                    'ModGatherExtraQuantity',
+                    'StatMulticraft',
+                    'ModCraftCritSize',
+                    'ModCraftExtraQuantity',
+                    'ModUnused_2',
+                    'ModUnused_1',
+                    'AccumulateRanksByLabel',
+                    'ModInspiration',
+                    'ModDeftness',
+                    'UnlockReagentSlot',
+                    'ModPerception',
+                    'StatResourcefulness',
                     'StatFinesse'
                 }
             },
             ProfessionRating = {
                 fields = {
-                    'Unused_2',
+                    'Resourcefulness',
                     'Inspiration',
-                    'Perception',
-                    'Unused_1',
-                    'Deftness',
                     'Finesse',
-                    'CraftingSpeed',
+                    'Unused_1',
+                    'Perception',
                     'Multicraft',
-                    'Resourcefulness'
+                    'Unused_2',
+                    'CraftingSpeed',
+                    'Deftness'
                 }
             },
             ProfessionRatingType = {
@@ -42018,23 +42019,23 @@ globals = {
             },
             ProfessionsSpecPathState = {
                 fields = {
-                    'Locked',
                     'Completed',
+                    'Locked',
                     'Progressing'
                 }
             },
             ProfessionsSpecPerkState = {
                 fields = {
                     'Earned',
-                    'Pending',
-                    'Unearned'
+                    'Unearned',
+                    'Pending'
                 }
             },
             ProfessionsSpecTabState = {
                 fields = {
+                    'Unlockable',
                     'Locked',
-                    'Unlocked',
-                    'Unlockable'
+                    'Unlocked'
                 }
             },
             PvPFaction = {
@@ -42045,39 +42046,39 @@ globals = {
             },
             PvPMatchState = {
                 fields = {
-                    'Engaged',
                     'Waiting',
-                    'Complete',
-                    'PostRound',
+                    'Inactive',
                     'StartUp',
-                    'Inactive'
+                    'PostRound',
+                    'Engaged',
+                    'Complete'
                 }
             },
             PvPUnitClassification = {
                 fields = {
-                    'FlagCarrierHorde',
-                    'OrbCarrierGreen',
-                    'CartRunnerAlliance',
-                    'AssassinAlliance',
-                    'OrbCarrierPurple',
-                    'OrbCarrierOrange',
-                    'OrbCarrierBlue',
+                    'FlagCarrierNeutral',
                     'AssassinHorde',
-                    'CartRunnerHorde',
+                    'OrbCarrierBlue',
+                    'OrbCarrierPurple',
                     'FlagCarrierAlliance',
-                    'FlagCarrierNeutral'
+                    'FlagCarrierHorde',
+                    'OrbCarrierOrange',
+                    'CartRunnerAlliance',
+                    'OrbCarrierGreen',
+                    'CartRunnerHorde',
+                    'AssassinAlliance'
                 }
             },
             QuestCompleteSpellType = {
                 fields = {
                     'Spell',
-                    'LegacyBehavior',
-                    'Tradeskill',
-                    'Companion',
-                    'Ability',
                     'Follower',
+                    'Tradeskill',
+                    'LegacyBehavior',
+                    'Unlock',
                     'Aura',
-                    'Unlock'
+                    'Ability',
+                    'Companion'
                 }
             },
             QuestFrequency = {
@@ -42096,99 +42097,99 @@ globals = {
             },
             QuestSessionCommand = {
                 fields = {
-                    'None',
                     'Start',
+                    'Stop',
                     'SessionActiveNoCommand',
-                    'Stop'
+                    'None'
                 }
             },
             QuestSessionResult = {
                 fields = {
-                    'NotOwner',
-                    'AlreadyMember',
-                    'Restricted',
-                    'Ok',
                     'InRaid',
-                    'Timeout',
-                    'Left',
+                    'AlreadyMember',
                     'AlreadyActive',
-                    'Busy',
-                    'PartyDestroyed',
-                    'Resync',
-                    'OwnerRefused',
-                    'NotInParty',
-                    'Unknown',
-                    'MemberTimeout',
-                    'QuestNotCompleted',
                     'Empty',
-                    'AlreadyJoined',
+                    'Unknown',
+                    'OwnerRefused',
                     'NotActive',
-                    'InvalidOwner',
-                    'Logout',
-                    'MemberInCombat',
-                    'Joined',
-                    'OwnerLeft',
-                    'NotMember',
                     'RestrictedCrossFaction',
+                    'QuestNotCompleted',
+                    'PartyDestroyed',
+                    'Busy',
+                    'Timeout',
+                    'Joined',
+                    'InvalidOwner',
+                    'Restricted',
                     'InCombat',
-                    'InvalidPublicParty',
+                    'Left',
+                    'Ok',
                     'Disabled',
-                    'Started',
-                    'InPetBattle',
+                    'NotOwner',
+                    'NotInParty',
+                    'NotMember',
+                    'Logout',
                     'JoinRejected',
                     'Stopped',
+                    'InPetBattle',
+                    'Resync',
+                    'OwnerLeft',
+                    'MemberInCombat',
+                    'AlreadyJoined',
+                    'Started',
+                    'AlreadyOwner',
+                    'MemberTimeout',
                     'ReadyCheckFailed',
-                    'AlreadyOwner'
+                    'InvalidPublicParty'
                 }
             },
             QuestTag = {
                 fields = {
-                    'PvP',
-                    'Raid',
-                    'Raid25',
-                    'Group',
+                    'Scenario',
+                    'Heroic',
+                    'Raid10',
                     'CombatAlly',
                     'Account',
-                    'Legendary',
                     'Dungeon',
-                    'Scenario',
-                    'Raid10',
-                    'Heroic'
+                    'Raid25',
+                    'Legendary',
+                    'Group',
+                    'PvP',
+                    'Raid'
                 }
             },
             QuestTagType = {
                 fields = {
-                    'Islands',
-                    'CovenantCalling',
-                    'Raid',
-                    'RatedReward',
-                    'FactionAssault',
-                    'Tag',
-                    'Dungeon',
-                    'PvP',
-                    'Profession',
-                    'Threat',
                     'Contribution',
                     'Bounty',
-                    'Normal',
-                    'InvasionWrapper',
-                    'Invasion',
+                    'RatedReward',
+                    'Raid',
                     'PetBattle',
+                    'PvP',
+                    'CovenantCalling',
+                    'Islands',
+                    'Threat',
+                    'InvasionWrapper',
+                    'FactionAssault',
+                    'Dungeon',
+                    'Invasion',
+                    'Profession',
+                    'Tag',
+                    'Normal',
                     'DragonRiderRacing'
                 }
             },
             QuestWatchType = {
                 fields = {
-                    'Automatic',
-                    'Manual'
+                    'Manual',
+                    'Automatic'
                 }
             },
             RafLinkType = {
                 fields = {
-                    'None',
                     'Friend',
                     'Recruit',
-                    'Both'
+                    'Both',
+                    'None'
                 }
             },
             RafRecruitActivityState = {
@@ -42200,61 +42201,61 @@ globals = {
             },
             RafRecruitSubStatus = {
                 fields = {
-                    'Trial',
                     'Inactive',
+                    'Trial',
                     'Active'
                 }
             },
             RafRewardType = {
                 fields = {
-                    'Illusion',
                     'Mount',
-                    'Appearance',
-                    'Title',
                     'AppearanceSet',
-                    'Pet',
+                    'Invalid',
+                    'Appearance',
+                    'Illusion',
+                    'Title',
                     'GameTime',
-                    'Invalid'
+                    'Pet'
                 }
             },
             RaidGroupDisplayType = {
                 fields = {
                     'CombineGroupsHorizontal',
                     'SeparateGroupsHorizontal',
-                    'CombineGroupsVertical',
-                    'SeparateGroupsVertical'
+                    'SeparateGroupsVertical',
+                    'CombineGroupsVertical'
                 }
             },
             RcoCloseReason = {
                 fields = {
+                    'RcoCloseFulfill',
+                    'RcoCloseReject',
                     'RcoCloseCancel',
                     'RcoCloseGmCancel',
-                    'RcoCloseInvalid',
                     'RcoCloseExpire',
-                    'RcoCloseCrafterFulfill',
-                    'RcoCloseReject',
-                    'RcoCloseFulfill'
+                    'RcoCloseInvalid',
+                    'RcoCloseCrafterFulfill'
                 }
             },
             RecipeRequirementType = {
                 fields = {
-                    'Area',
+                    'Totem',
                     'SpellFocus',
-                    'Totem'
+                    'Area'
                 }
             },
             RecruitAFriendRewardsVersion = {
                 fields = {
-                    'UnusedVersionOne',
-                    'InvalidVersion',
                     'VersionThree',
-                    'VersionTwo'
+                    'VersionTwo',
+                    'UnusedVersionOne',
+                    'InvalidVersion'
                 }
             },
             RegisterAddonMessagePrefixResult = {
                 fields = {
-                    'DuplicatePrefix',
                     'MaxPrefixes',
+                    'DuplicatePrefix',
                     'InvalidPrefix',
                     'Success'
                 }
@@ -42262,89 +42263,89 @@ globals = {
             RelativeContentDifficulty = {
                 fields = {
                     'Fair',
-                    'Impossible',
+                    'Trivial',
                     'Easy',
                     'Difficult',
-                    'Trivial'
+                    'Impossible'
                 }
             },
             ReportMajorCategory = {
                 fields = {
-                    'GameplaySabotage',
+                    'InappropriateCommunication',
                     'InappropriateName',
                     'Cheating',
-                    'InappropriateCommunication'
+                    'GameplaySabotage'
                 }
             },
             ReportMinorCategory = {
                 fields = {
-                    'Advertisement',
-                    'Name',
-                    'TextChat',
-                    'IntentionallyFeeding',
-                    'GroupName',
-                    'GuildName',
-                    'BlockingProgress',
-                    'Hacking',
-                    'Description',
-                    'CharacterName',
-                    'BTag',
                     'Spam',
-                    'Botting',
+                    'Afk',
                     'Boosting',
-                    'Afk'
+                    'Name',
+                    'BTag',
+                    'GuildName',
+                    'CharacterName',
+                    'Advertisement',
+                    'GroupName',
+                    'Hacking',
+                    'TextChat',
+                    'BlockingProgress',
+                    'Botting',
+                    'Description',
+                    'IntentionallyFeeding'
                 }
             },
             ReportSubComplaintTypes = {
                 fields = {
-                    'Inappropriate',
-                    'Advertising'
+                    'Advertising',
+                    'Inappropriate'
                 }
             },
             ReportType = {
                 fields = {
-                    'GroupFinderPosting',
-                    'CraftingOrder',
                     'InWorld',
-                    'Calendar',
-                    'Friend',
                     'PvPGroupMember',
-                    'PvP',
                     'ClubFinderPosting',
+                    'Friend',
+                    'GroupFinderApplicant',
                     'Pet',
-                    'Chat',
                     'ClubFinderApplicant',
-                    'PvPScoreboard',
                     'Mail',
-                    'BattlePet',
+                    'GroupFinderPosting',
+                    'Chat',
+                    'CraftingOrder',
+                    'Calendar',
                     'ClubMember',
-                    'GroupMember',
-                    'GroupFinderApplicant'
+                    'BattlePet',
+                    'PvPScoreboard',
+                    'PvP',
+                    'GroupMember'
                 }
             },
             RuneforgePowerFilter = {
                 fields = {
+                    'All',
                     'Relevant',
                     'Available',
-                    'All',
                     'Unavailable'
                 }
             },
             RuneforgePowerState = {
                 fields = {
-                    'Invalid',
                     'Available',
+                    'Invalid',
                     'Unavailable'
                 }
             },
             ScriptedAnimationBehavior = {
                 fields = {
-                    'None',
-                    'TargetShake',
-                    'UIParentShake',
-                    'SourceRecoil',
                     'TargetKnockBack',
-                    'SourceCollideWithTarget'
+                    'UIParentShake',
+                    'TargetShake',
+                    'SourceRecoil',
+                    'SourceCollideWithTarget',
+                    'None'
                 }
             },
             ScriptedAnimationFlags = {
@@ -42354,41 +42355,41 @@ globals = {
             },
             ScriptedAnimationTrajectory = {
                 fields = {
-                    'AtTarget',
                     'Straight',
-                    'HalfwayBetween',
-                    'AtSource',
                     'CurveLeft',
+                    'AtTarget',
                     'CurveRandom',
-                    'CurveRight'
+                    'HalfwayBetween',
+                    'CurveRight',
+                    'AtSource'
                 }
             },
             ScrubStringFlags = {
                 fields = {
-                    'None',
-                    'TruncateNewLines',
+                    'StripControlCodes',
                     'AllowBarCodes',
-                    'StripControlCodes'
+                    'TruncateNewLines',
+                    'None'
                 }
             },
             SelfResurrectOptionType = {
                 fields = {
-                    'Spell',
-                    'Item'
+                    'Item',
+                    'Spell'
                 }
             },
             SendAddonMessageResult = {
                 fields = {
-                    'NotInGroup',
-                    'InvalidChannel',
-                    'TargetRequired',
-                    'InvalidMessage',
                     'Success',
-                    'AddonMessageThrottle',
-                    'ChannelThrottle',
-                    'GeneralError',
                     'InvalidChatType',
-                    'InvalidPrefix'
+                    'ChannelThrottle',
+                    'InvalidPrefix',
+                    'GeneralError',
+                    'InvalidMessage',
+                    'TargetRequired',
+                    'AddonMessageThrottle',
+                    'InvalidChannel',
+                    'NotInGroup'
                 }
             },
             SharedStringFlag = {
@@ -42398,42 +42399,42 @@ globals = {
             },
             SkinningState = {
                 fields = {
-                    'None',
-                    'Skinning',
                     'Looting',
+                    'Skinning',
+                    'Skinned',
                     'Reserved',
-                    'Skinned'
+                    'None'
                 }
             },
             SlotRegion = {
                 fields = {
-                    'Bank',
-                    'PlayerEquip',
-                    'ReagentBank',
+                    'Invalid',
                     'PlayerInv',
-                    'Invalid'
+                    'ReagentBank',
+                    'PlayerEquip',
+                    'Bank'
                 }
             },
             SocialWhoOrigin = {
                 fields = {
                     'Unknown',
-                    'Social',
                     'Item',
+                    'Social',
                     'Chat'
                 }
             },
             SoftTargetEnableFlags = {
                 fields = {
-                    'None',
                     'Any',
+                    'Kbm',
                     'Gamepad',
-                    'Kbm'
+                    'None'
                 }
             },
             SortPlayersBy = {
                 fields = {
-                    'Role',
                     'Alphabetical',
+                    'Role',
                     'Group'
                 }
             },
@@ -42444,13 +42445,13 @@ globals = {
             },
             SoulbindConduitInstallResult = {
                 fields = {
-                    'InvalidItem',
-                    'ForgeNotInProximity',
-                    'DuplicateConduit',
                     'SocketNotEmpty',
-                    'InvalidConduit',
                     'InvalidTalent',
-                    'Success'
+                    'Success',
+                    'InvalidConduit',
+                    'DuplicateConduit',
+                    'InvalidItem',
+                    'ForgeNotInProximity'
                 }
             },
             SoulbindConduitTransactionType = {
@@ -42462,114 +42463,114 @@ globals = {
             SoulbindConduitType = {
                 fields = {
                     'Flex',
-                    'Finesse',
                     'Potency',
+                    'Finesse',
                     'Endurance'
                 }
             },
             SoulbindNodeState = {
                 fields = {
                     'Unselected',
-                    'Selectable',
                     'Selected',
+                    'Selectable',
                     'Unavailable'
                 }
             },
             SpellDisplayBorderColor = {
                 fields = {
-                    'None',
-                    'Orange',
                     'Yellow',
-                    'Black',
+                    'Orange',
+                    'None',
+                    'Red',
                     'Blue',
                     'Green',
+                    'Black',
                     'Purple',
-                    'Red',
                     'White'
                 }
             },
             SpellDisplayIconDisplayType = {
                 fields = {
+                    'Circular',
                     'Debuff',
                     'NoBorder',
-                    'Circular',
                     'Buff'
                 }
             },
             SpellDisplayTextShownStateType = {
                 fields = {
-                    'Hidden',
-                    'Shown'
+                    'Shown',
+                    'Hidden'
                 }
             },
             SplashScreenType = {
                 fields = {
-                    'SeasonRollOver',
-                    'WhatsNew'
+                    'WhatsNew',
+                    'SeasonRollOver'
                 }
             },
             StatusBarColorTintValue = {
                 fields = {
-                    'None',
-                    'Orange',
                     'Yellow',
-                    'Black',
+                    'Orange',
+                    'None',
+                    'Red',
                     'Blue',
                     'Green',
+                    'Black',
                     'Purple',
-                    'Red',
                     'White'
                 }
             },
             StatusBarOverrideBarTextShownType = {
                 fields = {
-                    'Never',
-                    'OnlyOnMouseover',
                     'OnlyNotOnMouseover',
-                    'Always'
+                    'Never',
+                    'Always',
+                    'OnlyOnMouseover'
                 }
             },
             StatusBarValueTextType = {
                 fields = {
-                    'Percentage',
-                    'ValueOverMaxNormalized',
-                    'Value',
                     'TimeShowOneLevelOnly',
-                    'ValueOverMax',
+                    'ValueOverMaxNormalized',
                     'Hidden',
+                    'Percentage',
+                    'ValueOverMax',
+                    'Value',
                     'Time'
                 }
             },
             SubscriptionInterstitialResponseType = {
                 fields = {
-                    'WebRedirect',
                     'Clicked',
+                    'WebRedirect',
                     'Closed'
                 }
             },
             SubscriptionInterstitialType = {
                 fields = {
-                    'LeftNpeArea',
+                    'Standard',
                     'MaxLevel',
-                    'Standard'
+                    'LeftNpeArea'
                 }
             },
             SummonStatus = {
                 fields = {
-                    'None',
-                    'Pending',
                     'Declined',
-                    'Accepted'
+                    'Accepted',
+                    'Pending',
+                    'None'
                 }
             },
             SuperTrackingType = {
                 fields = {
-                    'Content',
-                    'Quest',
-                    'Scenario',
                     'Corpse',
                     'PartyMember',
-                    'UserWaypoint'
+                    'UserWaypoint',
+                    'Content',
+                    'Quest',
+                    'Scenario'
                 }
             },
             TimeEventFlag = {
@@ -42579,125 +42580,125 @@ globals = {
             },
             TitleIconVersion = {
                 fields = {
-                    'Large',
                     'Small',
-                    'Medium'
+                    'Medium',
+                    'Large'
                 }
             },
             TooltipComparisonMethod = {
                 fields = {
+                    'WithBagMainHandItem',
                     'WithBagOffHandItem',
-                    'WithBothHands',
                     'Single',
-                    'WithBagMainHandItem'
+                    'WithBothHands'
                 }
             },
             TooltipDataItemBinding = {
                 fields = {
-                    'Account',
-                    'BnetAccount',
-                    'Soulbound',
-                    'BindOnUse',
-                    'BindToBnetAccount',
-                    'Quest',
                     'BindOnPickup',
+                    'Soulbound',
+                    'Account',
+                    'BindToBnetAccount',
+                    'BindToAccount',
                     'BindOnEquip',
-                    'BindToAccount'
+                    'BindOnUse',
+                    'BnetAccount',
+                    'Quest'
                 }
             },
             TooltipDataLineType = {
                 fields = {
-                    'AzeriteEssenceSlot',
-                    'QuestObjective',
-                    'RestrictedSpellKnown',
-                    'SellPrice',
-                    'RestrictedPvPMedal',
-                    'RestrictedFaction',
-                    'EquipSlot',
-                    'RestrictedBg',
-                    'LearnableSpell',
-                    'AzeriteItemPowerDescription',
-                    'Separator',
-                    'NestedBlock',
-                    'ItemName',
                     'AzeriteEssencePower',
                     'None',
-                    'ItemEnchantmentPermanent',
-                    'ItemBinding',
-                    'GemSocket',
-                    'UnitThreat',
-                    'UnitName',
+                    'LearnableSpell',
                     'Blank',
-                    'QuestTitle',
-                    'QuestPlayer',
-                    'RestrictedSkill',
-                    'ToySource',
-                    'ToyFlavorText',
-                    'ToyDescription',
-                    'UnitOwner',
-                    'RestrictedArena',
-                    'CurrencyTotal',
-                    'ToyDuration',
-                    'ToyText',
-                    'RestrictedRaceClass',
-                    'ToyName',
-                    'RuneforgeLegendaryPowerDescription',
-                    'RestrictedLevel',
+                    'UnitThreat',
+                    'AzeriteItemPowerDescription',
+                    'EquipSlot',
+                    'UnitName',
+                    'RestrictedFaction',
                     'RestrictedReputation',
+                    'GemSocket',
+                    'RestrictedPvPMedal',
+                    'QuestPlayer',
+                    'AzeriteEssenceSlot',
+                    'ToyName',
+                    'RestrictedArena',
+                    'RestrictedSpellKnown',
+                    'SellPrice',
+                    'ToyFlavorText',
+                    'ItemEnchantmentPermanent',
+                    'RestrictedRaceClass',
                     'GemSocketEnchantment',
+                    'Separator',
+                    'ToyDescription',
+                    'RestrictedSkill',
+                    'RestrictedBg',
+                    'ToyDuration',
+                    'QuestObjective',
+                    'CurrencyTotal',
                     'ToyEffect',
+                    'ToyText',
+                    'ToySource',
+                    'NestedBlock',
+                    'ItemName',
+                    'ItemBinding',
+                    'RestrictedLevel',
                     'ProfessionCraftingQuality',
-                    'SpellName'
+                    'QuestTitle',
+                    'UnitOwner',
+                    'SpellName',
+                    'RuneforgeLegendaryPowerDescription'
                 }
             },
             TooltipDataType = {
                 fields = {
+                    'Object',
+                    'InstanceLock',
+                    'Unit',
                     'Currency',
-                    'Totem',
+                    'Debug',
+                    'Corpse',
+                    'CompanionPet',
                     'UnitAura',
                     'Spell',
-                    'Debug',
-                    'CompanionPet',
-                    'Item',
-                    'EnhancedConduit',
-                    'Corpse',
-                    'QuestPartyProgress',
-                    'EquipmentSet',
-                    'PvPBrawl',
-                    'Mount',
-                    'MinimapMouseover',
-                    'RecipeRankInfo',
-                    'AzeriteEssence',
-                    'CorruptionCleanser',
-                    'Toy',
+                    'Totem',
                     'Flyout',
-                    'InstanceLock',
-                    'Quest',
-                    'Achievement',
-                    'PetAction',
                     'Macro',
-                    'Object',
+                    'QuestPartyProgress',
+                    'PetAction',
+                    'MinimapMouseover',
                     'BattlePet',
-                    'Unit'
+                    'Toy',
+                    'EquipmentSet',
+                    'RecipeRankInfo',
+                    'Mount',
+                    'PvPBrawl',
+                    'CorruptionCleanser',
+                    'EnhancedConduit',
+                    'Achievement',
+                    'Item',
+                    'Quest',
+                    'AzeriteEssence'
                 }
             },
             TooltipSide = {
                 fields = {
                     'Bottom',
-                    'Left',
                     'Top',
+                    'Left',
                     'Right'
                 }
             },
             TooltipTextureAnchor = {
                 fields = {
-                    'LeftTop',
                     'All',
-                    'LeftCenter',
-                    'RightTop',
-                    'RightCenter',
                     'RightBottom',
-                    'LeftBottom'
+                    'RightTop',
+                    'LeftCenter',
+                    'LeftBottom',
+                    'LeftTop',
+                    'RightCenter'
                 }
             },
             TooltipTextureRelativeRegion = {
@@ -42708,11 +42709,11 @@ globals = {
             },
             TrackedSpellCategory = {
                 fields = {
-                    'None',
                     'RacialAbility',
+                    'Defensive',
                     'Debuff',
                     'Offensive',
-                    'Defensive'
+                    'None'
                 }
             },
             TradeskillOrderDuration = {
@@ -42724,26 +42725,26 @@ globals = {
             },
             TradeskillOrderRecipient = {
                 fields = {
-                    'Private',
                     'Public',
+                    'Private',
                     'Guild'
                 }
             },
             TradeskillOrderStatus = {
                 fields = {
-                    'Expired',
                     'Unclaimed',
-                    'Started',
-                    'Completed'
+                    'Completed',
+                    'Expired',
+                    'Started'
                 }
             },
             TradeskillRecipeType = {
                 fields = {
-                    'Gathering',
+                    'Recraft',
                     'Enchant',
                     'Item',
-                    'Salvage',
-                    'Recraft'
+                    'Gathering',
+                    'Salvage'
                 }
             },
             TradeskillRelativeDifficulty = {
@@ -42756,31 +42757,31 @@ globals = {
             },
             TradeskillSlotDataType = {
                 fields = {
+                    'Reagent',
                     'ModifiedReagent',
-                    'Currency',
-                    'Reagent'
+                    'Currency'
                 }
             },
             TraitCombatConfigFlags = {
                 fields = {
-                    'StarterBuild',
                     'ActiveForSpec',
-                    'SharedActionBars'
+                    'SharedActionBars',
+                    'StarterBuild'
                 }
             },
             TraitCondFlag = {
                 fields = {
                     'IsGate',
-                    'IsSufficient',
-                    'IsAlwaysMet'
+                    'IsAlwaysMet',
+                    'IsSufficient'
                 }
             },
             TraitConditionType = {
                 fields = {
-                    'Increased',
-                    'Granted',
                     'Available',
-                    'Visible'
+                    'Visible',
+                    'Increased',
+                    'Granted'
                 }
             },
             TraitConfigDbState = {
@@ -42793,71 +42794,71 @@ globals = {
             },
             TraitConfigType = {
                 fields = {
+                    'Invalid',
                     'Generic',
                     'Profession',
-                    'Combat',
-                    'Invalid'
+                    'Combat'
                 }
             },
             TraitCurrencyFlag = {
                 fields = {
                     'UseSpecIcon',
-                    'ShowQuantityAsSpent',
                     'TraitSourcedShowMax',
+                    'ShowQuantityAsSpent',
                     'UseClassIcon'
                 }
             },
             TraitCurrencyType = {
                 fields = {
-                    'Gold',
+                    'CurrencyTypesBased',
                     'TraitSourced',
-                    'CurrencyTypesBased'
+                    'Gold'
                 }
             },
             TraitDefinitionSubType = {
                 fields = {
-                    'DragonflightBronze',
                     'DragonflightBlue',
+                    'DragonflightBlack',
                     'DragonflightGreen',
                     'DragonflightRed',
-                    'DragonflightBlack'
+                    'DragonflightBronze'
                 }
             },
             TraitEdgeType = {
                 fields = {
+                    'VisualOnly',
                     'SufficientForAvailability',
+                    'MutuallyExclusive',
                     'RequiredForAvailability',
                     'DeprecatedRankConnection',
-                    'DeprecatedSelectionOption',
-                    'VisualOnly',
-                    'MutuallyExclusive'
+                    'DeprecatedSelectionOption'
                 }
             },
             TraitEdgeVisualStyle = {
                 fields = {
-                    'None',
-                    'Straight'
+                    'Straight',
+                    'None'
                 }
             },
             TraitNodeEntryType = {
                 fields = {
-                    'DragAndDrop',
+                    'SpendCircle',
+                    'SpendSmallCircle',
+                    'ProfPath',
+                    'SpendDiamond',
                     'ProfPathUnlock',
                     'ProfPerk',
-                    'SpendCircle',
+                    'DragAndDrop',
                     'DeprecatedSelect',
-                    'SpendSmallCircle',
-                    'SpendDiamond',
-                    'SpendHex',
                     'SpendSquare',
-                    'ProfPath'
+                    'SpendHex'
                 }
             },
             TraitNodeFlag = {
                 fields = {
                     'TestGridPositioned',
-                    'NeverPurchasable',
                     'ShowMultipleIcons',
+                    'NeverPurchasable',
                     'TestPositionLocked'
                 }
             },
@@ -42875,15 +42876,15 @@ globals = {
             },
             TraitPointsOperationType = {
                 fields = {
-                    'None',
+                    'Multiply',
                     'Set',
-                    'Multiply'
+                    'None'
                 }
             },
             TraitSystemFlag = {
                 fields = {
-                    'ShowSpendConfirmation',
-                    'AllowMultipleLoadoutsPerTree'
+                    'AllowMultipleLoadoutsPerTree',
+                    'ShowSpendConfirmation'
                 }
             },
             TraitTreeFlag = {
@@ -42894,49 +42895,49 @@ globals = {
             },
             TransmogCameraVariation = {
                 fields = {
-                    'None',
+                    'CloakBackpack',
                     'RightShoulder',
-                    'CloakBackpack'
+                    'None'
                 }
             },
             TransmogCollectionType = {
                 fields = {
-                    'None',
-                    'Polearm',
-                    'Waist',
-                    'Chest',
-                    'Dagger',
-                    'OneHMace',
-                    'Legs',
-                    'Paired',
-                    'Fist',
                     'Tabard',
-                    'Shirt',
-                    'Hands',
+                    'Legs',
                     'Warglaives',
+                    'Dagger',
                     'Holdable',
-                    'Head',
+                    'Paired',
+                    'None',
+                    'Hands',
+                    'Waist',
+                    'Fist',
                     'Gun',
-                    'Crossbow',
-                    'Bow',
-                    'Wand',
-                    'Wrist',
-                    'Back',
-                    'Staff',
-                    'OneHAxe',
-                    'Shoulder',
                     'Feet',
-                    'Shield',
-                    'OneHSword',
-                    'TwoHMace',
+                    'Bow',
+                    'Shirt',
+                    'Polearm',
+                    'Head',
                     'TwoHAxe',
-                    'TwoHSword'
+                    'OneHAxe',
+                    'TwoHSword',
+                    'Staff',
+                    'Wand',
+                    'Chest',
+                    'Shoulder',
+                    'OneHSword',
+                    'Shield',
+                    'Crossbow',
+                    'OneHMace',
+                    'Wrist',
+                    'TwoHMace',
+                    'Back'
                 }
             },
             TransmogIllisionFlags = {
                 fields = {
-                    'PlayerConditionGrantsOnLogin',
-                    'HideUntilCollected'
+                    'HideUntilCollected',
+                    'PlayerConditionGrantsOnLogin'
                 }
             },
             TransmogModification = {
@@ -42947,75 +42948,75 @@ globals = {
             },
             TransmogPendingType = {
                 fields = {
-                    'Apply',
                     'ToggleOff',
-                    'Revert',
-                    'ToggleOn'
+                    'ToggleOn',
+                    'Apply',
+                    'Revert'
                 }
             },
             TransmogSearchType = {
                 fields = {
                     'UsableSets',
-                    'Items',
-                    'BaseSets'
+                    'BaseSets',
+                    'Items'
                 }
             },
             TransmogSlot = {
                 fields = {
+                    'Tabard',
                     'Head',
-                    'Waist',
-                    'Chest',
+                    'Offhand',
                     'Mainhand',
-                    'Wrist',
                     'Back',
-                    'Legs',
                     'Shoulder',
                     'Feet',
-                    'Tabard',
-                    'Offhand',
+                    'Waist',
+                    'Legs',
                     'Hand',
-                    'Body'
+                    'Wrist',
+                    'Body',
+                    'Chest'
                 }
             },
             TransmogSource = {
                 fields = {
+                    'Vendor',
+                    'JournalEncounter',
+                    'NotValidForTransmog',
+                    'WorldDrop',
                     'None',
-                    'Profession',
                     'HiddenUntilCollected',
                     'TradingPost',
-                    'Quest',
-                    'NotValidForTransmog',
                     'Achievement',
-                    'JournalEncounter',
-                    'WorldDrop',
-                    'CantCollect',
-                    'Vendor'
+                    'Profession',
+                    'Quest',
+                    'CantCollect'
                 }
             },
             TransmogType = {
                 fields = {
-                    'Appearance',
-                    'Illusion'
+                    'Illusion',
+                    'Appearance'
                 }
             },
             TransmogUseErrorType = {
                 fields = {
-                    'None',
-                    'Skill',
-                    'HotRecheckFailed',
                     'PlayerCondition',
-                    'Holiday',
+                    'HotRecheckFailed',
                     'Faction',
-                    'Ability'
+                    'Holiday',
+                    'Skill',
+                    'Ability',
+                    'None'
                 }
             },
             TtsBoolSetting = {
                 fields = {
-                    'PlayActivitySoundWhenNotFocused',
-                    'PlaySoundSeparatingChatLineBreaks',
-                    'AlternateSystemVoice',
                     'AddCharacterNameToSpeech',
-                    'NarrateMyMessages'
+                    'PlaySoundSeparatingChatLineBreaks',
+                    'NarrateMyMessages',
+                    'PlayActivitySoundWhenNotFocused',
+                    'AlternateSystemVoice'
                 }
             },
             TtsVoiceType = {
@@ -43027,8 +43028,8 @@ globals = {
             TugOfWarMarkerArrowShownState = {
                 fields = {
                     'Never',
-                    'FlashOnMove',
-                    'Always'
+                    'Always',
+                    'FlashOnMove'
                 }
             },
             TugOfWarStyleValue = {
@@ -43039,27 +43040,27 @@ globals = {
             },
             UICursorType = {
                 fields = {
-                    'Currency',
+                    'GuildBank',
                     'Merchant',
-                    'ActionBar',
                     'Default',
-                    'Spell',
-                    'Item',
-                    'EquipmentSet',
                     'PetAction',
+                    'VoidItem',
+                    'Spell',
+                    'Pet',
                     'PerksProgramVendorItem',
                     'ConduitCollectionItem',
-                    'Pet',
-                    'Toy',
-                    'Flyout',
-                    'Mount',
-                    'GuildBank',
-                    'VoidItem',
-                    'Money',
-                    'Macro',
-                    'AmmoObsolete',
                     'BattlePet',
-                    'GuildBankMoney'
+                    'Macro',
+                    'Toy',
+                    'Mount',
+                    'Money',
+                    'Flyout',
+                    'Currency',
+                    'EquipmentSet',
+                    'GuildBankMoney',
+                    'Item',
+                    'ActionBar',
+                    'AmmoObsolete'
                 }
             },
             UIFrameType = {
@@ -43069,85 +43070,85 @@ globals = {
             },
             UIItemInteractionFlags = {
                 fields = {
+                    'ClickShowsFlyout',
                     'ConfirmationHasDelay',
                     'DisplayWithInset',
+                    'UsesCharges',
                     'ConversionMode',
-                    'ClickShowsFlyout',
-                    'AddCurrency',
-                    'UsesCharges'
+                    'AddCurrency'
                 }
             },
             UIItemInteractionType = {
                 fields = {
-                    'None',
                     'ItemConversion',
-                    'CastSpell',
+                    'CleanseCorruption',
                     'RunecarverScrapping',
-                    'CleanseCorruption'
+                    'CastSpell',
+                    'None'
                 }
             },
             UIMapFlag = {
                 fields = {
-                    'FlightMapAutoZoom',
-                    'HideIcons',
-                    'HideVignettes',
+                    'ShowTaxiNodes',
+                    'NoWorldPositions',
                     'DoNotShowOnNavbar',
                     'NoHighlight',
-                    'ShowOverlays',
-                    'FlightMapShowZoomOut',
-                    'ShowTaskObjectives',
-                    'ForceAllOverlayExplored',
-                    'NoWorldPositions',
-                    'ForceOnNavbar',
                     'GarrisonMap',
-                    'FallbackToParentMap',
-                    'ShowTaxiNodes',
-                    'NoHighlightTexture',
-                    'HideArchaeologyDigs',
-                    'AlwaysAllowTaxiPathing',
-                    'ForceAllowMapLinks',
+                    'HideVignettes',
+                    'FlightMapShowZoomOut',
                     'AlwaysAllowUserWaypoints',
-                    'DoNotTranslateBranches'
+                    'ShowOverlays',
+                    'ForceOnNavbar',
+                    'HideIcons',
+                    'ForceAllowMapLinks',
+                    'DoNotTranslateBranches',
+                    'NoHighlightTexture',
+                    'ForceAllOverlayExplored',
+                    'FallbackToParentMap',
+                    'AlwaysAllowTaxiPathing',
+                    'FlightMapAutoZoom',
+                    'HideArchaeologyDigs',
+                    'ShowTaskObjectives'
                 }
             },
             UIMapSystem = {
                 fields = {
-                    'Taxi',
-                    'World',
                     'Minimap',
-                    'Adventure'
+                    'Adventure',
+                    'Taxi',
+                    'World'
                 }
             },
             UIMapType = {
                 fields = {
-                    'Continent',
-                    'Micro',
-                    'Orphan',
                     'Zone',
-                    'Cosmic',
                     'Dungeon',
+                    'Cosmic',
+                    'Micro',
+                    'Continent',
+                    'Orphan',
                     'World'
                 }
             },
             UIModelSceneActorFlag = {
                 fields = {
-                    'UseCenterForOriginY',
-                    'Deprecated1',
                     'UseCenterForOriginX',
-                    'UseCenterForOriginZ'
+                    'UseCenterForOriginY',
+                    'UseCenterForOriginZ',
+                    'Deprecated1'
                 }
             },
             UIModelSceneContext = {
                 fields = {
-                    'None',
-                    'PerksProgram'
+                    'PerksProgram',
+                    'None'
                 }
             },
             UIModelSceneFlags = {
                 fields = {
-                    'SheatheWeapon',
+                    'Autodress',
                     'HideWeapon',
-                    'Autodress'
+                    'SheatheWeapon'
                 }
             },
             UISystemType = {
@@ -43163,8 +43164,8 @@ globals = {
             },
             UIWidgetBlendModeType = {
                 fields = {
-                    'Additive',
-                    'Opaque'
+                    'Opaque',
+                    'Additive'
                 }
             },
             UIWidgetFlag = {
@@ -43181,18 +43182,18 @@ globals = {
             },
             UIWidgetLayoutDirection = {
                 fields = {
+                    'Vertical',
                     'Horizontal',
-                    'Overlap',
                     'HorizontalForceNewRow',
                     'Default',
-                    'Vertical'
+                    'Overlap'
                 }
             },
             UIWidgetModelSceneLayer = {
                 fields = {
-                    'None',
+                    'Front',
                     'Back',
-                    'Front'
+                    'None'
                 }
             },
             UIWidgetMotionType = {
@@ -43203,154 +43204,154 @@ globals = {
             },
             UIWidgetScale = {
                 fields = {
-                    'OneHundredForty',
-                    'Seventy',
-                    'OneHundredNinety',
-                    'OneHundredFifty',
-                    'OneHundredTwenty',
-                    'Sixty',
-                    'Fifty',
-                    'OneHundredEighty',
-                    'TwoHundred',
-                    'Ninty',
-                    'OneHundredSixty',
                     'OneHundredThirty',
-                    'Eighty',
-                    'OneHundredTen',
                     'OneHundredSeventy',
-                    'OneHundred'
+                    'Ninty',
+                    'OneHundredNinety',
+                    'OneHundredTwenty',
+                    'OneHundredSixty',
+                    'OneHundredEighty',
+                    'OneHundredFifty',
+                    'OneHundred',
+                    'TwoHundred',
+                    'Sixty',
+                    'Seventy',
+                    'Fifty',
+                    'OneHundredTen',
+                    'OneHundredForty',
+                    'Eighty'
                 }
             },
             UIWidgetSetLayoutDirection = {
                 fields = {
-                    'Overlap',
                     'Vertical',
-                    'Horizontal'
+                    'Horizontal',
+                    'Overlap'
                 }
             },
             UIWidgetTextSizeType = {
                 fields = {
-                    'Huge27Pt',
-                    'Medium18Pt',
-                    'Small10Pt',
-                    'Small11Pt',
-                    'Small12Pt',
-                    'Large24Pt',
-                    'Standard14Pt',
                     'Large20Pt',
-                    'Medium16Pt'
+                    'Huge27Pt',
+                    'Small12Pt',
+                    'Medium16Pt',
+                    'Standard14Pt',
+                    'Small11Pt',
+                    'Medium18Pt',
+                    'Large24Pt',
+                    'Small10Pt'
                 }
             },
             UIWidgetTextureAndTextSizeType = {
                 fields = {
-                    'Large',
                     'Small',
-                    'Medium2',
-                    'Huge',
+                    'Standard',
+                    'Large',
                     'Medium',
-                    'Standard'
+                    'Medium2',
+                    'Huge'
                 }
             },
             UIWidgetTooltipLocation = {
                 fields = {
                     'TopRight',
-                    'BottomLeft',
-                    'Bottom',
-                    'Default',
-                    'TopLeft',
-                    'BottomRight',
                     'Left',
-                    'Top',
-                    'Right'
+                    'BottomRight',
+                    'Default',
+                    'Bottom',
+                    'Right',
+                    'BottomLeft',
+                    'TopLeft',
+                    'Top'
                 }
             },
             UIWidgetUpdateAnimType = {
                 fields = {
-                    'None',
-                    'Flash'
+                    'Flash',
+                    'None'
                 }
             },
             UIWidgetVisualizationType = {
                 fields = {
-                    'HorizontalCurrencies',
-                    'ZoneControl',
-                    'IconAndText',
-                    'BulletTextList',
-                    'IconTextAndCurrencies',
-                    'ItemDisplay',
-                    'TextureAndTextRow',
-                    'ScenarioHeaderTimer',
                     'TextureWithAnimation',
-                    'TugOfWar',
                     'CaptureBar',
-                    'StatusBar',
-                    'UnitPowerBar',
-                    'StackedResourceTracker',
-                    'MapPinAnimation',
-                    'DoubleIconAndText',
-                    'ScenarioHeaderCurrenciesAndBackground',
-                    'FillUpFrames',
-                    'Spacer',
-                    'IconTextAndBackground',
-                    'SpellDisplay',
-                    'TextColumnRow',
+                    'TextWithSubtext',
+                    'TugOfWar',
                     'TextureAndText',
-                    'DoubleStateIconRow',
+                    'IconAndText',
+                    'TextWithState',
+                    'DoubleIconAndText',
+                    'ItemDisplay',
+                    'StatusBar',
                     'DiscreteProgressSteps',
                     'CaptureZone',
-                    'TextWithSubtext',
+                    'TextColumnRow',
                     'DoubleStatusBar',
-                    'TextWithState'
+                    'FillUpFrames',
+                    'UnitPowerBar',
+                    'HorizontalCurrencies',
+                    'BulletTextList',
+                    'StackedResourceTracker',
+                    'IconTextAndCurrencies',
+                    'ScenarioHeaderTimer',
+                    'MapPinAnimation',
+                    'ZoneControl',
+                    'SpellDisplay',
+                    'IconTextAndBackground',
+                    'DoubleStateIconRow',
+                    'ScenarioHeaderCurrenciesAndBackground',
+                    'TextureAndTextRow',
+                    'Spacer'
                 }
             },
             UnitSex = {
                 fields = {
-                    'None',
-                    'Female',
-                    'Both',
+                    'Male',
                     'Neutral',
-                    'Male'
+                    'Both',
+                    'Female',
+                    'None'
                 }
             },
             ValidateNameResult = {
                 fields = {
-                    'InvalidCharacter',
-                    'Failure',
-                    'MultipleApostrophes',
-                    'TooLong',
-                    'Reserved',
-                    'SpacesDisallowed',
-                    'RussianConsecutiveSilentCharacters',
-                    'Profane',
-                    'MixedLanguages',
-                    'Success',
-                    'DeclensionDoesntMatchBaseName',
-                    'RussianSilentCharacterAtBeginningOrEnd',
-                    'InvalidSpace',
-                    'TooShort',
-                    'InvalidApostrophe',
-                    'ConsecutiveSpaces',
                     'NoName',
-                    'ThreeConsecutive'
+                    'TooShort',
+                    'InvalidSpace',
+                    'DeclensionDoesntMatchBaseName',
+                    'Reserved',
+                    'Profane',
+                    'RussianSilentCharacterAtBeginningOrEnd',
+                    'TooLong',
+                    'Failure',
+                    'InvalidCharacter',
+                    'Success',
+                    'MultipleApostrophes',
+                    'ThreeConsecutive',
+                    'InvalidApostrophe',
+                    'RussianConsecutiveSilentCharacters',
+                    'SpacesDisallowed',
+                    'MixedLanguages',
+                    'ConsecutiveSpaces'
                 }
             },
             VasPurchaseProgress = {
                 fields = {
-                    'PrePurchase',
-                    'WaitingOnQueue',
-                    'ProcessingFactionChange',
+                    'Invalid',
                     'Complete',
-                    'Ready',
-                    'ApplyingLicense',
                     'PaymentPending',
-                    'Invalid'
+                    'WaitingOnQueue',
+                    'Ready',
+                    'ProcessingFactionChange',
+                    'ApplyingLicense',
+                    'PrePurchase'
                 }
             },
             ViewArenaSize = {
                 fields = {
                     'Two',
-                    'Five',
-                    'Three'
+                    'Three',
+                    'Five'
                 }
             },
             ViewRaidSize = {
@@ -43362,83 +43363,83 @@ globals = {
             },
             VignetteType = {
                 fields = {
-                    'Treasure',
-                    'Normal',
                     'PvPBounty',
+                    'FyrakkFlight',
                     'Torghast',
-                    'FyrakkFlight'
+                    'Normal',
+                    'Treasure'
                 }
             },
             Vocalerrorsounds = {
                 fields = {
-                    'Targettoofar',
-                    'Inventoryfull',
-                    'Genericnotarget',
-                    'Cantswap',
-                    'Abilitycooling',
-                    'Spellcooling',
+                    'ExhaustedObsolete',
+                    'Mustequippitem',
+                    'NoequipEver',
+                    'Ammoonlyinbag',
+                    'CantcastOutofrange',
+                    'Cantequip2HNoskill',
                     'Bagfull',
-                    'Invaliditemtarget',
-                    'CantlearnLevel',
-                    'Declinegroup',
-                    'Potioncooling',
-                    'Invalidtarget',
+                    'CantlootWrongfacing',
+                    'CantattackNotstandingObsolete',
+                    'Cantdrinkmore',
+                    'Cantuselocked',
+                    'CanttaxiNomoney',
+                    'Itemlocked',
+                    'Noessence',
+                    'Cantaffordbankslot',
+                    'Spellcooling',
+                    'CantlootNotstandingObsolete',
+                    'BoundNodrop',
+                    'Norage',
+                    'Guildpermissions',
+                    'Targettoofar',
                     'Inviteebusy',
-                    'Notenoughgold',
+                    'Notabag',
+                    'FoodcoolingObsolete',
+                    'Chestinuse',
+                    'Alreadyingroup',
+                    'Proficiencyneeded',
+                    'Locked',
+                    'Cantattackrongdirection',
+                    'Cantuseitem',
+                    'Outofammo',
+                    'Cantcreate',
+                    'CantlootDidntkill',
+                    'CantlearnLevel',
+                    'Wrongslot',
                     'CanteatMoving',
                     'Toomanybankslots',
-                    'Cantattackrongdirection',
-                    'Norage',
-                    'NoequipEver',
-                    'CantlootToofar',
-                    'CantattackNotstandingObsolete',
-                    'CantcastOutofrange',
-                    'NoequipLevel',
-                    'Noequipslotavailable',
-                    'Notequippable',
-                    'Notwhiledead',
-                    'CantattackNotarget',
-                    'Cantinvite',
-                    'Locked',
-                    'Itemcooling',
-                    'BoundNodrop',
-                    'FoodcoolingObsolete',
-                    'Notabag',
-                    'Cantcreate',
-                    'Cantuseitem',
-                    'Cantuselocked',
-                    'Cantputbag',
-                    'Cantflyhere',
-                    'Noessence',
-                    'Noenergy',
-                    'CantlootNotstandingObsolete',
-                    'Cantaffordbankslot',
-                    'Itemlocked',
-                    'Outofammo',
-                    'Nomana',
-                    'Ammoonlyinbag',
-                    'ExhaustedObsolete',
-                    'CanttradeSoulbound',
-                    'Cantdrinkmore',
-                    'CantlootLocked',
-                    'Cantusetoofar',
-                    'CantlootDidntkill',
-                    'Alreadyingroup',
-                    'Notenoughmoney',
-                    'Mustequippitem',
-                    'Cantequip2Hequipped',
-                    'Proficiencyneeded',
-                    'Cantequip2HNoskill',
-                    'Alreadyinguild',
+                    'Notenoughgold',
                     'Cantequip2HSkill',
-                    'Chestinuse',
-                    'Guildpermissions',
-                    'CantlootWrongfacing',
-                    'CanttaxiNomoney',
+                    'Cantequip2Hequipped',
+                    'Nomana',
+                    'NoequipLevel',
+                    'CanttradeSoulbound',
+                    'CantattackNotarget',
+                    'Cantswap',
+                    'CantlootToofar',
+                    'Cantusetoofar',
+                    'Invalidtarget',
+                    'Potioncooling',
+                    'Inventoryfull',
+                    'Cantputbag',
+                    'Alreadyinguild',
+                    'Invaliditemtarget',
+                    'Noenergy',
+                    'Cantflyhere',
+                    'Cantinvite',
+                    'Notwhiledead',
+                    'Declinegroup',
+                    'Noequipslotavailable',
+                    'Abilitycooling',
+                    'Genericnotarget',
+                    'Notequippable',
+                    'Notenoughmoney',
+                    'CantlootLocked',
                     'Itemmaxcount',
-                    'Wrongslot',
                     'Cantloot',
-                    'Canteatmore'
+                    'Canteatmore',
+                    'Itemcooling'
                 }
             },
             VoiceChannelErrorReason = {
@@ -43449,156 +43450,156 @@ globals = {
             },
             VoiceChatStatusCode = {
                 fields = {
-                    'ChannelNameTooLong',
-                    'InvalidInputDevice',
-                    'PlayerSilenced',
-                    'Failure',
-                    'ChannelNameTooShort',
-                    'ClientAlreadyLoggedIn',
-                    'TargetNotFound',
-                    'PlayerVoiceChatParentalDisabled',
-                    'ProxyConnectionUnexpectedDisconnect',
-                    'ChannelAlreadyExists',
-                    'InvalidCommunityStream',
-                    'UnsupportedChatChannelType',
-                    'Disabled',
-                    'ProxyConnectionUnableToConnect',
-                    'UnableToLaunchProxy',
-                    'LoginProhibited',
-                    'Success',
-                    'ClientNotInitialized',
                     'OperationPending',
+                    'LoginProhibited',
+                    'InvalidCommunityStream',
+                    'ClientNotInitialized',
+                    'AlreadyInChannel',
+                    'ChannelAlreadyExists',
+                    'InvalidOutputDevice',
+                    'TargetNotFound',
+                    'Disabled',
+                    'Failure',
+                    'PlayerVoiceChatParentalDisabled',
+                    'ChannelNameTooLong',
+                    'Success',
+                    'PlayerSilenced',
+                    'ClientAlreadyLoggedIn',
+                    'ChannelNameTooShort',
+                    'UnsupportedChatChannelType',
+                    'InvalidInputDevice',
+                    'ProxyConnectionUnexpectedDisconnect',
+                    'UnableToLaunchProxy',
+                    'ProxyConnectionUnableToConnect',
                     'ProxyConnectionTimeOut',
                     'ServiceLost',
-                    'InvalidOutputDevice',
-                    'AlreadyInChannel',
-                    'ClientNotLoggedIn',
-                    'TooManyRequests'
+                    'TooManyRequests',
+                    'ClientNotLoggedIn'
                 }
             },
             VoiceTtsDestination = {
                 fields = {
                     'QueuedRemoteTransmission',
                     'RemoteTransmission',
-                    'ScreenReader',
+                    'QueuedLocalPlayback',
                     'LocalPlayback',
-                    'QueuedRemoteTransmissionWithLocalPlayback',
+                    'ScreenReader',
                     'RemoteTransmissionWithLocalPlayback',
-                    'QueuedLocalPlayback'
+                    'QueuedRemoteTransmissionWithLocalPlayback'
                 }
             },
             VoiceTtsStatusCode = {
                 fields = {
-                    'DestinationQueueFull',
-                    'EngineAllocationFailed',
                     'UtteranceBelowMinimumDuration',
-                    'SdkNotInitialized',
-                    'UtteranceNotFound',
-                    'Success',
                     'InternalError',
-                    'InputTextEnqueued',
-                    'MaxCharactersExceeded',
-                    'InvalidEngineType',
-                    'InvalidArgument',
+                    'Success',
                     'ManagerNotFound',
-                    'NotSupported',
-                    'EnqueueNotNecessary'
+                    'InvalidArgument',
+                    'UtteranceNotFound',
+                    'InvalidEngineType',
+                    'EnqueueNotNecessary',
+                    'SdkNotInitialized',
+                    'DestinationQueueFull',
+                    'MaxCharactersExceeded',
+                    'InputTextEnqueued',
+                    'EngineAllocationFailed',
+                    'NotSupported'
                 }
             },
             WeeklyRewardChestActivityType = {
                 fields = {
-                    'Scenario',
-                    'LFGDungeons'
+                    'LFGDungeons',
+                    'Scenario'
                 }
             },
             WeeklyRewardChestClaimRewardResult = {
                 fields = {
-                    'TooManyItems',
                     'CountExceeded',
-                    'LockFailure',
-                    'DbError',
                     'PlayerNotFound',
-                    'InvalidSlot',
+                    'DbError',
+                    'Success',
+                    'LockFailure',
                     'InvalidThreshold',
-                    'Success'
+                    'TooManyItems',
+                    'InvalidSlot'
                 }
             },
             WeeklyRewardChestThresholdType = {
                 fields = {
-                    'None',
                     'RankedPvP',
-                    'Raid',
                     'Activities',
                     'AlsoReceive',
-                    'Concession'
+                    'Raid',
+                    'Concession',
+                    'None'
                 }
             },
             WeeklyRewardProgressResult = {
                 fields = {
-                    'DbError',
-                    'NoPlayer',
-                    'TimedOut',
                     'NoSeason',
-                    'Success'
+                    'DbError',
+                    'Success',
+                    'NoPlayer',
+                    'TimedOut'
                 }
             },
             WidgetAnimationType = {
                 fields = {
-                    'None',
-                    'Fade'
+                    'Fade',
+                    'None'
                 }
             },
             WidgetCurrencyClass = {
                 fields = {
-                    'Currency',
-                    'Item'
+                    'Item',
+                    'Currency'
                 }
             },
             WidgetEnabledState = {
                 fields = {
-                    'Red',
+                    'Yellow',
                     'Disabled',
                     'Green',
-                    'Black',
-                    'Artifact',
                     'BrightBlue',
-                    'White',
-                    'Yellow'
+                    'Black',
+                    'Red',
+                    'Artifact',
+                    'White'
                 }
             },
             WidgetGlowAnimType = {
                 fields = {
-                    'None',
-                    'Pulse'
+                    'Pulse',
+                    'None'
                 }
             },
             WidgetIconSizeType = {
                 fields = {
-                    'Large',
                     'Small',
                     'Medium',
-                    'Standard'
+                    'Standard',
+                    'Large'
                 }
             },
             WidgetIconSourceType = {
                 fields = {
-                    'Spell',
-                    'Item'
+                    'Item',
+                    'Spell'
                 }
             },
             WidgetOpacityType = {
                 fields = {
-                    'Seventy',
                     'Twenty',
-                    'Sixty',
-                    'Ten',
-                    'Forty',
-                    'Zero',
-                    'Ninety',
-                    'Eighty',
-                    'Fifty',
                     'Thirty',
-                    'OneHundred'
+                    'Zero',
+                    'OneHundred',
+                    'Ten',
+                    'Sixty',
+                    'Forty',
+                    'Fifty',
+                    'Ninety',
+                    'Seventy',
+                    'Eighty'
                 }
             },
             WidgetShowGlowState = {
@@ -43609,15 +43610,15 @@ globals = {
             },
             WidgetShownState = {
                 fields = {
-                    'Hidden',
-                    'Shown'
+                    'Shown',
+                    'Hidden'
                 }
             },
             WidgetTextHorizontalAlignmentType = {
                 fields = {
+                    'Right',
                     'Left',
-                    'Center',
-                    'Right'
+                    'Center'
                 }
             },
             WidgetUnitPowerBarFlashMomentType = {
@@ -43629,52 +43630,52 @@ globals = {
             },
             WoWEntitlementType = {
                 fields = {
-                    'Illusion',
-                    'Mount',
-                    'Title',
-                    'GameTime',
-                    'Battlepet',
-                    'Appearance',
-                    'Item',
-                    'AppearanceSet',
+                    'Invalid',
                     'Toy',
-                    'Invalid'
+                    'Mount',
+                    'AppearanceSet',
+                    'Illusion',
+                    'Appearance',
+                    'Title',
+                    'Item',
+                    'GameTime',
+                    'Battlepet'
                 }
             },
             WorldCursorAnchorType = {
                 fields = {
-                    'None',
                     'Nameplate',
+                    'Cursor',
                     'Default',
-                    'Cursor'
+                    'None'
                 }
             },
             WorldQuestQuality = {
                 fields = {
-                    'Rare',
                     'Epic',
-                    'Common'
+                    'Common',
+                    'Rare'
                 }
             },
             ZoneControlActiveState = {
                 fields = {
-                    'Active',
-                    'Inactive'
+                    'Inactive',
+                    'Active'
                 }
             },
             ZoneControlDangerFlashType = {
                 fields = {
+                    'ShowOnGoodStates',
                     'ShowOnBadStates',
                     'ShowOnNeither',
-                    'ShowOnGoodStates',
                     'ShowOnBoth'
                 }
             },
             ZoneControlFillType = {
                 fields = {
                     'DoubleFillCounterClockwise',
-                    'SingleFillClockwise',
                     'SingleFillCounterClockwise',
+                    'SingleFillClockwise',
                     'DoubleFillClockwise'
                 }
             },
@@ -43686,16 +43687,16 @@ globals = {
             },
             ZoneControlMode = {
                 fields = {
-                    'State1IsGood',
-                    'State2IsGood',
+                    'NeitherStateIsGood',
                     'BothStatesAreGood',
-                    'NeitherStateIsGood'
+                    'State1IsGood',
+                    'State2IsGood'
                 }
             },
             ZoneControlState = {
                 fields = {
-                    'State1',
-                    'State2'
+                    'State2',
+                    'State1'
                 }
             }
         }
