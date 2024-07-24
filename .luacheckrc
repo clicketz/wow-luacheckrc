@@ -22,6 +22,10 @@ ignore = {
     '582', -- Error-prone operator orders
 }
 globals = {
+    -- Temp Additions
+    'Settings',
+    'C_AddOns',
+
     '101_CutsceneName_Ref',
     '101_CutsceneName_Ref2',
     '10_1_5_TIME_RIFTS_MINIGAME_01_WRONG_ELEMENT',
