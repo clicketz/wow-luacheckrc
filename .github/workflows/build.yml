@@ -9,11 +9,11 @@ on:
         default: "mainline"
       commit:
         description: "Commit message"
-        required: true
+        required: false
         default: ""
       tag:
         description: "Tag"
-        required: true
+        required: false
         default: ""
 
 jobs:
