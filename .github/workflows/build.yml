@@ -29,7 +29,8 @@ jobs:
           python-version: '3.12'
 
       - name: Install Lua/LuaJIT
-        uses: leafo/gh-actions-lua@v11
+        #uses: leafo/gh-actions-lua@v11
+        uses: lewis6991/gh-actions-lua@01aab24c4de9555717b685f9b142a2abbe12ef14
 
       - name: Install tree sitter languages
         run: python -m pip install tree_sitter_languages
